@@ -1,0 +1,15 @@
+{
+    "name": "Mikros Runtime",
+    "references": [
+        "GUID:21462402cefc5dd4ba284fb769521eff"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
