@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 2404826914302949647}
   - component: {fileID: 8027434241070248981}
   - component: {fileID: 7475536345124364303}
-  - component: {fileID: 4428534396319765762}
+  - component: {fileID: 7580602168386991386}
   m_Layer: 5
   m_Name: TCoinsContent
   m_TagString: Untagged
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4428534396319765762
+--- !u!114 &7580602168386991386
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3126300919128128929}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1326248304, guid: 51294ce4533f778419f6be7ccec72816, type: 3}
+  m_Script: {fileID: 1326248304, guid: f5a8cd379946f2543929752c8ed768ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   txtBuyMessage: {fileID: 6396691887138167104}
@@ -605,8 +605,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4428534396319765762}
-        m_TargetAssemblyTypeName: MikrosClient.UI.TCoinsContent, MikrosLibrary
+      - m_Target: {fileID: 7580602168386991386}
+        m_TargetAssemblyTypeName: 
         m_MethodName: BuyTCoin
         m_Mode: 1
         m_Arguments:

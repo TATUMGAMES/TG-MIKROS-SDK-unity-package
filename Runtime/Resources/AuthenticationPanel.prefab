@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 597339845052862578}
   - component: {fileID: 4417647812111986011}
   - component: {fileID: 6795669656863934903}
-  - component: {fileID: 6281546339614256578}
+  - component: {fileID: -3158674063882026641}
   - component: {fileID: 5049084177581739866}
   m_Layer: 5
   m_Name: AuthenticationPanel
@@ -313,7 +313,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6281546339614256578
+--- !u!114 &-3158674063882026641
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -322,7 +322,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 447028159738704447}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1886942297, guid: 51294ce4533f778419f6be7ccec72816, type: 3}
+  m_Script: {fileID: 1886942297, guid: f5a8cd379946f2543929752c8ed768ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   titleText: {fileID: 4666023820614423226}
@@ -338,7 +338,7 @@ MonoBehaviour:
     hasBackButton: 0
     showSubtitleText: 1
   mikrosAccountButtonContainer: {fileID: 3510879359469317574}
-  mikrosAccountButtonPrefab: {fileID: 113236063975660497, guid: 6e58b85adeae8874ea6ca9fbd4fb7aff, type: 3}
+  mikrosAccountButtonPrefab: {fileID: 8867283362332567866, guid: 6e58b85adeae8874ea6ca9fbd4fb7aff, type: 3}
   addAccountButton: {fileID: 7691377691414746997}
   signinPage:
     pageGameObject: {fileID: 2025749490356862956}
@@ -481,7 +481,7 @@ GameObject:
   - component: {fileID: 6392084346901602734}
   - component: {fileID: 153169307833952068}
   - component: {fileID: 1748401255866237539}
-  - component: {fileID: 1813470237106738403}
+  - component: {fileID: 5355202781252189043}
   m_Layer: 5
   m_Name: MainContent
   m_TagString: Untagged
@@ -563,7 +563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
---- !u!114 &1813470237106738403
+--- !u!114 &5355202781252189043
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -572,7 +572,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 755957151889097001}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 487666650, guid: 51294ce4533f778419f6be7ccec72816, type: 3}
+  m_Script: {fileID: 487666650, guid: f5a8cd379946f2543929752c8ed768ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   portriatRectRef: {fileID: 3120940041925346420}
@@ -2073,7 +2073,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4110481613479336444}
-  - component: {fileID: 7493781413444846013}
+  - component: {fileID: 8347206919969813906}
   m_Layer: 5
   m_Name: HeaderSetup
   m_TagString: Untagged
@@ -2101,7 +2101,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -30}
   m_SizeDelta: {x: -60, y: 240}
   m_Pivot: {x: 0.5, y: 1}
---- !u!114 &7493781413444846013
+--- !u!114 &8347206919969813906
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2110,7 +2110,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2824375514294732348}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 487666650, guid: 51294ce4533f778419f6be7ccec72816, type: 3}
+  m_Script: {fileID: 487666650, guid: f5a8cd379946f2543929752c8ed768ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   portriatRectRef: {fileID: 8588154973978507166}
@@ -2415,7 +2415,7 @@ GameObject:
   - component: {fileID: 6533411106157019346}
   - component: {fileID: 5218380231343093751}
   - component: {fileID: 4365166214728449039}
-  - component: {fileID: 8525327556460170644}
+  - component: {fileID: 4061484094279220479}
   m_Layer: 5
   m_Name: MainPanel
   m_TagString: Untagged
@@ -2497,7 +2497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 1
---- !u!114 &8525327556460170644
+--- !u!114 &4061484094279220479
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2506,7 +2506,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3281845609214644924}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 487666650, guid: 51294ce4533f778419f6be7ccec72816, type: 3}
+  m_Script: {fileID: 487666650, guid: f5a8cd379946f2543929752c8ed768ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   portriatRectRef: {fileID: 4623839196790013758}
@@ -3341,7 +3341,7 @@ GameObject:
   - component: {fileID: 5175942805135466571}
   - component: {fileID: 4667566033067749122}
   - component: {fileID: 2611124121065008057}
-  - component: {fileID: 5886041203751911210}
+  - component: {fileID: 806793945001094479}
   m_Layer: 5
   m_Name: Scroll View
   m_TagString: Untagged
@@ -3437,7 +3437,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &5886041203751911210
+--- !u!114 &806793945001094479
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3446,7 +3446,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4075689096279856179}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 487666650, guid: 51294ce4533f778419f6be7ccec72816, type: 3}
+  m_Script: {fileID: 487666650, guid: f5a8cd379946f2543929752c8ed768ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   portriatRectRef: {fileID: 6634929524410576443}
@@ -5692,7 +5692,7 @@ GameObject:
   - component: {fileID: 4426996383172533673}
   - component: {fileID: 802628211636397148}
   - component: {fileID: 7109231515886441676}
-  - component: {fileID: 1335828452973734862}
+  - component: {fileID: 7116189484335444088}
   m_Layer: 5
   m_Name: Logo&TitleSetup
   m_TagString: Untagged
@@ -5762,7 +5762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
---- !u!114 &1335828452973734862
+--- !u!114 &7116189484335444088
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5771,7 +5771,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9017847717211051398}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 487666650, guid: 51294ce4533f778419f6be7ccec72816, type: 3}
+  m_Script: {fileID: 487666650, guid: f5a8cd379946f2543929752c8ed768ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   portriatRectRef: {fileID: 7017321864560251003}
