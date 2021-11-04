@@ -15,5 +15,5 @@ interface.
 Supply the following URL:
 
 ```none
-https://github.com/jilleJr/Newtonsoft.Json-for-Unity.git#upm
+https://github.com/TATUMGAMES/TG-MIKROS-SDK-unity-package.git
 ```
