@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 893495013702875744}
   - component: {fileID: 3882518569741712150}
   - component: {fileID: 342791753959066366}
-  - component: {fileID: 8570380732200771742}
+  - component: {fileID: 1461898588441362852}
   m_Layer: 5
   m_Name: Crouton
   m_TagString: Untagged
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8570380732200771742
+--- !u!114 &1461898588441362852
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6907524535648992953}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1791391099, guid: 51294ce4533f778419f6be7ccec72816, type: 3}
+  m_Script: {fileID: -1791391099, guid: f5a8cd379946f2543929752c8ed768ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mainImage: {fileID: 342791753959066366}

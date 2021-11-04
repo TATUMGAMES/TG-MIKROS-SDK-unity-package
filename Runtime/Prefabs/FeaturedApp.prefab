@@ -249,7 +249,7 @@ GameObject:
   - component: {fileID: 8314350271716845839}
   - component: {fileID: 8814754351247117055}
   - component: {fileID: 2873303013906584252}
-  - component: {fileID: 8008382886402028156}
+  - component: {fileID: -8115257395907487694}
   m_Layer: 5
   m_Name: FeaturedApp
   m_TagString: Untagged
@@ -359,8 +359,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8008382886402028156}
-        m_TargetAssemblyTypeName: MikrosClient.UI.AppBase, MikrosLibrary
+      - m_Target: {fileID: -8115257395907487694}
+        m_TargetAssemblyTypeName: MikrosApiClient.AppBase, Mikros Runtime
         m_MethodName: OnClickApp
         m_Mode: 1
         m_Arguments:
@@ -371,7 +371,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &8008382886402028156
+--- !u!114 &-8115257395907487694
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -380,7 +380,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4340337512693902984}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1092342566, guid: 51294ce4533f778419f6be7ccec72816, type: 3}
+  m_Script: {fileID: -1092342566, guid: f5a8cd379946f2543929752c8ed768ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   imageIcon: {fileID: 2221147396903860370}

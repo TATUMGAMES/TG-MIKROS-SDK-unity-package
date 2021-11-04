@@ -384,7 +384,7 @@ GameObject:
   - component: {fileID: 1586789943727274239}
   - component: {fileID: 3723787950591444521}
   - component: {fileID: 6922720574260636690}
-  - component: {fileID: 113236063975660497}
+  - component: {fileID: 8867283362332567866}
   m_Layer: 5
   m_Name: MikrosAccountButton
   m_TagString: Untagged
@@ -495,7 +495,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &113236063975660497
+--- !u!114 &8867283362332567866
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -504,7 +504,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9061760134062555027}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 953048909, guid: 51294ce4533f778419f6be7ccec72816, type: 3}
+  m_Script: {fileID: 953048909, guid: f5a8cd379946f2543929752c8ed768ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mainButton: {fileID: 6922720574260636690}

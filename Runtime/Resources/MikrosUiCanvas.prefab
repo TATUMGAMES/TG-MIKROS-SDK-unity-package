@@ -431,7 +431,7 @@ GameObject:
   - component: {fileID: 9177915911895379971}
   - component: {fileID: 9177915911895379968}
   - component: {fileID: 9177915911895379969}
-  - component: {fileID: 4037311908411102880}
+  - component: {fileID: 9177915911895379973}
   m_Layer: 5
   m_Name: MikrosUiCanvas
   m_TagString: Untagged
@@ -520,7 +520,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &4037311908411102880
+--- !u!114 &9177915911895379973
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -529,7 +529,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9177915911895379998}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1210666177, guid: 51294ce4533f778419f6be7ccec72816, type: 3}
+  m_Script: {fileID: -1210666177, guid: f5a8cd379946f2543929752c8ed768ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mikrosMainPanel: {fileID: 9177915912788358064}

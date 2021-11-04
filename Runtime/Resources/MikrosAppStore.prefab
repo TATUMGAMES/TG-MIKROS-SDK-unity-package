@@ -648,7 +648,7 @@ GameObject:
   - component: {fileID: 827589019592958182}
   - component: {fileID: 2233100391043209289}
   - component: {fileID: 685138061143758249}
-  - component: {fileID: 9038493794952807592}
+  - component: {fileID: 7096561816985840817}
   m_Layer: 5
   m_Name: CategoryFullView
   m_TagString: Untagged
@@ -715,7 +715,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &9038493794952807592
+--- !u!114 &7096561816985840817
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -724,7 +724,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1049768153231786398}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 213803671, guid: 51294ce4533f778419f6be7ccec72816, type: 3}
+  m_Script: {fileID: 213803671, guid: f5a8cd379946f2543929752c8ed768ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   categoryNameText: {fileID: 106998535914978639}
@@ -4555,7 +4555,7 @@ GameObject:
   - component: {fileID: 8461777069675893212}
   - component: {fileID: 8461777069675893215}
   - component: {fileID: 8461777069675893214}
-  - component: {fileID: 7903370609181474293}
+  - component: {fileID: 4427445535498443379}
   m_Layer: 5
   m_Name: ProfileSectionsScrollView
   m_TagString: Untagged
@@ -4651,7 +4651,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7903370609181474293
+--- !u!114 &4427445535498443379
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4660,7 +4660,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8461777069675893200}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -171519808, guid: 51294ce4533f778419f6be7ccec72816, type: 3}
+  m_Script: {fileID: -171519808, guid: f5a8cd379946f2543929752c8ed768ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   userImage: {fileID: 2854392133308047721}
@@ -6000,7 +6000,7 @@ GameObject:
   - component: {fileID: 8461777070957166098}
   - component: {fileID: 8461777070957166096}
   - component: {fileID: 8461777070957166099}
-  - component: {fileID: 7957139476898128857}
+  - component: {fileID: -4805978721826769098}
   m_Layer: 5
   m_Name: MikrosAppStore
   m_TagString: Untagged
@@ -6068,7 +6068,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7957139476898128857
+--- !u!114 &-4805978721826769098
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6077,7 +6077,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8461777070957166101}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1842609291, guid: 51294ce4533f778419f6be7ccec72816, type: 3}
+  m_Script: {fileID: -1842609291, guid: f5a8cd379946f2543929752c8ed768ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   storeCloseButton: {fileID: 3426042732634495120}
@@ -6085,11 +6085,11 @@ MonoBehaviour:
   appsViewSetup: {fileID: 5421453545101312783}
   gameCategoriesContainer: {fileID: 8461777069379262054}
   featuredAppsContainer: {fileID: 8461777070527196968}
-  gameCategoryPrefab: {fileID: 4292782416901895874, guid: e1eb365b460a7094e938fbf15d32a688, type: 3}
-  featuredAppPrefab: {fileID: 8008382886402028156, guid: bdb9c91f98844fc4b8589181d8f6fe2c, type: 3}
-  normalAppPrefab: {fileID: 8829171026675280007, guid: d64f098f3562f7c4d9b6a4375d420b61, type: 3}
-  gameCategoryFullViewPanel: {fileID: 9038493794952807592}
-  userProfilePanel: {fileID: 7903370609181474293}
+  gameCategoryPrefab: {fileID: 1738872513426219399, guid: e1eb365b460a7094e938fbf15d32a688, type: 3}
+  featuredAppPrefab: {fileID: -8115257395907487694, guid: bdb9c91f98844fc4b8589181d8f6fe2c, type: 3}
+  normalAppPrefab: {fileID: -5730996715090950163, guid: d64f098f3562f7c4d9b6a4375d420b61, type: 3}
+  gameCategoryFullViewPanel: {fileID: 7096561816985840817}
+  userProfilePanel: {fileID: 4427445535498443379}
 --- !u!1 &8461777071014359470
 GameObject:
   m_ObjectHideFlags: 0
