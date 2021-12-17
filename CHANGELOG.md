@@ -21,9 +21,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <a name="1.1.0"></a>
 ## [1.1.0] - 2021-12-17
 
-### Platform Compatability
+### Platform Compatibility
 
-- Compatabile for both iOS and Android platforms.
+- Compatibile for both iOS and Android platforms.
 
 ### Added Interfaces
 
