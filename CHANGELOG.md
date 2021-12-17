@@ -27,7 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added Interfaces
 
-- TrackHandledException(): Use this to log any handled exceptions. This should be added to try-catch exceptions 
+- TrackHandledExceptionRequest(): Use this to log any handled exceptions. This should be added to try-catch exceptions 
   and to failed API cases to get a better understanding of how gracefully you are handling non-ideal scenarios.
 
 <a name="1.0.0"></a>
