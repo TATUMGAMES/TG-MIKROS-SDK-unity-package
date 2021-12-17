@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Released Versions
+
+* [1.0.0](#1.0.0)
+* [1.1.0](#1.1.0)
+
 ## [Upcoming]
 
 ### Track User Spending 
@@ -12,7 +17,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - (IN PROGRESS) Working on preset event interfaces for tracking user spending. By 
   using these interfaces Integrators of MIKROS will be able to see information regarding 
   user spending habits e.g. how much and frequency of spending via Spending Score.
+  
+<a name="1.1.0"></a>
+## [1.1.0] - 2021-12-17
 
+### Platform Compatability
+
+- Compatabile for both iOS and Android platforms.
+
+### Added Interfaces
+
+- TrackHandledException(): Use this to log any handled exceptions. This should be added to try-catch exceptions 
+  and to failed API cases to get a better understanding of how gracefully you are handling non-ideal scenarios.
+
+<a name="1.0.0"></a>
 ## [1.0.0] - 2021-05-11
 
 ### Added
@@ -40,8 +58,9 @@ The following interfaces are convenience interfaces for Integrators. These out-o
 call LogEvent() and will track the provided information and details.
 
 - TrackGameOverRequest(): Use this to track when a user faces game over or level failure.
-- TrackLevelEndRequest(): Use this to track when a user has successfully completed a level.
 - TrackLevelStartRequest(): Use this to track when a user starts a level.
+- TrackLevelEndRequest(): Use this to track when a user has successfully completed a level. This should be used in 
+  conjunction with `TrackLevelStartRequest()`.
 - TrackLevelUpRequest(): Use this when a user levels up. You can include level and character
   details e.g. type of character, character name, or username.
 - TrackPostScoreRequest(): Use this to track any changes in score. You can include level and character
@@ -57,6 +76,7 @@ call LogEvent() and will track the provided information and details.
 - TrackStopTimerRequest(): Use this to stop tracking any timed events. This should be used in conjunction
   with `TrackStartTimerRequest()`.
 - TrackTutorialBeginRequest(): Use this to track when users start a tutorial.
-- TrackTutorialCompleteRequest(): Use this to track when users have completed a tutorial.
+- TrackTutorialCompleteRequest(): Use this to track when users have completed a tutorial. This should be used in
+  conjunction with `TrackTutorialBeginRequest()`.
 - TrackUnlockAchievementRequest(): Use this to track any unlock achievements e.g. level unlock, item
   unlock, or feature unlock.
