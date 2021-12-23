@@ -1,9 +1,0 @@
-<dependencies>
-  <iosPods>
-    <iosPod name="Mikros" version="1.0.0-release" bitcodeEnabled="true" minTargetSdk="12.0" addToAllTargets="false">
-	  <sources>
-	    <source>https://github.com/TATUMGAMES/TG-MIKROS-FRAMEWORK-POD-ios.git</source>
-	  </sources>
-	</iosPod>
-  </iosPods>
-</dependencies>
