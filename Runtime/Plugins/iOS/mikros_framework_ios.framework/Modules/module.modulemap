@@ -1,0 +1,11 @@
+framework module mikros_framework_ios {
+  umbrella header "mikros_framework_ios.h"
+
+  export *
+  module * { export * }
+}
+
+module mikros_framework_ios.Swift {
+    header "mikros_framework_ios-Swift.h"
+    requires objc
+}
