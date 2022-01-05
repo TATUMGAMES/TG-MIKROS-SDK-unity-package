@@ -11,10 +11,11 @@
 
 <a name="what-is-mikros"></a>
 ## What Is MIKROS?
-Mikros is a service aimed at game developers which provides useful information and clear analytics in a sharing ecosystem, also known as data pooling. These insights about user behaviour can help developers understand their clientele better including their spending habits.
+Mikros is a service aimed at game developers which provides useful information and clear analytics in a sharing ecosystem, also known as data pooling. These insights about user behaviour can help developers understand their clientele better including their spending habits. Mikros uniquely displays its analytics in a simple format with the goal of connecting game developers and advertisers to a full understanding of the problems they are looking to solve. This is due to all the data being in the Mikros ecosystem.
 
 <a name="how-dose-mirkos-work"></a>
 ## How Dose MIKROS Work?
+
 
 <a name="how-to-implement-mirkos"></a>
 ## How to Implement MIKROS?
