@@ -19,6 +19,24 @@ MIKROS sorts users by spending and activity levels in its ecosystem. This differ
 
 <a name="how-to-implement-mirkos"></a>
 ## How to Implement MIKROS?
+1. In order to use Mikros, clients (game developers/publishers) must go to https://developer.tatumgames.com/
+2. Select a subscription plan. The options are FREE, STARTUP, ENTERPRISE
+3. Register an account, and verify this account via email
+4. Once inside the Mikros dashboard, the client can "create app". The process of creating an app is filling out a form that includes details such as company name, game title, description, package name (bundle id), product assets, videos, category {RPG, Puzzle, Platformer, CCG, Strategy, Other}
+
+Once steps 1-4 is completed, the following will be generated:
+1. App Game ID (auto-generated)
+2. Production API Key (auto-generated)
+3. QA API Key (Manual)
+4. Development API Key (Manual)
+
+Now, the client has to include the Mikros SDK into their gaming product and setup the SDK by the following method:
+1. In the Unity Editor, select **Mikros > Edit Settings**
+2. In the Inspector tab of **Mikros Settings**, paste in your App Game ID and API keys that have been generated.
+3. *(Optional)* If you want manual initialization of the SDK, disable the ***Auto Initialize At Start*** option from the Mikros Settings. By default, it is kept enabled.
+4. *(Optional)* You also have the option to select which API key to use at any development stage. By default, Production API Key is used.
+5. *(Optional)* Mikros collects and sends session data for better user insights and is also crucial for Analytics purpose. This can be enabled or disabled by the ***Auto Track User Session*** option from the Mikros Settings. By default, it is kept enabled and is recommended to keep it that way.
+6. *(Optional)* Mikros collects and sends metadata for better user insights and is also crucial for Analytics purpose. This can be enabled or disabled by the ***Auto Track User Metadata*** option from the Mikros Settings. By default, it is kept enabled and is recommended to keep it that way.
 
 <a name="what-is-mikros-community-slack"></a>
 ## WHat is MIKROS Community Slack?
