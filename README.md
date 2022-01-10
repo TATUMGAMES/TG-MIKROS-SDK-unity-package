@@ -1,7 +1,7 @@
 ## Table of Contents
 
 * [What is MIKROS?](#what-is-mikros)
-* [How Dose MIKROS Work?](#how-dose-mikros-work)
+* [How Does MIKROS Work?](#how-dose-mikros-work)
 * [How to Implement MIKROS?](#how-to-implement-mikros)
 * [What is MIKROS Community Slack?](*what-is-mirkos-community-slack)
 * [How to Join MIKROS Community Slack?](*how-to-join-mikros-community-slack)
@@ -39,13 +39,13 @@ Now, the client has to include the Mikros SDK into their gaming product and setu
 6. *(Optional)* Mikros collects and sends metadata for better user insights and is also crucial for Analytics purpose. This can be enabled or disabled by the ***Auto Track User Metadata*** option from the Mikros Settings. By default, it is kept enabled and is recommended to keep it that way.
 
 <a name="what-is-mikros-community-slack"></a>
-## WHat is MIKROS Community Slack?
+## What is MIKROS Community Slack?
 
 <a name="how-to-join-mikros-community-slack"></a>
 ## How to Join MIKROS Community Slack?
 
 <a name="what-are-the-rules-for-the-mikros-community-slack"></a>
-## WHat Are the Rules For the MIKROS Community Slack?
+## What Are the Rules For the MIKROS Community Slack?
 
 <a name="faq"></a>
 ## FAQ 
