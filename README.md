@@ -73,7 +73,7 @@ If someone is subject to or witnesses unacceptable behavior, or has any other co
 * Your email message will reach the MIKROS Slack core team.
 * Reports will be confidential within the core team.
 
-Alternative ways of reporting guidelines can be found [here](https://developer.tatumgames.com/documentation/slack) on the MIKROS website.
+Alternative ways of reporting guidelines and more information can be found [here](https://developer.tatumgames.com/documentation/slack) on the MIKROS website.
 
 <a name="faq"></a>
 ## FAQ 
