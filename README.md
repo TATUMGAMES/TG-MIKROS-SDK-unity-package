@@ -70,8 +70,8 @@ The following behaviors are considered unacceptable within our community:
 If someone is subject to or witnesses unacceptable behavior, or has any other concerns, they are strongly encouraged to notify an administrator as soon as possible. Every reported concern will follow this workflow until resolved:
 
 * Make contact by emailing support@tatumgames.com
-** Your email message will reach the MIKROS Slack core team.
-** Reports will be confidential within the core team.
+* Your email message will reach the MIKROS Slack core team.
+* Reports will be confidential within the core team.
 
 Alternative ways of reporting guidelines can be found on the [MIKROS website](https://developer.tatumgames.com/documentation/slack)
 
