@@ -49,31 +49,31 @@ MIKROS Community Slack aims to have the largest number of communities and viewpo
 ## What Are the Rules For the MIKROS Community Slack?
 The following behaviors are expected and requested of all community members:
 
-*When you choose to participate, do so authentically and productively. In doing so, you contribute to the health and longevity of this community.
-*Exercise consideration and respect in your speech and actions.
-*Attempt collaboration before conflict.
-*Be mindful of your surroundings and of your fellow participants. Alert community leaders if you notice a dangerous situation, someone in distress, or violations of this Code of *Conduct, even if they seem inconsequential.
+* When you choose to participate, do so authentically and productively. In doing so, you contribute to the health and longevity of this community.
+* Exercise consideration and respect in your speech and actions.
+* Attempt collaboration before conflict.
+* Be mindful of your surroundings and of your fellow participants. Alert community leaders if you notice a dangerous situation, someone in distress, or violations of this Code of Conduct, even if they seem inconsequential.
 
 The following behaviors are considered unacceptable within our community:
 
-*Violence, threats of violence or violent language directed against another person.
-*Sexist, racist, homophobic, transphobic, ableist or otherwise discriminatory jokes and language.
-*Demeaning language, personal and ad hominem attacks on other persons, whether they are a member of the MIKROS community or external to it.
-*Posting or displaying sexually explicit or violent material.
-*Posting or threatening to post other people’s personally identifying information ("doxing").
-*Personal insults, particularly those related to gender, sexual orientation, race, religion, age, or disability.
-*Publicly shaming.
-*Unwelcome sexual attention. This includes, but is not limited to, sexualized comments or jokes.
-*Deliberate intimidation, stalking or following (online or in person).
-*Advocating for, or encouraging, any of the above behavior.
+* Violence, threats of violence or violent language directed against another person.
+* Sexist, racist, homophobic, transphobic, ableist or otherwise discriminatory jokes and language.
+* Demeaning language, personal and ad hominem attacks on other persons, whether they are a member of the MIKROS community or external to it.
+* Posting or displaying sexually explicit or violent material.
+* Posting or threatening to post other people’s personally identifying information ("doxing").
+* Personal insults, particularly those related to gender, sexual orientation, race, religion, age, or disability.
+* Publicly shaming.
+* Unwelcome sexual attention. This includes, but is not limited to, sexualized comments or jokes.
+* Deliberate intimidation, stalking or following (online or in person).
+* Advocating for, or encouraging, any of the above behavior.
 
 If someone is subject to or witnesses unacceptable behavior, or has any other concerns, they are strongly encouraged to notify an administrator as soon as possible. Every reported concern will follow this workflow until resolved:
 
-*Make contact by emailing support@tatumgames.com
-**Your email message will reach the MIKROS Slack core team.
-**Reports will be confidential within the core team.
+* Make contact by emailing support@tatumgames.com
+** Your email message will reach the MIKROS Slack core team.
+** Reports will be confidential within the core team.
 
-Alternative ways of reporting guidelines can be found on the MIKROS website or here: https://developer.tatumgames.com/documentation/slack
+Alternative ways of reporting guidelines can be found on the [MIKROS website](https://developer.tatumgames.com/documentation/slack)
 
 <a name="faq"></a>
 ## FAQ 
