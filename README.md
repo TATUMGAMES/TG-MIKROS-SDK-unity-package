@@ -40,6 +40,7 @@ Now, the client has to include the Mikros SDK into their gaming product and setu
 
 <a name="what-is-mikros-community-slack"></a>
 ## What is MIKROS Community Slack?
+MIKROS Community Slack aims to have the largest number of communities and viewpoints as inclusivity is our primary goal. We are committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic status, age, and religion (or lack thereof).
 
 <a name="how-to-join-mikros-community-slack"></a>
 ## How to Join MIKROS Community Slack?
