@@ -3,7 +3,7 @@
 * [What is MIKROS?](#what-is-mikros)
 * [How Does MIKROS Work?](#how-dose-mikros-work)
 * [How to Implement MIKROS?](#how-to-implement-mikros)
-* [SAMPLE APP & DOCUMENTATION](#sample-app-&-documentation)
+* [Sample App & Documentation](#sample-app-&-documentation)
 * [What is MIKROS Community Slack?](*what-is-mirkos-community-slack)
 * [How to Join MIKROS Community Slack?](*how-to-join-mikros-community-slack)
 * [What Are the Rules For The MIKROS Community Slack?](*what-are-the-rules-for-the-mikros-community-slack)
