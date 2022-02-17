@@ -3,11 +3,12 @@
 * [What is MIKROS?](#what-is-mikros)
 * [How Does MIKROS Work?](#how-dose-mikros-work)
 * [How to Implement MIKROS?](#how-to-implement-mikros)
+* [SAMPLE APP & DOCUMENTATION](#sample-app-&-documentation)
 * [What is MIKROS Community Slack?](*what-is-mirkos-community-slack)
 * [How to Join MIKROS Community Slack?](*how-to-join-mikros-community-slack)
 * [What Are the Rules For The MIKROS Community Slack?](*what-are-the-rules-for-the-mikros-community-slack)
 * [FAQ](*faq)
-* [SAMPLE APP & DOCUMENTATION](#sample-app-&-documentation)
+
 
 
 <a name="what-is-mikros"></a>
@@ -38,6 +39,24 @@ Now, the client has to include the Mikros SDK into their gaming product and setu
 4. *(Optional)* You also have the option to select which API key to use at any development stage. By default, Production API Key is used.
 5. *(Optional)* Mikros collects and sends session data for better user insights and is also crucial for Analytics purpose. This can be enabled or disabled by the ***Auto Track User Session*** option from the Mikros Settings. By default, it is kept enabled and is recommended to keep it that way.
 6. *(Optional)* Mikros collects and sends metadata for better user insights and is also crucial for Analytics purpose. This can be enabled or disabled by the ***Auto Track User Metadata*** option from the Mikros Settings. By default, it is kept enabled and is recommended to keep it that way.
+
+<a name="sample-app-&-documentation"></a>
+## Sample App & Dcumentation
+
+* Authentification
+    
+    
+ This is the Mikros Sample App main screen. The Authentication button will allow you to be authenticated and allow you to use the Mikros Sample App.
+ 
+ ![MIKROS MAIN SCREEN, add from Git URL dropdown](Documentation/Mikros-main-screen.png)
+ 
+ After clicking the Authentication button you will be presented with 3 options. (Sign-in, Sign-up, and Sign-out)
+ 
+ 
+ After clicking the Sign-up button you will  be presented with this screen and will need a Username, Email, and Password to sign up.
+ 
+ 
+ After clicking the Sign-out button you will be presented with this message. Letting you know you have signed out of the Mikros Sample App.
 
 <a name="what-is-mikros-community-slack"></a>
 ## What is MIKROS Community Slack?
@@ -102,23 +121,7 @@ Supply the following URL:
 https://github.com/TATUMGAMES/TG-MIKROS-SDK-unity-package.git
 ```
 
-<a name="sample-app-&-documentation"></a>
-## Sample App & Dcumentation
 
-* Authentification
-    
-    
- This is the Mikros Sample App main screen. The Authentication button will allow you to be authenticated and allow you to use the Mikros Sample App.
- 
- ![MIKROS MAIN SCREEN, add from Git URL dropdown](Documentation/Mikros-main-screen.png)
- 
- After clicking the Authentication button you will be presented with 3 options. (Sign-in, Sign-up, and Sign-out)
- 
- 
- After clicking the Sign-up button you will  be presented with this screen and will need a Username, Email, and Password to sign up.
- 
- 
- After clicking the Sign-out button you will be presented with this message. Letting you know you have signed out of the Mikros Sample App.
  
  
  
