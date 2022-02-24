@@ -54,19 +54,19 @@ Now, the client has to include the Mikros SDK into their gaming product and setu
     
 This is the Mikros Sample App main screen. The Authentication button will allow you to be authenticated and allow you to use the Mikros Sample App.
 
-![MIKROS MAIN SCREEN, add from Git URL dropdown](Documentation/Mikros-main-screen.png)
+![MIKROS MAIN SCREEN, add from Git URL dropdown](Documentation/mikros_main_screen.png)
 
 After clicking the Authentication button you will be presented with 3 options. (Sign-in, Sign-up, and Sign-out)
 
-![MIKROS SIGN-IN OPTIONS, add from Git URL dropdown](Documentation/Mikros-sign-in.png) 
+![MIKROS SIGN-IN OPTIONS, add from Git URL dropdown](Documentation/mikros_signin.png) 
 
 After clicking the Sign-up button you will  be presented with this screen and will need a Username, Email, and Password to sign up.
 
-![MIKROS SIGN-UP , add from Git URL dropdown](Documentation/sign-up.png) 
+![MIKROS SIGN-UP , add from Git URL dropdown](Documentation/signup.png) 
 
 After clicking the Sign-out button you will be presented with this message. Letting you know you have signed out of the Mikros Sample App.
 
-![MIKROS SIGN-OUT , add from Git URL dropdown](Documentation/sign-out.png) 
+![MIKROS SIGN-OUT , add from Git URL dropdown](Documentation/signout.png) 
 
 <a name="sdk-initialization"></a>
 ### SDK Initialization
@@ -273,7 +273,7 @@ computer.
 In later versions of Unity, you can import directly via the Package Manager
 interface.
 
-![UPM, add from Git URL dropdown](Documentation/upm-via-git.png)
+![UPM, add from Git URL dropdown](Documentation/upm_via_git.png)
 
 Supply the following URL:
 
