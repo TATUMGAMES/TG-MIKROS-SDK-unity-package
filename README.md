@@ -1,9 +1,15 @@
 ## Table of Contents
 
 * [What is MIKROS?](#what-is-mikros)
-* [How Does MIKROS Work?](#how-dose-mikros-work)
+* [How Does MIKROS Work?](#how-does-mikros-work)
 * [How to Implement MIKROS?](#how-to-implement-mikros)
 * [Sample App & Documentation](#sample-app-&-documentation)
+	* [Authentication](#authentication)
+	* [SDK Initialization](#sdk-initialization)
+	* [Privacy Standard](#privacy-standard)
+	* [Mikros Analytics](#mikros-analytics)
+		* [Preset Analytics Events](#mikros-analytics-preset)
+		* [Custom Analytics Events](#mikros-analytics-custom)
 * [What is MIKROS Community Slack?](*what-is-mirkos-community-slack)
 * [How to Join MIKROS Community Slack?](*how-to-join-mikros-community-slack)
 * [What Are the Rules For The MIKROS Community Slack?](*what-are-the-rules-for-the-mikros-community-slack)
@@ -15,11 +21,11 @@
 ## What Is MIKROS?
 MIKROS is a service aimed at game developers which provides useful information and clear analytics in a sharing ecosystem, also known as data pooling. These insights about user behaviour can help developers understand their clientele better including their spending habits. MIKROS uniquely displays its analytics in a simple format with the goal of connecting game developers and advertisers to a full understanding of the problems they are looking to solve. This is due to all the data being in the MIKROS ecosystem.
 
-<a name="how-dose-mirkos-work"></a>
+<a name="how-does-mikros-work"></a>
 ## How Does MIKROS Work?
 MIKROS sorts users by spending and activity levels in its ecosystem. This differs from how data is currently managed by competitors as they do not offer any data pooling. Game developers and advertisers can then view reports in a dashboard with valuable information which is needed to identify areas to improve their customer experience. With MIKROS, advertisers can now be certain that their ads are being shown to verified spenders.
 
-<a name="how-to-implement-mirkos"></a>
+<a name="how-to-implement-mikros"></a>
 ## How to Implement MIKROS?
 1. In order to use Mikros, clients (game developers/publishers) must go to https://developer.tatumgames.com/
 2. Select a subscription plan. The options are FREE, STARTUP, ENTERPRISE
@@ -41,22 +47,496 @@ Now, the client has to include the Mikros SDK into their gaming product and setu
 6. *(Optional)* Mikros collects and sends metadata for better user insights and is also crucial for Analytics purpose. This can be enabled or disabled by the ***Auto Track User Metadata*** option from the Mikros Settings. By default, it is kept enabled and is recommended to keep it that way.
 
 <a name="sample-app-&-documentation"></a>
-## Sample App & Dcumentation
+## Sample App & Documentation
 
-* Authentification
+<a name="authentication"></a>
+* Authentication
     
     
- This is the Mikros Sample App main screen. The Authentication button will allow you to be authenticated and allow you to use the Mikros Sample App.
- 
- ![MIKROS MAIN SCREEN, add from Git URL dropdown](Documentation/Mikros-main-screen.png)
- 
- After clicking the Authentication button you will be presented with 3 options. (Sign-in, Sign-up, and Sign-out)
- 
- 
- After clicking the Sign-up button you will  be presented with this screen and will need a Username, Email, and Password to sign up.
- 
- 
- After clicking the Sign-out button you will be presented with this message. Letting you know you have signed out of the Mikros Sample App.
+This is the Mikros Sample App main screen. The Authentication button will allow you to be authenticated and allow you to use the Mikros Sample App.
+
+![MIKROS MAIN SCREEN, add from Git URL dropdown](Documentation/Mikros-main-screen.png)
+
+After clicking the Authentication button you will be presented with 3 options. (Sign-in, Sign-up, and Sign-out)
+
+![MIKROS SIGN-IN OPTIONS, add from Git URL dropdown](Documentation/Mikros-sign-in.png) 
+
+After clicking the Sign-up button you will  be presented with this screen and will need a Username, Email, and Password to sign up.
+
+![MIKROS SIGN-UP , add from Git URL dropdown](Documentation/sign-up.png) 
+
+After clicking the Sign-out button you will be presented with this message. Letting you know you have signed out of the Mikros Sample App.
+
+![MIKROS SIGN-OUT , add from Git URL dropdown](Documentation/sign-out.png) 
+
+<a name="sdk-initialization"></a>
+* SDK Initialization
+
+Mikros SDK is initialized automatically by default. But you can manually initialize at any point in the following way:
+
+Make sure to have the following namespaces defined at the top of your scripts:
+```
+using MikrosClient;
+```
+
+##### Initialize with Privacy Level set in Mikros Settings
+```
+MikrosManager.Instance.InitializeMikrosSDK();
+```
+
+##### Initialize with custom Privacy Level
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| privacyLevel           | PRIVACY_LEVEL           | Optional   |
+| isEventLogging         | Boolean                 | Required   |
+
+```
+Configuration configuration = Configuration.Builder().SetPrivacyLevel(privacyLevel).SetEventLogging(isEventLogging).Create();
+MikrosManager.Instance.InitializeMikrosSDK(configuration);
+```
+
+*Note: The privacy configuration that is set in MikrosSettings from Editor, will always get overriden whenever a Configuration parameter is passed to the `MikrosManager.Instance.InitializeMikrosSDK` method.*
+
+
+You can use the `MikrosManager.Instance` and request objects to perform any operation. You will also need to pass in the correct response callbacks.
+
+<a name="privacy-standard"></a>
+* Privacy Standard
+Mikros provides 3 levels of privacy, all of which are GDPR & CCPA compliant. Following is the description for each privacy level:
+1. PRIVACY_LEVEL.DEFAULT
+   (Recommended) Mikros tracks user metadata and session in the background.
+
+2. PRIVACY_LEVEL.HIGH
+   Mikros no longer tracks any metadata information in the background; only session is tracked.
+
+3. PRIVACY_LEVEL.EXTREME
+   Mikros no longer tracks any metadata or session in the background. Integrators will have to track manually.
+
+However, Mikros also provides interfaces to set privacy standards according to requirement. This can be done as follows:
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| isTrackUserSession     | Boolean                 | Required   |
+| isTrackUserMetadata    | Boolean                 | Required   |
+| isEventLogging         | Boolean                 | Required   |
+
+```
+MikrosManager.Instance.ConfigurationController.SetAutoTrackUserSession(isTrackUserSession);
+MikrosManager.Instance.ConfigurationController.SetAutoTrackUserMetadata(isTrackUserMetadata);
+MikrosManager.Instance.ConfigurationController.SetEventLogging(isEventLogging);
+```
+
+If at any point it is required to customize logging of all type of user activity tracking (preset events, custom events, metadata, session), it can be done as follows:
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| isAllTrackingEnabled   | Boolean                 | Required   |
+```
+MikrosManager.Instance.ConfigurationController.SetAllTrackingEnabled(isDisableAllTracking);
+```
+<a name="mikros-analytics"></a>
+## Mikros Analytics
+Once the SDK is initialized, you can immediately start logging events (preset or custom) for analytics.
+
+Make sure to have the following namespaces defined at the top of your scripts:
+```
+using MikrosClient;
+using MikrosClient.Analytics;
+```
+
+<a name="mikros-analytics-preset"></a>
+### Preset Analytics Events
+
+##### Track App Open Request Object
+
+```
+TrackAppOpenRequest.Builder()
+    .Create(
+    trackAppOpenRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackAppOpenRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Game Over Request Object
+
+```
+TrackGameOverRequest.Builder()
+    .Create(
+    trackGameOverRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackGameOverRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Handled Exception Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| exception              | System.Exception        | Required   |
+
+```
+TrackHandledExceptionRequest.Builder()
+    .SetException(exception)
+    .Create(
+    trackHandledExceptionRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackHandledExceptionRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Http Failure Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| url                    | String                  | Required   |
+| statusCode             | String                  | Required   |
+| message                | String                  | Optional   |
+| networkSpeed           | String                  | Required   |
+
+```
+TrackHttpFailureRequest.Builder()
+    .Url(url)
+    .StatusCode(statusCode)
+    .Message(message)
+    .NetworkSpeed(networkSpeed)
+    .Create(
+    trackHttpFailureRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackHttpFailureRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Http Success Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| url                    | String                  | Required   |
+| statusCode             | String                  | Required   |
+| message                | String                  | Optional   |
+| networkSpeed           | String                  | Optional   |
+
+```
+TrackHttpSuccessRequest.Builder()
+    .Url(url)
+    .StatusCode(statusCode)
+    .Message(message)
+    .NetworkSpeed(networkSpeed)
+    .Create(
+    trackHttpSuccessRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackHttpSuccessRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Level End Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| level                  | Long                    | Required   |
+| subLevel               | Long                    | Optional   |
+| levelName              | String                  | Optional   |
+| description            | String                  | Optional   |
+| completeDuration       | String                  | Optional   |
+| success                | String                  | Optional   |
+
+```
+TrackLevelEndRequest.Builder()
+    .Level(level)
+    .SubLevel(subLevel)
+    .LevelName(levelName)
+    .Description(description)
+    .CompleteDuration(completeDuration)
+    .Success(success)
+    .Create(
+    trackLevelEndRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackLevelEndRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Level Start Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| level                  | Long                    | Required   |
+| subLevel               | Long                    | Optional   |
+| levelName              | String                  | Optional   |
+| description            | String                  | Optional   |
+
+```
+TrackLevelStartRequest.Builder()
+    .Level(level)
+    .SubLevel(subLevel)
+    .LevelName(levelName)
+    .Description(description)
+    .Create(
+    trackLevelStartRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackLevelStartRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Level Up Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| level                  | Long                    | Required   |
+| subLevel               | Long                    | Optional   |
+| levelName              | String                  | Optional   |
+| character              | String                  | Optional   |
+| description            | String                  | Optional   |
+
+```
+TrackLevelUpRequest.Builder()
+    .Level(level)
+    .SubLevel(subLevel)
+    .LevelName(levelName)
+    .Character(character)
+    .Description(description)
+    .Create(
+    trackLevelUpRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackLevelUpRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Post Score Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| score                  | Long                    | Required   |
+| level                  | Long                    | Optional   |
+| subLevel               | Long                    | Optional   |
+| levelName              | String                  | Optional   |
+| character              | String                  | Optional   |
+
+```
+TrackPostScoreRequest.Builder()
+    .Score(score)
+    .Level(level)
+    .SubLevel(subLevel)
+    .LevelName(levelName)
+    .Character(character)
+    .Create(
+    trackPostScoreRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackPostScoreRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Share Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| method                 | String                  | Required   |
+| contentType            | String                  | Required   |
+
+```
+TrackShareRequest.Builder()
+    .Method(method)
+    .ContentType(contentType)
+    .Create(
+    trackShareRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackShareRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Sign-in Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| method                 | String                  | Required   |
+
+```
+TrackSigninRequest.Builder()
+    .Method(method)
+    .Create(
+    trackSigninRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackSigninRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Sign-up Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| method                 | String                  | Required   |
+
+```
+TrackSignupRequest.Builder()
+    .Method(method)
+    .Create(
+    trackSignupRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackSignupRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Start Timer Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| eventKey               | String                  | Required   |
+
+```
+TrackStartTimerRequest.Builder()
+    .Event(eventKey)
+    .Create(
+    trackStartTimerRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackStartTimerRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Stop Timer Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| eventKey               | String                  | Required   |
+
+```
+TrackStopTimerRequest.Builder()
+    .Event(eventKey)
+    .Create(
+    trackStopTimerRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackStopTimerRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Tutorial Begin Request Object
+
+```
+TrackTutorialBeginRequest.Builder()
+    .Create(
+    trackTutorialBeginRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackTutorialBeginRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Tutorial Complete Request Object
+
+```
+TrackTutorialCompleteRequest.Builder()
+    .Create(
+    trackTutorialCompleteRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackTutorialCompleteRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Unlock Achievement Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| achievementId          | String                  | Required   |
+| achievementName        | String                  | Optional   |
+
+```
+TrackUnlockAchievementRequest.Builder()
+    .AchievementId(achievementId)
+    .AchievementName(achievementName)
+    .Create(
+    trackUnlockAchievementRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackUnlockAchievementRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+<a name="mikros-analytics-custom"></a>
+### Custom Analytics Events
+Custom events can be tracked by the following ways:
+1. To log an event without any parameters
+```
+MikrosManager.Instance.AnalyticsController.LogEvent("custom_event_name", (Hashtable customEventWholeData) =>
+{
+    // handle success
+},
+onFailure =>
+{
+    // handle failure
+});
+```
+
+2. To log an event with only one parameter of String datatype
+```
+MikrosManager.Instance.AnalyticsController.LogEvent("custom_event_name", "parameter", "parameter_value", (Hashtable customEventWholeData) =>
+{
+    // handle success
+},
+onFailure =>
+{
+    // handle failure
+});
+```
+
+3. To log an event with only one parameter of Double datatype
+```
+MikrosManager.Instance.AnalyticsController.LogEvent("custom_event_name", "parameter", 1.5, (Hashtable customEventWholeData) =>
+{
+    // handle success
+},
+onFailure =>
+{
+    // handle failure
+});
+```
+
+4. To log an event with only one parameter of Long datatype
+```
+MikrosManager.Instance.AnalyticsController.LogEvent("custom_event_name", "parameter", 1, (Hashtable customEventWholeData) =>
+{
+    // handle success
+},
+onFailure =>
+{
+    // handle failure
+});
+```
+
+5. To log an event with multiple parameters of any datatype
+```
+Hashtable parameterData = new Hashtable();
+parameterData.Add("parameter1", "parameter_value");
+parameterData.Add("parameter2", 1.5);
+parameterData.Add("parameter3", 1);
+parameterData.Add("parameter4", true);
+MikrosManager.Instance.AnalyticsController.LogEvent("custom_event_name", parameterData, (Hashtable customEventWholeData) =>
+{
+    // handle success
+},
+onFailure =>
+{
+    // handle failure
+});
+```
+
+All custom events are uploaded automatically to backend at a feasible time whenever the phone is idle. However, these events can also be uploaded any time in the following way:
+```
+MikrosManager.Instance.AnalyticsController.FlushEvents();
+```
 
 <a name="what-is-mikros-community-slack"></a>
 ## What is MIKROS Community Slack?
