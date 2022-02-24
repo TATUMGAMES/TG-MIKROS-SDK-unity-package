@@ -102,7 +102,8 @@ MikrosManager.Instance.InitializeMikrosSDK(configuration);
 You can use the `MikrosManager.Instance` and request objects to perform any operation. You will also need to pass in the correct response callbacks.
 
 <a name="privacy-standard"></a>
-* Privacy Standard
+### Privacy Standard
+
 Mikros provides 3 levels of privacy, all of which are GDPR & CCPA compliant. Following is the description for each privacy level:
 1. PRIVACY_LEVEL.DEFAULT
    (Recommended) Mikros tracks user metadata and session in the background.
@@ -111,7 +112,7 @@ Mikros provides 3 levels of privacy, all of which are GDPR & CCPA compliant. Fol
    Mikros no longer tracks any metadata information in the background; only session is tracked.
 
 3. PRIVACY_LEVEL.EXTREME
-   Mikros no longer tracks any metadata or session in the background. Integrators will have to track manually.
+   Mikros no longer tracks any metadata or session in the background. You will have to track manually.
 
 However, Mikros also provides interfaces to set privacy standards according to requirement. This can be done as follows:
 
