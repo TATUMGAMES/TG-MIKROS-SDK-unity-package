@@ -50,7 +50,7 @@ Now, the client has to include the Mikros SDK into their gaming product and setu
 ## Sample App & Documentation
 
 <a name="authentication"></a>
-* Authentication
+## Authentication
     
     
 This is the Mikros Sample App main screen. The Authentication button will allow you to be authenticated and allow you to use the Mikros Sample App.
@@ -70,7 +70,7 @@ After clicking the Sign-out button you will be presented with this message. Lett
 ![MIKROS SIGN-OUT , add from Git URL dropdown](Documentation/sign-out.png) 
 
 <a name="sdk-initialization"></a>
-* SDK Initialization
+## SDK Initialization
 
 Mikros SDK is initialized automatically by default. But you can manually initialize at any point in the following way:
 
