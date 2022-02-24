@@ -50,7 +50,7 @@ Now, the client has to include the Mikros SDK into their gaming product and setu
 ## Sample App & Documentation
 
 <a name="authentication"></a>
-## Authentication
+### Authentication
     
     
 This is the Mikros Sample App main screen. The Authentication button will allow you to be authenticated and allow you to use the Mikros Sample App.
@@ -70,7 +70,7 @@ After clicking the Sign-out button you will be presented with this message. Lett
 ![MIKROS SIGN-OUT , add from Git URL dropdown](Documentation/sign-out.png) 
 
 <a name="sdk-initialization"></a>
-## SDK Initialization
+### SDK Initialization
 
 Mikros SDK is initialized automatically by default. But you can manually initialize at any point in the following way:
 
@@ -136,7 +136,7 @@ If at any point it is required to customize logging of all type of user activity
 MikrosManager.Instance.ConfigurationController.SetAllTrackingEnabled(isDisableAllTracking);
 ```
 <a name="mikros-analytics"></a>
-## Mikros Analytics
+### Mikros Analytics
 Once the SDK is initialized, you can immediately start logging events (preset or custom) for analytics.
 
 Make sure to have the following namespaces defined at the top of your scripts:
@@ -146,7 +146,7 @@ using MikrosClient.Analytics;
 ```
 
 <a name="mikros-analytics-preset"></a>
-### Preset Analytics Events
+#### Preset Analytics Events
 
 ##### Track App Open Request Object
 
@@ -466,7 +466,7 @@ TrackUnlockAchievementRequest.Builder()
 ```
 
 <a name="mikros-analytics-custom"></a>
-### Custom Analytics Events
+#### Custom Analytics Events
 Custom events can be tracked by the following ways:
 1. To log an event without any parameters
 ```
