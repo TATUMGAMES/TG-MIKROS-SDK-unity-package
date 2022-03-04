@@ -53,8 +53,7 @@ Now, the client has to include the Mikros SDK into their gaming product and setu
  After clicking the Authentication button you will be presented with 3 options. (Sign-in, Sign-up, and Sign-out)
  
  
- After clicking the Sign-up button you will  be presented with this screen and will need a Username, Email, and Password to sign up.
- 
+When a user clicks the “Sign-up” button, the user will be presented a new screen on the application. This screen will have three options where the user can input their “username”, “email”, and “password” in order for the application to grant access to the data inside of the sample app. This is necessary in order to link each user with their own personalized account.  
  
  After clicking the Sign-out button you will be presented with this message. Letting you know you have signed out of the Mikros Sample App.
 
