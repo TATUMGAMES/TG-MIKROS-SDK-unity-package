@@ -55,7 +55,7 @@ Now, the client has to include the Mikros SDK into their gaming product and setu
  
 When a user clicks the “Sign-up” button, the user will be presented a new screen on the application. This screen will have three options where the user can input their “username”, “email”, and “password” in order for the application to grant access to the data inside of the sample app. This is necessary in order to link each user with their own personalized account.  
  
- After clicking the Sign-out button you will be presented with this message. Letting you know you have signed out of the Mikros Sample App.
+When a user clicks the “Sign-out” button the sample app will present the message “Signed out” with the the option stating “OK” below it. This “OK” button allows the user to exit out of that message. The purpose of this message is to give the user a confirmation screen that they are logged out of the application and will need to input their identification information (username, email, password) in order to gain access into the sample app’s data again. 
 
 <a name="what-is-mikros-community-slack"></a>
 ## What is MIKROS Community Slack?
