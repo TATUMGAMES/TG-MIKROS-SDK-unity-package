@@ -50,8 +50,7 @@ Now, the client has to include the Mikros SDK into their gaming product and setu
  
  ![MIKROS MAIN SCREEN, add from Git URL dropdown](Documentation/Mikros-main-screen.png)
  
- After clicking the Authentication button you will be presented with 3 options. (Sign-in, Sign-up, and Sign-out)
- 
+To test authentication with MIKROS, the sample app users the available interfaces for signin, signup, and signout. These interfaces are gateways to the Tatum Games backend will call auth/mikros/mobile/signin, auth/mikros/mobile/signup, and auth/mikros/mobile/signout respectively.
  
 When a user clicks the “Sign-up” button, the user will be presented a new screen on the application. This screen will have three options where the user can input their “username”, “email”, and “password” in order for the application to grant access to the data inside of the sample app. This is necessary in order to link each user with their own personalized account.  
  
