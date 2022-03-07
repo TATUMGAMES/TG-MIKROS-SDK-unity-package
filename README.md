@@ -97,5 +97,5 @@ Alternative ways of reporting guidelines and more information can be found [here
 
 <a name="faq"></a>
 ## FAQ
-* *Getting Started* Documentation can be found [here](Documentation/Getting Started with Mikros Unity SDK.docx).
-* Script references can be found [here](Documentation/Mikros Unity SDK - Public interfaces.md).
+1. *Getting Started* Documentation can be found [here](Documentation/Getting Started with Mikros Unity SDK.docx).
+2. Script references can be found [here](Documentation/Mikros Unity SDK - Public interfaces.md).
