@@ -2,14 +2,12 @@
 
 * [What is MIKROS?](#what-is-mikros)
 * [How Does MIKROS Work?](#how-dose-mikros-work)
+* [How to install MIKROS?](#how-to-install-mikros)
 * [How to Implement MIKROS?](#how-to-implement-mikros)
-* [Sample App & Documentation](#sample-app-&-documentation)
 * [What is MIKROS Community Slack?](*what-is-mirkos-community-slack)
 * [How to Join MIKROS Community Slack?](*how-to-join-mikros-community-slack)
 * [What Are the Rules For The MIKROS Community Slack?](*what-are-the-rules-for-the-mikros-community-slack)
 * [FAQ](*faq)
-
-
 
 <a name="what-is-mikros"></a>
 ## What Is MIKROS?
@@ -18,6 +16,24 @@ MIKROS is a service aimed at game developers which provides useful information a
 <a name="how-dose-mirkos-work"></a>
 ## How Does MIKROS Work?
 MIKROS sorts users by spending and activity levels in its ecosystem. This differs from how data is currently managed by competitors as they do not offer any data pooling. Game developers and advertisers can then view reports in a dashboard with valuable information which is needed to identify areas to improve their customer experience. With MIKROS, advertisers can now be certain that their ads are being shown to verified spenders.
+
+<a name="how-to-install-mikros"></a>
+## Installation
+### Installation via Git in UPM
+
+You can install via Git. This assumes you have Git installed on your
+computer.
+
+In later versions of Unity, you can import directly via the Package Manager
+interface.
+
+![UPM, add from Git URL dropdown](Documentation/upm-via-git.png)
+
+Supply the following URL:
+
+```
+https://github.com/TATUMGAMES/TG-MIKROS-SDK-unity-package.git
+```
 
 <a name="how-to-implement-mirkos"></a>
 ## How to Implement MIKROS?
@@ -39,26 +55,6 @@ Now, the client has to include the Mikros SDK into their gaming product and setu
 4. *(Optional)* You also have the option to select which API key to use at any development stage. By default, Production API Key is used.
 5. *(Optional)* Mikros collects and sends session data for better user insights and is also crucial for Analytics purpose. This can be enabled or disabled by the ***Auto Track User Session*** option from the Mikros Settings. By default, it is kept enabled and is recommended to keep it that way.
 6. *(Optional)* Mikros collects and sends metadata for better user insights and is also crucial for Analytics purpose. This can be enabled or disabled by the ***Auto Track User Metadata*** option from the Mikros Settings. By default, it is kept enabled and is recommended to keep it that way.
-
-<a name="sample-app-&-documentation"></a>
-## Sample App & Documentation
-
-* Authentification
-    
-    
- This is the Mikros Sample App main screen. The Authentication button will allow you to be authenticated and allow you to use the Mikros Sample App.
- 
- ![MIKROS MAIN SCREEN, add from Git URL dropdown](Documentation/Mikros-main-screen.png)
- 
-To test authentication with MIKROS, the sample app users the available interfaces for signin, signup, and signout. These interfaces are gateways to the Tatum Games backend will call auth/mikros/mobile/signin, auth/mikros/mobile/signup, and auth/mikros/mobile/signout respectively.
- 
-When a user clicks the “Sign-up” button, that interface will be presented the user a new screen on the application. This screen will have three options where the user can input their “username”, “email”, and “password” in order for the application to grant access to the data inside of the sample app. This is necessary in order to link each user with their own personalized account.  
- 
-When a user clicks the “Sign-out” button the sample app will present the message “Signed out” with the option stating “OK” below it. This “OK” button allows the user to exit out of that message. The purpose of this message is to give the user a confirmation screen that they are logged out of the application and will need to input their identification information (username, email, password) in order to gain access to the sample app’s data again. 
-
-When a user clicks the “Analytics” tab, this interface will present another screen that has the buttons “Log 10 Custom Events” and “Flush Events”. The “Log 10 Custom Events” feature will log 10 custom-made events on the Sample App. Developers can use this feature to track specific data from their personal projects and use the premade events to further analyze this information. The “Flush Events” feature logs the events and data onto the Mikros website where users can be connected to another application. 
-
-Reputation Scoring is a system in the Sample App which evaluates player behavior and documents it in the Mikros Website for player data. This feature is able to provide clear analytics for each developer to further understand their project and the connection it has to its users.
 
 <a name="what-is-mikros-community-slack"></a>
 ## What is MIKROS Community Slack?
@@ -100,32 +96,6 @@ If someone is subject to or witnesses unacceptable behavior, or has any other co
 Alternative ways of reporting guidelines and more information can be found [here](https://developer.tatumgames.com/documentation/slack) on the MIKROS website.
 
 <a name="faq"></a>
-## FAQ 
-
-
-
-
-# TG-MIKROS-SDK-unity-package
-MIKROS is a SaaS product that enrolls developers in an information sharing ecosystem, also known as data pooling, that helps identify better insights about user behavior. Including user spending habits.
-
-## Installation
-### Installation via Git in UPM
-
-You can install via Git. This assumes you have Git installed on your
-computer.
-
-In later versions of Unity, you can import directly via the Package Manager
-interface.
-
-![UPM, add from Git URL dropdown](Documentation/upm-via-git.png)
-
-Supply the following URL:
-
-```
-https://github.com/TATUMGAMES/TG-MIKROS-SDK-unity-package.git
-```
-
-
- 
- 
- 
+## FAQ
+* *Getting Started* Documentation can be found [here](Documentation/Getting Started with Mikros Unity SDK.docx).
+* Script references can be found [here](Documentation/Mikros Unity SDK - Public interfaces.md).
