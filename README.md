@@ -67,6 +67,8 @@ MIKROS Community Slack aims to have the largest number of communities and viewpo
 <a name="how-to-join-mikros-community-slack"></a>
 ## How to Join MIKROS Community Slack?
 
+Users must first create an account on Slack which could be found [here](https://slack.com/help/articles/212675257-Join-a-Slack-workspace). Once an account is created users can click on [this](https://join.slack.com/t/mikros-community/shared_invite/zt-owl845v6-UMLsx9m8W_8VwSrfvciX8Q) link in order to join the Mikros Community Slack where one can immedediately start posting and connecting with others apart of the community.
+
 <a name="what-are-the-rules-for-the-mikros-community-slack"></a>
 ## What Are the Rules For the MIKROS Community Slack?
 The following behaviors are expected and requested of all community members:
