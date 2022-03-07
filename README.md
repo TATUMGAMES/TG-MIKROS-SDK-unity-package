@@ -41,7 +41,7 @@ Now, the client has to include the Mikros SDK into their gaming product and setu
 6. *(Optional)* Mikros collects and sends metadata for better user insights and is also crucial for Analytics purpose. This can be enabled or disabled by the ***Auto Track User Metadata*** option from the Mikros Settings. By default, it is kept enabled and is recommended to keep it that way.
 
 <a name="sample-app-&-documentation"></a>
-## Sample App & Dcumentation
+## Sample App & Documentation
 
 * Authentification
     
