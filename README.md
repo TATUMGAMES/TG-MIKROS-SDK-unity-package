@@ -7,7 +7,7 @@
 * [SDK Initialization](#sdk-initialization)
 * [Privacy Standard](#privacy-standard)
 * [Mikros Analytics](#mikros-analytics)
-		* [Custom Analytics Events](#mikros-analytics-custom)
+	* [Custom Analytics Events](#mikros-analytics-custom)
 * [FAQ](*faq)
 
 
