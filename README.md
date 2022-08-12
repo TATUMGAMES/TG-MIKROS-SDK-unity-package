@@ -370,9 +370,7 @@ SignupRequest.Builder()
 *   activityScore
 *   reputationScore
 *   created
-*   updated
-
-         
+*   updated      
 
 ### Signout
 Calling sign-out will end the user session. You will receive a status code 200 if successful.
