@@ -7,6 +7,7 @@
 * [SDK Initialization](#sdk-initialization)
 * [Privacy Standard](#privacy-standard)
 * [Mikros Analytics](#mikros-analytics)
+    * [Preset Analytics Events](#mikros-analytics-preset)    
 	* [Custom Analytics Events](#mikros-analytics-custom)
 * [Mikros Authentication](#mikros-authentication)
 * [Mikros SSO](#mikros-sso)
@@ -209,10 +210,390 @@ using MikrosClient;
 using MikrosClient.Analytics;
 ```
 
+<a name="mikros-analytics-preset"></a>
+### Preset Analytics Events
+
+##### Track Game Over Request Object
+
+```
+TrackGameOverRequest.Builder()
+    .Create(
+    trackGameOverRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackGameOverRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Handled Exception Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| exception              | System.Exception        | Required   |
+
+```
+TrackHandledExceptionRequest.Builder()
+    .SetException(exception)
+    .Create(
+    trackHandledExceptionRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackHandledExceptionRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Http Failure Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| url                    | String                  | Required   |
+| statusCode             | String                  | Required   |
+| message                | String                  | Optional   |
+| networkSpeed           | String                  | Required   |
+
+```
+TrackHttpFailureRequest.Builder()
+    .Url(url)
+    .StatusCode(statusCode)
+    .Message(message)
+    .NetworkSpeed(networkSpeed)
+    .Create(
+    trackHttpFailureRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackHttpFailureRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Http Success Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| url                    | String                  | Required   |
+| statusCode             | String                  | Required   |
+| message                | String                  | Optional   |
+| networkSpeed           | String                  | Optional   |
+
+```
+TrackHttpSuccessRequest.Builder()
+    .Url(url)
+    .StatusCode(statusCode)
+    .Message(message)
+    .NetworkSpeed(networkSpeed)
+    .Create(
+    trackHttpSuccessRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackHttpSuccessRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Level End Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| level                  | Long                    | Required   |
+| subLevel               | Long                    | Optional   |
+| levelName              | String                  | Optional   |
+| description            | String                  | Optional   |
+| completeDuration       | String                  | Optional   |
+| success                | String                  | Optional   |
+
+```
+TrackLevelEndRequest.Builder()
+    .Level(level)
+    .SubLevel(subLevel)
+    .LevelName(levelName)
+    .Description(description)
+    .CompleteDuration(completeDuration)
+    .Success(success)
+    .Create(
+    trackLevelEndRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackLevelEndRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Level Start Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| level                  | Long                    | Required   |
+| subLevel               | Long                    | Optional   |
+| levelName              | String                  | Optional   |
+| description            | String                  | Optional   |
+
+```
+TrackLevelStartRequest.Builder()
+    .Level(level)
+    .SubLevel(subLevel)
+    .LevelName(levelName)
+    .Description(description)
+    .Create(
+    trackLevelStartRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackLevelStartRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Level Up Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| level                  | Long                    | Required   |
+| subLevel               | Long                    | Optional   |
+| levelName              | String                  | Optional   |
+| character              | String                  | Optional   |
+| description            | String                  | Optional   |
+
+```
+TrackLevelUpRequest.Builder()
+    .Level(level)
+    .SubLevel(subLevel)
+    .LevelName(levelName)
+    .Character(character)
+    .Description(description)
+    .Create(
+    trackLevelUpRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackLevelUpRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Post Score Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| score                  | Long                    | Required   |
+| level                  | Long                    | Optional   |
+| subLevel               | Long                    | Optional   |
+| levelName              | String                  | Optional   |
+| character              | String                  | Optional   |
+
+```
+TrackPostScoreRequest.Builder()
+    .Score(score)
+    .Level(level)
+    .SubLevel(subLevel)
+    .LevelName(levelName)
+    .Character(character)
+    .Create(
+    trackPostScoreRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackPostScoreRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Share Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| method                 | String                  | Required   |
+| contentType            | String                  | Required   |
+
+```
+TrackShareRequest.Builder()
+    .Method(method)
+    .ContentType(contentType)
+    .Create(
+    trackShareRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackShareRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Sign-in Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| method                 | String                  | Required   |
+
+```
+TrackSigninRequest.Builder()
+    .Method(method)
+    .Create(
+    trackSigninRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackSigninRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Sign-up Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| method                 | String                  | Required   |
+
+```
+TrackSignupRequest.Builder()
+    .Method(method)
+    .Create(
+    trackSignupRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackSignupRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Start Timer Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| eventKey               | String                  | Required   |
+
+```
+TrackStartTimerRequest.Builder()
+    .Event(eventKey)
+    .Create(
+    trackStartTimerRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackStartTimerRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Stop Timer Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| eventKey               | String                  | Required   |
+
+```
+TrackStopTimerRequest.Builder()
+    .Event(eventKey)
+    .Create(
+    trackStopTimerRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackStopTimerRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Tutorial Begin Request Object
+
+```
+TrackTutorialBeginRequest.Builder()
+    .Create(
+    trackTutorialBeginRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackTutorialBeginRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Tutorial Complete Request Object
+
+```
+TrackTutorialCompleteRequest.Builder()
+    .Create(
+    trackTutorialCompleteRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackTutorialCompleteRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Unlock Achievement Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| achievementId          | String                  | Required   |
+| achievementName        | String                  | Optional   |
+
+```
+TrackUnlockAchievementRequest.Builder()
+    .AchievementId(achievementId)
+    .AchievementName(achievementName)
+    .Create(
+    trackUnlockAchievementRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackUnlockAchievementRequest),
+    onFailure =>
+    {
+        // handle failure
+    });
+```
+
+##### Track Screen Time Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| screenName             | String                  | Required   |
+| screenClass            | String                  | Required   |
+| screenTime             | String                  | Required   |
+
+```
+TrackScreenTimeRequest.Builder()
+        .ScreenName(screenName)
+        .ScreenClass(screenClass)
+        .TimeSpentOnScreen(screenTime)
+        .Create(
+            trackScreenTimeRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackScreenTimeRequest, response =>
+            { 
+                // handle success
+            }),
+            onFailure =>
+            {
+                // handle failure
+            });
+```
+
+
+##### Track Purchase Request Object
+
+| Parameter              | Type                    | Field      |
+| ---------------------- | ----------------------- | ---------- |
+| skuName                | String                  | Required   |
+| skuDescription         | String                  | Optional   |
+| skuType                | int                     | Required   |
+| skuSubType             | int                     | Required   |
+| purchaseType           | int                     | Required   |
+| purchaseCurrencyType   | int                     | Required   |
+| purchasePrice          | float                   | Required   |
+| percentDiscount        | int                     | Optional   |
+| amountRewarded         | int                     | Optional   |
+| skuName                | String                  | Optional   |
+| skuDescription         | String                  | Optional   |
+| skuType                | String                  | Required   |
+| skuSubType             | String                  | Required   |
+| timestamp              | String                  | Required   |
+
+```
+List<TrackPurchaseRequest.PurchaseDetails> purchaseDetails = new List<TrackPurchaseRequest.PurchaseDetails>();
+       TrackPurchaseRequest.PurchaseDetails data = TrackPurchaseRequest.PurchaseDetails.Builder()
+        .SkuName(skuName)
+        .SkuDescription(skuDescription)
+        .PurchaseCategory(purchaseData.GetCategory(skuType, skuSubType))
+        .Create();
+        purchaseDetails.Add(data);
+        
+        TrackPurchaseRequest.Builder()
+        .SkuName(skuName)
+        .SkuDescription(skuDescription)
+        .PurchaseCategory(purchaseData.GetCategory(skuType, skuSubType))
+        .PurchaseType(purchaseType)
+        .PurchaseCurrencyType(purchaseCurrencyType)
+        .PurchasePrice(purchasePrice)
+        .PercentDiscount(percentDiscount)
+        .AmountRewarded(amountRewarded)
+        .PurchaseDetail(purchaseDetails)
+        .Create(
+        trackAppOpenRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackAppOpenRequest),
+        onFailure =>
+        {
+            Debug.Log("Unrecognized Error Occured");
+        });
+
+```
+
 <a name="mikros-analytics-custom"></a>
 #### Custom Analytics Events
 Custom events can be tracked by the following ways:
-1. To log an event without any parameters
+#####  1. To log an event without any parameters
 ```
 MikrosManager.Instance.AnalyticsController.LogEvent("custom_event_name", (Hashtable customEventWholeData) =>
 {
@@ -224,7 +605,7 @@ onFailure =>
 });
 ```
 
-2. To log an event with only one parameter of String datatype
+##### 2. To log an event with only one parameter of String datatype
 ```
 MikrosManager.Instance.AnalyticsController.LogEvent("custom_event_name", "parameter", "parameter_value", (Hashtable customEventWholeData) =>
 {
@@ -236,7 +617,7 @@ onFailure =>
 });
 ```
 
-3. To log an event with only one parameter of Double datatype
+##### 3. To log an event with only one parameter of Double datatype
 ```
 MikrosManager.Instance.AnalyticsController.LogEvent("custom_event_name", "parameter", 1.5, (Hashtable customEventWholeData) =>
 {
@@ -248,7 +629,7 @@ onFailure =>
 });
 ```
 
-4. To log an event with only one parameter of Long datatype
+##### 4. To log an event with only one parameter of Long datatype
 ```
 MikrosManager.Instance.AnalyticsController.LogEvent("custom_event_name", "parameter", 1, (Hashtable customEventWholeData) =>
 {
@@ -260,7 +641,7 @@ onFailure =>
 });
 ```
 
-5. To log an event with multiple parameters of any datatype
+##### 5. To log an event with multiple parameters of any datatype
 ```
 Hashtable parameterData = new Hashtable();
 parameterData.Add("parameter1", "parameter_value");

@@ -1,6 +1,25 @@
-## `1. Initialisation Processes`
+## Table Of Contents
 
+* [Initialisation Processes](#initialisation-processes)
+* [Privacy Standard](#privacy-standard)
+* [Custom Data Tracking](#custom-data-tracking)
+* [Mikros Settings Data](#mikros-settings-data)
+* [Mikros Authentication](#mikros-authentication)
+* [Mikros SSO](#mikros-sso)
+* [Mikros App Store](#mikros-app-store)
+* [Mikros Analytics](#mikros-analytics)
+    * [Custom Analytics Events](#mikros-analytics-custom)
+    * [Preset Analytics Events](#mikros-analytics-preset)
+* [Reputation Scoring](#reputation-scoring)
+* [Mikros Button](#mikros-button)
+
+<a name="initialisation-processes"></a>
+## Initialisation Processes
 ### Initialize Mikros without Configuration (using settings from Mikros Settings in the Unity Editor).
+Make sure to have the following namespaces defined at the top of your scripts:
+```
+using MikrosClient;
+```
 
 ##### Initialize with Privacy Level set in Mikros Settings
 ```
@@ -100,7 +119,6 @@ Configuration.Builder() .SetTrackDeviceMemory(isTrackDeviceMemory)
 
 *Note: The privacy configuration that is set in MikrosSettings from Editor, will always get overriden whenever a Configuration parameter is passed to the `MikrosManager.Instance.InitializeMikrosSDK` method.*
 
-
 You can use the `MikrosManager.Instance` and request objects to perform any operation. You will also need to pass in the correct response callbacks.
 
 <a name="privacy-standard"></a>
@@ -115,11 +133,11 @@ Mikros provides 3 levels of privacy, all of which are GDPR & CCPA compliant. Fol
 3. PRIVACY_LEVEL.EXTREME
    Mikros no longer tracks any metadata, session, log event, crash reporting and device memory in the background. Integrators will have to track manually.
 
-
-## `2.Custom Data Tracking`
+<a name="custom-data-tracking"></a>
+## Custom Data Tracking
 
 If at any point it is required to customize logging of all type of user activity tracking (preset events, custom events, metadata, session), it can be done as follows:
-### To change only session tracking settings (Optional).
+#### To change only session tracking settings (Optional).
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
 | isTrackUserSession     | Boolean                 | Required   |
@@ -127,7 +145,7 @@ If at any point it is required to customize logging of all type of user activity
 MikrosManager.Instance.ConfigurationController.SetAutoTrackUserSession(isTrackUserSession);
 ```
 
-### To change only metadata tracking settings (Optional).
+#### To change only metadata tracking settings (Optional).
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
 | isTrackUserMetadata    | Boolean                 | Required   |
@@ -135,21 +153,21 @@ MikrosManager.Instance.ConfigurationController.SetAutoTrackUserSession(isTrackUs
 MikrosManager.Instance.ConfigurationController.SetAutoTrackUserMetadata(isTrackUserMetadata);
 ```
 
-### To change only event logging settings (Optional).
+#### To change only event logging settings (Optional).
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
 | isEventLogging         | Boolean                 | Required   |
 ```
 MikrosManager.Instance.ConfigurationController.SetEventLogging(isEventLogging);
 ```
-### To change only crash reporting settings (Optional).
+#### To change only crash reporting settings (Optional).
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
 | isEventLogging         | Boolean                 | Required   |
 ```
 MikrosManager.Instance.ConfigurationController.SetAutoCrashReporting(isCrashReporting);
 ```
-### To change only device memory tracking settings (Optional).
+#### To change only device memory tracking settings (Optional).
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
 | isEventLogging         | Boolean                 | Required   |
@@ -157,7 +175,7 @@ MikrosManager.Instance.ConfigurationController.SetAutoCrashReporting(isCrashRepo
 MikrosManager.Instance.ConfigurationController.SetAutoTrackDeviceMemory(isTrackDeviceMemory);
 ```
 
-### To change all data tracking settings at once (Optional)
+#### To change all data tracking settings at once (Optional)
 | Parameter                | Type                    | Field      |
 | ------------------------ | ----------------------- | ---------- |
 | isAllTrackingEnabled     | Boolean                 | Required   |
@@ -165,7 +183,7 @@ MikrosManager.Instance.ConfigurationController.SetAutoTrackDeviceMemory(isTrackD
 MikrosManager.Instance.ConfigurationController.SetAllTrackingEnabled(isAllTrackingEnabled);
 ```
 
-### To view status of each configuration
+#### To view status of each configuration
 ```
 bool isTrackMetadata = MikrosManager.Instance.ConfigurationController.IsTrackUserMetadata;
 bool isTrackSession = MikrosManager.Instance.ConfigurationController.IsTrackUserSession;
@@ -175,37 +193,39 @@ bool isTrackDeviceMemory = MikrosManager.Instance.ConfigurationController.IsTrac
 bool isAllTrackingEnabled = MikrosManager.Instance.ConfigurationController.IsAllTrackingEnabled;
 ```
 
-## `3. Mikros Settings Data`
+<a name="mikros-settings-data"></a>
+## Mikros Settings Data
 
-### App Game ID that is set by integrator from Editor.
+#### App Game ID that is set by integrator from Editor.
 ```
 string appGameId = MikrosManager.Instance.ConfigurationController.MikrosSettings.AppGameID;
 ```
 
-### Production API key that is set by integrator from Editor.
+#### Production API key that is set by integrator from Editor.
 ```
 string apiKeyProduction = MikrosManager.Instance.ConfigurationController.MikrosSettings.ApiKeyProduction;
 ```
 
-### Development API key that is set by integrator from Editor.
+#### Development API key that is set by integrator from Editor.
 ```
 string apiKeyDevelopment = MikrosManager.Instance.ConfigurationController.MikrosSettings.ApiKeyDevelopment;
 ```
 
-### QA API key that is set by integrator from Editor.
+#### QA API key that is set by integrator from Editor.
 ```
 string apiKeyQA = MikrosManager.Instance.ConfigurationController.MikrosSettings.ApiKeyQA;
 ```
 
-### Type of API key that is being used currently, which is set by integrator from Editor.
+#### Type of API key that is being used currently, which is set by integrator from Editor.
 ```
 API_KEY_TYPE apiKeyType = MikrosManager.Instance.ConfigurationController.MikrosSettings.CurrentApiKeyType;
 ```
-### API key which is being used currently, set by integrator from Editor.
+#### API key which is being used currently, set by integrator from Editor.
 ```
 string currentUsedApiKey = MikrosManager.Instance.ConfigurationController.MikrosSettings.GetCurrentApiKey();
 ```
-## `4. Authentication`
+<a name="mikros-authentication"></a>
+## Mikros Authentication
 To make any request you must first create a request object. This object uses a builder pattern, which is a design pattern designed to provide a flexible solution to various object creation problems. The intent of the Builder design pattern is to separate the construction of a complex object from its representation.
 Make sure to have the following namespaces defined at the top of your scripts:
 ```
@@ -353,8 +373,9 @@ The provided optional callback is executed if a signing or signup is performed s
 MikrosUser mikrosUser = MikrosManager.Instance.AuthenticationController.MikrosUser;
 ```
 
-## `5. Mikros App Store Events`
-### Subscribe to App Store open event
+<a name="sdk-initialization"></a>
+## Mikros App Store Events
+#### Subscribe to App Store open event
 ```
 MikrosManager.Instance.AdController.StoreListener.OnOpened += AppStoreOpened;
 
@@ -363,7 +384,7 @@ private void AppStoreOpened()
 	Debug.Log("App store opened");
 }
 ```
-### Subscribe to App Store close event
+#### Subscribe to App Store close event
 ```
 MikrosManager.Instance.AdController.StoreListener.OnClosed += AppStoreClosed;
 
@@ -373,7 +394,7 @@ private void AppStoreClosed()
 }
 ```
 
-### Subscribe to error events in App Store
+#### Subscribe to error events in App Store
 ```
 MikrosManager.Instance.AdController.StoreListener.OnError += AppStoreError;
 
@@ -382,9 +403,19 @@ private void AppStoreError(MikrosException exception)
 	Debug.Log("App store error\n" + exception.Message);
 }
 ```
-## `6. Custom Events`
+<a name="mikros-analytics"></a>
+## Mikros Analytics
+Once the SDK is initialized, you can immediately start logging events (preset or custom) for analytics.
+Make sure to have the following namespaces defined at the top of your scripts:
+```
+using MikrosClient;
+using MikrosClient.Analytics;
+```
 
-### Custom event without parameter.
+<a name="mikros-analytics-custom"></a>
+### Custom Analytics Events
+
+#### Custom event without parameter.
 ```
 MikrosManager.Instance.AnalyticsController.LogEvent("Event Name 1", (Hashtable customEvent) =>
 {
@@ -395,7 +426,7 @@ onFailure =>
 	Debug.Log(onFailure.Message);
 });
 ```
-### Custom event with string type parameter.
+#### Custom event with string type parameter.
 ```
 MikrosManager.Instance.AnalyticsController.LogEvent("Event Name 2", "test_key", "custom_test_value", (Hashtable customEvent) =>
 {
@@ -406,7 +437,7 @@ onFailure =>
 	Debug.Log(onFailure.Message);
 });
 ```
-### Custom event with long type parameter.
+#### Custom event with long type parameter.
 ```
 MikrosManager.Instance.AnalyticsController.LogEvent("Event Name 3", "test_key", 1, (Hashtable customEvent) =>
 {
@@ -418,7 +449,7 @@ onFailure =>
 });
 ```
 
-### Custom event with double type parameter.
+#### Custom event with double type parameter.
 ```
 MikrosManager.Instance.AnalyticsController.LogEvent("Event Name 4", "test_key", 3.67f, (Hashtable customEvent) =>
 {
@@ -430,7 +461,7 @@ onFailure =>
 });
 ```
 
-### Custom event with Hashtable type parameter.
+#### Custom event with Hashtable type parameter.
 ```
 Hashtable dataset = new Hashtable();
 dataset.Add("key_1", "custom_test_value");
@@ -446,7 +477,7 @@ onFailure =>
 });
 ```
 
-### To test custom events in Editor
+#### To test custom events in Editor
 ```
 Hashtable dataset = new Hashtable();
 dataset.Add("key_1", "custom_test_value");
@@ -458,11 +489,10 @@ MikrosManager.Instance.AnalyticsController.TestCustomEvents(new List<Hashtable> 
 });
 ```
 
+<a name="mikros-analytics-preset"></a>
+### Preset Analytics Events
 
-## `7. Preset Events`
-
-### Track Game Over Request Object
-
+#### Track Game Over Request Object
 ```
 TrackGameOverRequest.Builder()
 	.Create(
@@ -473,7 +503,7 @@ TrackGameOverRequest.Builder()
 	});
 ```
 
-### Track Handled Exception Request Object
+#### Track Handled Exception Request Object
 
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
@@ -496,7 +526,7 @@ TrackHandledExceptionRequest.Builder()
 	});
 ```
 
-### Track Http Failure Request Object
+#### Track Http Failure Request Object
 
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
@@ -519,7 +549,7 @@ TrackHttpFailureRequest.Builder()
 	});
 ```
 
-### Track Http Success Request Object
+#### Track Http Success Request Object
 
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
@@ -542,7 +572,7 @@ TrackHttpSuccessRequest.Builder()
 	});
 ```
 
-### Track Level End Request Object
+#### Track Level End Request Object
 
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
@@ -569,7 +599,7 @@ TrackLevelEndRequest.Builder()
 	});
 ```
 
-### Track Level Start Request Object
+#### Track Level Start Request Object
 
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
@@ -592,7 +622,7 @@ TrackLevelStartRequest.Builder()
 	});
 ```
 
-### Track Level Up Request Object
+#### Track Level Up Request Object
 
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
@@ -617,7 +647,7 @@ TrackLevelUpRequest.Builder()
 	});
 ```
 
-### Track Post Score Request Object
+#### Track Post Score Request Object
 
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
@@ -642,7 +672,7 @@ TrackPostScoreRequest.Builder()
 	});
 ```
 
-### Track Share Request Object
+#### Track Share Request Object
 
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
@@ -661,7 +691,7 @@ TrackShareRequest.Builder()
 	});
 ```
 
-### Track Sign-in Request Object
+#### Track Sign-in Request Object
 
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
@@ -678,7 +708,7 @@ TrackSigninRequest.Builder()
 	});
 ```
 
-### Track Sign-up Request Object
+#### Track Sign-up Request Object
 
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
@@ -695,7 +725,7 @@ TrackSignupRequest.Builder()
 	});
 ```
 
-### Track Start Timer Request Object
+#### Track Start Timer Request Object
 
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
@@ -712,7 +742,7 @@ TrackStartTimerRequest.Builder()
 	});
 ```
 
-### Track Stop Timer Request Object
+#### Track Stop Timer Request Object
 
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
@@ -729,7 +759,7 @@ TrackStopTimerRequest.Builder()
 	});
 ```
 
-### Track Tutorial Begin Request Object
+#### Track Tutorial Begin Request Object
 
 ```
 TrackTutorialBeginRequest.Builder()
@@ -741,7 +771,7 @@ TrackTutorialBeginRequest.Builder()
 	});
 ```
 
-### Track Tutorial Complete Request Object
+#### Track Tutorial Complete Request Object
 
 ```
 TrackTutorialCompleteRequest.Builder()
@@ -753,7 +783,7 @@ TrackTutorialCompleteRequest.Builder()
 	});
 ```
 
-### Track Exception Request Object
+#### Track Exception Request Object
 
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
@@ -771,7 +801,7 @@ TrackUnhandledExceptionRequest.Builder()
 	});
 ```
 
-### Track Unlock Achievement Request Object
+#### Track Unlock Achievement Request Object
 
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
@@ -789,7 +819,7 @@ TrackUnlockAchievementRequest.Builder()
 		// handle failure
 	});
 ```
-### Track Screen Time Request Object
+#### Track Screen Time Request Object
 
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
@@ -814,7 +844,7 @@ TrackScreenTimeRequest.Builder()
 ```
 
 
-### Track Purchase Request Object
+#### Track Purchase Request Object
 
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
@@ -858,19 +888,17 @@ List<TrackPurchaseRequest.PurchaseDetails> purchaseDetails = new List<TrackPurch
         {
             Debug.Log("Unrecognized Error Occured");
         });
-
 ```
+<a name="reputation-scoring"></a>
+## Reputation Scoring
 
-
-## `8. Reputation Scoring`
-
-#### Create `PlayerRating` request using `Sender` and `Participant` data
+##### Create `PlayerRating` request using `Sender` and `Participant` data
 Example of creating `PlayerRating` request using `Sender` and `Participant` data:
 ```
 using MikrosClient;
 using MikrosClient.GameService;
 ```
-### Player Rating Request
+##### Player Rating Request
 
 | Parameter                | Type                    | Field                           |
 | ------------------------ | ----------------------- | ------------------------------- |
@@ -879,14 +907,14 @@ using MikrosClient.GameService;
 | sender                   | Sender                  | Required                        |
 | participants             | List<Participant>       | Required                        |
 
-### Sender Request
+##### Sender Request
 *(Provided internally)
 
 | Parameter                | Type                    | Field                           |
 | ------------------------ | ----------------------- | ------------------------------- |
 | senderDistinctId         | String                  | Required                        |
 
-### Participant Request
+##### Participant Request
 
 | Parameter                | Type                    | Field                                        |
 | ------------------------ | ----------------------- | -------------------------------------------- |
@@ -954,7 +982,8 @@ PlayerRating.Builder()
     });
 ```
 
-## `9.Mikros Button`
+<a name="mikros-button"></a>
+## Mikros Button
 Mikros Button is the gateway to the Mikros App Store. This button can be placed on the game UI by the integrators. It can be found at:
 ```
 GameObject (or right-click on Hierarchy window) -> UI -> Button - Mikros
