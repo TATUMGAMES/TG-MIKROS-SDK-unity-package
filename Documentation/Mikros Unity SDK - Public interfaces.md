@@ -1,6 +1,6 @@
 ## Table Of Contents
 
-* [Initialisation Processes](#initialisation-processes)
+* [Initialization Processes](#initialization-processes)
 * [Privacy Standard](#privacy-standard)
 * [Custom Data Tracking](#custom-data-tracking)
 * [Mikros Settings Data](#mikros-settings-data)
@@ -13,8 +13,8 @@
 * [Reputation Scoring](#reputation-scoring)
 * [Mikros Button](#mikros-button)
 
-<a name="initialisation-processes"></a>
-## Initialisation Processes
+<a name="initialization-processes"></a>
+## Initialization Processes
 ### Initialize Mikros without Configuration (using settings from Mikros Settings in the Unity Editor).
 Make sure to have the following namespaces defined at the top of your scripts:
 ```
