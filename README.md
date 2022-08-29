@@ -545,36 +545,38 @@ TrackScreenTimeRequest.Builder()
 
 ##### Track Purchase Request Object
 
-| Parameter              | Type                    | Field      |
-| ---------------------- | ----------------------- | ---------- |
-| skuName                | String                  | Required   |
-| skuDescription         | String                  | Optional   |
-| skuType                | int                     | Required   |
-| skuSubType             | int                     | Required   |
-| purchaseType           | int                     | Required   |
-| purchaseCurrencyType   | int                     | Required   |
-| purchasePrice          | float                   | Required   |
-| percentDiscount        | int                     | Optional   |
-| amountRewarded         | int                     | Optional   |
-| skuName                | String                  | Optional   |
-| skuDescription         | String                  | Optional   |
-| skuType                | String                  | Required   |
-| skuSubType             | String                  | Required   |
-| timestamp              | String                  | Required   |
+| Parameter               | Type                                         | Field      |
+| ----------------------  | -------------------------------------------- | ---------- |
+| skuName                 | String                                       | Required   |
+| skuDescription          | String                                       | Optional   |
+| primaryPurchaseCategory | PurchaseCategory                             | Required   |
+| purchaseType            | PurchaseType                                 | Required   |
+| purchaseCurrencyType    | PurchaseCurrencyType                         | Required   |
+| purchasePrice           | float                                        | Required   |
+| percentDiscount         | int                                          | Optional   |
+| amountRewarded          | int                                          | Optional   |
+| skuName                 | String                                       | Optional   |
+| skuDescription          | String                                       | Optional   |
+| skuType                 | String                                       | Required   |
+| skuSubType              | String                                       | Required   |
+| purchaseDetails         | List<TrackPurchaseRequest.PurchaseDetails>   | Required   |
+| timestamp               | String                                       | Required   |
 
 ```
+PurchaseCategory primaryPurchaseCategory = PurchaseCategory.Currency.GOLD;
 List<TrackPurchaseRequest.PurchaseDetails> purchaseDetails = new List<TrackPurchaseRequest.PurchaseDetails>();
+PurchaseCategory secondayPurchaseCategory = PurchaseCategory.Currency.GOLD;
        TrackPurchaseRequest.PurchaseDetails data = TrackPurchaseRequest.PurchaseDetails.Builder()
         .SkuName(skuName)
         .SkuDescription(skuDescription)
-        .PurchaseCategory(purchaseData.GetCategory(skuType, skuSubType))
+        .PurchaseCategory(secondayPurchaseCategory)
         .Create();
         purchaseDetails.Add(data);
         
         TrackPurchaseRequest.Builder()
         .SkuName(skuName)
         .SkuDescription(skuDescription)
-        .PurchaseCategory(purchaseData.GetCategory(skuType, skuSubType))
+        .PurchaseCategory(primaryPurchaseCategory)
         .PurchaseType(purchaseType)
         .PurchaseCurrencyType(purchaseCurrencyType)
         .PurchasePrice(purchasePrice)
