@@ -543,6 +543,7 @@ TrackScreenTimeRequest.Builder()
 ```
 
 
+
 ##### Track Purchase Request Object
 
 | Parameter               | Type                                         | Field      |
@@ -559,14 +560,14 @@ TrackScreenTimeRequest.Builder()
 | skuDescription          | String                                       | Optional   |
 | skuType                 | String                                       | Required   |
 | skuSubType              | String                                       | Required   |
-| purchaseDetails         | List<TrackPurchaseRequest.PurchaseDetails>   | Required   |
+| purchaseDetails         | List<TrackPurchaseRequest.PurchaseInfo>      | Required   |
 | timestamp               | String                                       | Required   |
 
 ```
 PurchaseCategory primaryPurchaseCategory = PurchaseCategory.Currency.GOLD;
-List<TrackPurchaseRequest.PurchaseDetails> purchaseDetails = new List<TrackPurchaseRequest.PurchaseDetails>();
+List<TrackPurchaseRequest.PurchaseInfo> purchaseDetails = new List<TrackPurchaseRequest.PurchaseInfo>();
 PurchaseCategory secondayPurchaseCategory = PurchaseCategory.Currency.GOLD;
-       TrackPurchaseRequest.PurchaseDetails data = TrackPurchaseRequest.PurchaseDetails.Builder()
+       TrackPurchaseRequest.PurchaseInfo data = TrackPurchaseRequest.PurchaseInfo.Builder()
         .SkuName(skuName)
         .SkuDescription(skuDescription)
         .PurchaseCategory(secondayPurchaseCategory)
@@ -582,9 +583,9 @@ PurchaseCategory secondayPurchaseCategory = PurchaseCategory.Currency.GOLD;
         .PurchasePrice(purchasePrice)
         .PercentDiscount(percentDiscount)
         .AmountRewarded(amountRewarded)
-        .PurchaseDetail(purchaseDetails)
+        .PurchaseDetails(purchaseDetails)
         .Create(
-        trackAppOpenRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackAppOpenRequest),
+        trackPurchaseRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackPurchaseRequest),
         onFailure =>
         {
             Debug.Log("Unrecognized Error Occured");
