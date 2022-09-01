@@ -543,46 +543,49 @@ TrackScreenTimeRequest.Builder()
 ```
 
 
+
 ##### Track Purchase Request Object
 
-| Parameter              | Type                    | Field      |
-| ---------------------- | ----------------------- | ---------- |
-| skuName                | String                  | Required   |
-| skuDescription         | String                  | Optional   |
-| skuType                | int                     | Required   |
-| skuSubType             | int                     | Required   |
-| purchaseType           | int                     | Required   |
-| purchaseCurrencyType   | int                     | Required   |
-| purchasePrice          | float                   | Required   |
-| percentDiscount        | int                     | Optional   |
-| amountRewarded         | int                     | Optional   |
-| skuName                | String                  | Optional   |
-| skuDescription         | String                  | Optional   |
-| skuType                | String                  | Required   |
-| skuSubType             | String                  | Required   |
-| timestamp              | String                  | Required   |
+| Parameter               | Type                                         | Field      |
+| ----------------------  | -------------------------------------------- | ---------- |
+| skuName                 | String                                       | Required   |
+| skuDescription          | String                                       | Optional   |
+| primaryPurchaseCategory | PurchaseCategory                             | Required   |
+| purchaseType            | PurchaseType                                 | Required   |
+| purchaseCurrencyType    | PurchaseCurrencyType                         | Required   |
+| purchasePrice           | float                                        | Required   |
+| percentDiscount         | int                                          | Optional   |
+| amountRewarded          | int                                          | Optional   |
+| skuName                 | String                                       | Optional   |
+| skuDescription          | String                                       | Optional   |
+| skuType                 | String                                       | Required   |
+| skuSubType              | String                                       | Required   |
+| purchaseDetails         | List<TrackPurchaseRequest.PurchaseInfo>      | Required   |
+| timestamp               | String                                       | Required   |
 
 ```
-List<TrackPurchaseRequest.PurchaseDetails> purchaseDetails = new List<TrackPurchaseRequest.PurchaseDetails>();
-       TrackPurchaseRequest.PurchaseDetails data = TrackPurchaseRequest.PurchaseDetails.Builder()
+PurchaseCategory primaryPurchaseCategory = PurchaseCategory.Currency.GOLD;
+List<TrackPurchaseRequest.PurchaseInfo> purchaseDetails = new List<TrackPurchaseRequest.PurchaseInfo>();
+PurchaseCategory secondayPurchaseCategory = PurchaseCategory.Currency.GOLD;
+       TrackPurchaseRequest.PurchaseInfo purchaseInfo = TrackPurchaseRequest.PurchaseInfo.Builder()
         .SkuName(skuName)
         .SkuDescription(skuDescription)
-        .PurchaseCategory(purchaseData.GetCategory(skuType, skuSubType))
+        .PurchaseCategory(secondayPurchaseCategory)
         .Create();
-        purchaseDetails.Add(data);
+        purchaseDetails.Add(purchaseInfo);
         
         TrackPurchaseRequest.Builder()
         .SkuName(skuName)
         .SkuDescription(skuDescription)
-        .PurchaseCategory(purchaseData.GetCategory(skuType, skuSubType))
+        .PurchaseCategory(primaryPurchaseCategory)
         .PurchaseType(purchaseType)
         .PurchaseCurrencyType(purchaseCurrencyType)
         .PurchasePrice(purchasePrice)
         .PercentDiscount(percentDiscount)
         .AmountRewarded(amountRewarded)
-        .PurchaseDetail(purchaseDetails)
+        .PurchaseDetails(purchaseDetails)
         .Create(
-        trackAppOpenRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackAppOpenRequest),
+        trackPurchaseRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackPurchaseRequest),
         onFailure =>
         {
             Debug.Log("Unrecognized Error Occured");
