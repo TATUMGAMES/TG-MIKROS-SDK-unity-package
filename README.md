@@ -567,12 +567,12 @@ TrackScreenTimeRequest.Builder()
 PurchaseCategory primaryPurchaseCategory = PurchaseCategory.Currency.GOLD;
 List<TrackPurchaseRequest.PurchaseInfo> purchaseDetails = new List<TrackPurchaseRequest.PurchaseInfo>();
 PurchaseCategory secondayPurchaseCategory = PurchaseCategory.Currency.GOLD;
-       TrackPurchaseRequest.PurchaseInfo data = TrackPurchaseRequest.PurchaseInfo.Builder()
+       TrackPurchaseRequest.PurchaseInfo purchaseInfo = TrackPurchaseRequest.PurchaseInfo.Builder()
         .SkuName(skuName)
         .SkuDescription(skuDescription)
         .PurchaseCategory(secondayPurchaseCategory)
         .Create();
-        purchaseDetails.Add(data);
+        purchaseDetails.Add(purchaseInfo);
         
         TrackPurchaseRequest.Builder()
         .SkuName(skuName)
