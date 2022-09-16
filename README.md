@@ -244,12 +244,12 @@ TrackHandledExceptionRequest.Builder()
 
 ##### Track Http Failure Request Object
 
-| Parameter              | Type                    | Field      |
-| ---------------------- | ----------------------- | ---------- |
-| url                    | String                  | Required   |
-| statusCode             | String                  | Required   |
-| message                | String                  | Optional   |
-| networkSpeed           | String                  | Required   |
+| Parameter              | Type        | Field      						      |
+| ---------------------- | ------------| ---------------------------------------- |
+| url                    | String      | Required    							  |
+| statusCode             | Long        | Optional (Default 500, if not provided)  |
+| message                | String      | Optional   							  |
+| networkSpeed           | String      | Optional   							  |
 
 ```
 TrackHttpFailureRequest.Builder()
@@ -267,12 +267,12 @@ TrackHttpFailureRequest.Builder()
 
 ##### Track Http Success Request Object
 
-| Parameter              | Type                    | Field      |
-| ---------------------- | ----------------------- | ---------- |
-| url                    | String                  | Required   |
-| statusCode             | String                  | Required   |
-| message                | String                  | Optional   |
-| networkSpeed           | String                  | Optional   |
+| Parameter              | Type        | Field      						      |
+| ---------------------- | ------------| ---------------------------------------- |
+| url                    | String      | Required    							  |
+| statusCode             | Long        | Optional (Default 200, if not provided)  |
+| message                | String      | Optional   							  |
+| networkSpeed           | String      | Optional   							  |
 
 ```
 TrackHttpSuccessRequest.Builder()
@@ -296,8 +296,8 @@ TrackHttpSuccessRequest.Builder()
 | subLevel               | Long                    | Optional   |
 | levelName              | String                  | Optional   |
 | description            | String                  | Optional   |
-| completeDuration       | String                  | Optional   |
-| success                | String                  | Optional   |
+| duration       		 | Float                   | Optional   |
+| success                | Boolean                 | Optional   |
 
 ```
 TrackLevelEndRequest.Builder()
@@ -305,7 +305,7 @@ TrackLevelEndRequest.Builder()
     .SubLevel(subLevel)
     .LevelName(levelName)
     .Description(description)
-    .CompleteDuration(completeDuration)
+    .Duration(duration)
     .Success(success)
     .Create(
     trackLevelEndRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackLevelEndRequest),
@@ -390,14 +390,14 @@ TrackPostScoreRequest.Builder()
 
 ##### Track Share Request Object
 
-| Parameter              | Type                    | Field      |
-| ---------------------- | ----------------------- | ---------- |
-| method                 | String                  | Required   |
-| contentType            | String                  | Required   |
+| Parameter              | Type               | Field      |
+| ---------------------- | ------------------ | ---------- |
+| platform               | String             | Optional   |
+| contentType            | ContentType        | Required   |
 
 ```
 TrackShareRequest.Builder()
-    .Method(method)
+    .Platform(platform)
     .ContentType(contentType)
     .Create(
     trackShareRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackShareRequest),
@@ -411,11 +411,11 @@ TrackShareRequest.Builder()
 
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
-| method                 | String                  | Required   |
+| platform               | String                  | Optional   |
 
 ```
 TrackSigninRequest.Builder()
-    .Method(method)
+    .Platform(platform)
     .Create(
     trackSigninRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackSigninRequest),
     onFailure =>
@@ -428,11 +428,11 @@ TrackSigninRequest.Builder()
 
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
-| method                 | String                  | Required   |
+| platform               | String                  | Optional   |
 
 ```
 TrackSignupRequest.Builder()
-    .Method(method)
+    .Platform(platform)
     .Create(
     trackSignupRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackSignupRequest),
     onFailure =>
@@ -524,13 +524,13 @@ TrackUnlockAchievementRequest.Builder()
 | ---------------------- | ----------------------- | ---------- |
 | screenName             | String                  | Required   |
 | screenClass            | String                  | Required   |
-| screenTime             | String                  | Required   |
+| timeSpentOnScreen      | float                   | Required   |
 
 ```
 TrackScreenTimeRequest.Builder()
         .ScreenName(screenName)
         .ScreenClass(screenClass)
-        .TimeSpentOnScreen(screenTime)
+        .TimeSpentOnScreen(timeSpentOnScreen)
         .Create(
             trackScreenTimeRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackScreenTimeRequest, response =>
             { 
