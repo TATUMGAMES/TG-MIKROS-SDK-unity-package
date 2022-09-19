@@ -258,7 +258,7 @@ TrackHttpFailureRequest.Builder()
     .Message(message)
     .NetworkSpeed(networkSpeed)
     .Create(
-    trackHttpFailureRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackHttpFailureRequest),
+    trackHttpFailureRequest => MikrosManager.Instance.AnalyticsController.LogPresetInternalEvents(trackHttpFailureRequest),
     onFailure =>
     {
         // handle failure
@@ -281,7 +281,7 @@ TrackHttpSuccessRequest.Builder()
     .Message(message)
     .NetworkSpeed(networkSpeed)
     .Create(
-    trackHttpSuccessRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackHttpSuccessRequest),
+    trackHttpSuccessRequest => MikrosManager.Instance.AnalyticsController.LogPresetInternalEvents(trackHttpSuccessRequest),
     onFailure =>
     {
         // handle failure
@@ -445,7 +445,7 @@ TrackSignupRequest.Builder()
 
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
-| eventKey               | String                  | Required   |
+| eventKey               | Event                   | Required   |
 
 ```
 TrackStartTimerRequest.Builder()
@@ -462,7 +462,7 @@ TrackStartTimerRequest.Builder()
 
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
-| eventKey               | String                  | Required   |
+| eventKey               | Event                   | Required   |
 
 ```
 TrackStopTimerRequest.Builder()
