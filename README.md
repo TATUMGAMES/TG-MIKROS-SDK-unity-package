@@ -445,7 +445,7 @@ TrackSignupRequest.Builder()
 
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
-| eventKey               | Event                   | Required   |
+| eventKey               | String                  | Required   |
 
 ```
 TrackStartTimerRequest.Builder()
@@ -462,7 +462,7 @@ TrackStartTimerRequest.Builder()
 
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
-| eventKey               | Event                   | Required   |
+| eventKey               | String                  | Required   |
 
 ```
 TrackStopTimerRequest.Builder()
@@ -523,8 +523,8 @@ TrackUnlockAchievementRequest.Builder()
 | Parameter              | Type                    | Field      |
 | ---------------------- | ----------------------- | ---------- |
 | screenName             | String                  | Required   |
-| screenClass            | String                  | Required   |
-| timeSpentOnScreen      | float                   | Required   |
+| screenClass            | String                  | Optional   |
+| timeSpentOnScreen      | float                   | Optional   |
 
 ```
 TrackScreenTimeRequest.Builder()
