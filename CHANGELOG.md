@@ -27,7 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <a name="1.2.0"></a>
 ## [1.2.0] - 2022-10-07
 
-### Track User Spending
+### Platform Compatibility
 
 - Compatibile for both iOS and Android platforms.
 
