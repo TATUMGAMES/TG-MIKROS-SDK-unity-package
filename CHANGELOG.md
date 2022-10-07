@@ -48,7 +48,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   you use the TrackPurchaseRequest() interface. You can learn more via the [technical documentation](https://developer.tatumgames.com/documentation/log-preset-events#track-purchase). 
   
 <a name="1.1.0"></a>
-## [1.1.0] - 2021-12-17
+## [1.1.0] - 2021-12-17 (Version no longer supported)
 
 ### Platform Compatibility
 
@@ -72,7 +72,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   learn more via the [technical documentation](https://developer.tatumgames.com/documentation/preset/business). 
 
 <a name="1.0.0"></a>
-## [1.0.0] - 2021-05-11
+## [1.0.0] - 2021-05-11 (Version no longer supported)
 
 ### Added
 
