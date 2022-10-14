@@ -19,14 +19,22 @@ extern "C"
     /// @param deviceId Device unique identifier.
     /// @param appVersion Versioning for app releases and updates.
     /// @param sdkVersion Versioning for Mikros SDK releases and updates.
-    void ClientConfigurationSetup(char* apiKey, char* baseUrl, char* appGameId, char* apiKeyType, char* deviceId, char* appVersion, char* sdkVersion, bool isEventLogging, bool isTrackUserSession) {
+    /// @param eventLogging Status of event logging.
+    /// @param trackUserSession Status of user session tracking.
+    /// @param crashLoggging Status of crash reporting.
+    void ClientConfigurationSetup(char* apiKey, char* baseUrl, char* appGameId, char* apiKeyType, char* deviceId, char* appVersion, char* sdkVersion, char* eventLogging,  char* trackUserSession, char* crashReporting)
+    {
         NSString *strApiKey = [NSString stringWithUTF8String: apiKey];
         NSString *strBaseUrl = [NSString stringWithUTF8String: baseUrl];
         NSString *strAppGameId = [NSString stringWithUTF8String: appGameId];
         NSString *strApiKeyType = [NSString stringWithUTF8String: apiKeyType];
         NSString *strDeviceId = [NSString stringWithUTF8String: deviceId];
         NSString *strAppVersion = [NSString stringWithUTF8String: appVersion];
-        NSString *strSdkVersion = [NSString stringWithUTF8String: sdkVersion];
+        NSString *strSdkVersion = [NSString stringWithUTF8String: sdkVersion];		
+		NSString *strEventLogging = [NSString stringWithUTF8String: eventLogging];		
+		NSString *strTrackUserSession = [NSString stringWithUTF8String: trackUserSession];
+		NSString *strCrashReporting = [NSString stringWithUTF8String: crashReporting];
+        
         [[SwiftToUnity shared] clientConfigurationSetUpWithApiKey: strApiKey
                                                           baseUrl: strBaseUrl
                                                         appGameId: strAppGameId
@@ -34,8 +42,9 @@ extern "C"
                                                          deviceId: strDeviceId
                                                        appVersion: strAppVersion
                                                        sdkVersion: strSdkVersion
-                                                   isEventLogging: isEventLogging
-                                               isTrackUserSession: isTrackUserSession];
+                                                     eventLogging: strEventLogging
+                                                 trackUserSession: strTrackUserSession
+                                                   crashReporting: strCrashReporting];
     }
     /// Update user meatdata requests.
     /// @param latitude Latitude.
@@ -75,8 +84,8 @@ extern "C"
 
     /// Log Mikros Analytics event requests.
     /// @param eventData The event being tracked. This is represented as JSON string.
-    void LogEvent(const char* eventData) {
-        //NSString *strEventData = [NSString stringWithCString:eventData encoding:NSASCIIStringEncoding];
+    void LogEvent(const char* eventData)
+    {
         NSString *strEventData = [NSString stringWithUTF8String: eventData];
         [[SwiftToUnity shared] logEventsWithEventData: strEventData];
     }
@@ -85,6 +94,8 @@ extern "C"
     void FlushEvents()
     {
         [[SwiftToUnity shared] flushEvents];
+        [[SwiftToUnity shared] flushSessionEvents];
+        [[SwiftToUnity shared] flushMemoryEvents];
     }
 
     /// Used to update the value of session logging, allowing to enable or disable Mikros Analytics user sessions once the configuration has been set.
@@ -101,6 +112,17 @@ extern "C"
         [[SwiftToUnity shared] updateEventLoggingWithIsEventLogging:isEventLogging];
     }
 
+    /// Used to set the status of crash reporting.
+    /// @param isCrashReporting Enable or disable Mikros Crash Reporting.
+    void UpdateCrashReporting(bool isCrashReporting)
+    {
+        [[SwiftToUnity shared] updateCrashReportingWithIsCrashReportingEnabled:isCrashReporting];
+    }
+
+    void UpdateMemoryLogging(bool isTrackMemory)
+    {
+        [[SwiftToUnity shared] updateMemoryLoggingWithIsEventLogging: isTrackMemory];
+    }
     /// Method used whenever a key, touch, or trackball event is dispatched to the activity.
     void OnMotionEvent()
     {
