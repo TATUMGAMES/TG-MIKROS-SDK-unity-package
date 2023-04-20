@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name mikros_framework_ios
 import CoreData
 import Foundation
@@ -225,9 +225,9 @@ extension mikros_framework_ios.AnalyticsMemoryConfiguration.IllegalArgumentExcep
   }
 }
 @objc public protocol MikrosAnalyticsExceptionLogger : mikros_framework_ios.MikrosAnalyticsExceptionConfigurationProperties {
-  @objc override func updateCrashEventLogging(isEnabled: Swift.Bool)
-  @objc override func getAnalyticsExceptionConfiguration() -> mikros_framework_ios.AnalyticsExceptionConfiguration
-  @objc override func updateAnalyticsExceptionConfiguration(analyticssExceptionConfiguration: mikros_framework_ios.AnalyticsExceptionConfiguration)
+  @objc func updateCrashEventLogging(isEnabled: Swift.Bool)
+  @objc func getAnalyticsExceptionConfiguration() -> mikros_framework_ios.AnalyticsExceptionConfiguration
+  @objc func updateAnalyticsExceptionConfiguration(analyticssExceptionConfiguration: mikros_framework_ios.AnalyticsExceptionConfiguration)
 }
 @objc public protocol MikrosAnalyticsEventConfigurationProperties {
   @objc func updateEventLogging(isEnabled: Swift.Bool)
@@ -252,6 +252,11 @@ public enum LogLevel {
 public enum Logger {
   public static func log(_ message: Swift.String, level: mikros_framework_ios.LogLevel = .none)
   public static func log(_ array: [Swift.String], level: mikros_framework_ios.LogLevel = .none)
+}
+@objc @_inheritsConvenienceInitializers public class MikrosMemoryEntity : CoreData.NSManagedObject, Swift.Encodable {
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
 }
 public struct StackSymbolParser {
   public init(exception: Foundation.NSException, bundleId: Swift.String)
@@ -396,3 +401,21 @@ extension mikros_framework_ios.MikrosApiClientProvider.IllegalStateException : F
   @objc func getAnalyticsExceptionConfiguration() -> mikros_framework_ios.AnalyticsExceptionConfiguration
   @objc func updateAnalyticsExceptionConfiguration(analyticssExceptionConfiguration: mikros_framework_ios.AnalyticsExceptionConfiguration)
 }
+extension mikros_framework_ios.UserMetadata.IllegalArgumentException : Swift.Equatable {}
+extension mikros_framework_ios.UserMetadata.IllegalArgumentException : Swift.Hashable {}
+extension mikros_framework_ios.MikrosCrash.IllegalArgumentException : Swift.Equatable {}
+extension mikros_framework_ios.MikrosCrash.IllegalArgumentException : Swift.Hashable {}
+extension mikros_framework_ios.ClientConfiguration.IllegalArgumentException : Swift.Equatable {}
+extension mikros_framework_ios.ClientConfiguration.IllegalArgumentException : Swift.Hashable {}
+extension mikros_framework_ios.AnalyticsEventConfiguration.IllegalArgumentException : Swift.Equatable {}
+extension mikros_framework_ios.AnalyticsEventConfiguration.IllegalArgumentException : Swift.Hashable {}
+extension mikros_framework_ios.AnalyticsMemoryConfiguration.IllegalArgumentException : Swift.Equatable {}
+extension mikros_framework_ios.AnalyticsMemoryConfiguration.IllegalArgumentException : Swift.Hashable {}
+extension mikros_framework_ios.LogLevel : Swift.Equatable {}
+extension mikros_framework_ios.LogLevel : Swift.Hashable {}
+extension mikros_framework_ios.AnalyticsSessionConfiguration.IllegalArgumentException : Swift.Equatable {}
+extension mikros_framework_ios.AnalyticsSessionConfiguration.IllegalArgumentException : Swift.Hashable {}
+extension mikros_framework_ios.MikrosEvent.IllegalArgumentException : Swift.Equatable {}
+extension mikros_framework_ios.MikrosEvent.IllegalArgumentException : Swift.Hashable {}
+extension mikros_framework_ios.MikrosApiClientProvider.IllegalStateException : Swift.Equatable {}
+extension mikros_framework_ios.MikrosApiClientProvider.IllegalStateException : Swift.Hashable {}

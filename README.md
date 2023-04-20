@@ -258,7 +258,7 @@ TrackHttpFailureRequest.Builder()
     .Message(message)
     .NetworkSpeed(networkSpeed)
     .Create(
-    trackHttpFailureRequest => MikrosManager.Instance.AnalyticsController.LogPresetInternalEvents(trackHttpFailureRequest),
+    trackHttpFailureRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackHttpFailureRequest),
     onFailure =>
     {
         // handle failure
@@ -281,7 +281,7 @@ TrackHttpSuccessRequest.Builder()
     .Message(message)
     .NetworkSpeed(networkSpeed)
     .Create(
-    trackHttpSuccessRequest => MikrosManager.Instance.AnalyticsController.LogPresetInternalEvents(trackHttpSuccessRequest),
+    trackHttpSuccessRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackHttpSuccessRequest),
     onFailure =>
     {
         // handle failure
@@ -499,19 +499,24 @@ TrackTutorialCompleteRequest.Builder()
     });
 ```
 
-##### Track Unlock Achievement Request Object
+##### Track Unlocked Achievement Request Object
 
-| Parameter              | Type                    | Field      |
-| ---------------------- | ----------------------- | ---------- |
-| achievementId          | String                  | Required   |
-| achievementName        | String                  | Optional   |
+| Parameter               | Type                                                        | Field      |
+| ----------------------- | ----------------------------------------------------------- | ---------- |
+| achievementData         |  List<TrackUnlockedAchievementRequest.AchievementData>      | Required   |  
 
 ```
-TrackUnlockAchievementRequest.Builder()
+List<TrackUnlockedAchievementRequest.Achievement> achievements = new List<TrackUnlockedAchievementRequest.Achievement>();
+    TrackUnlockedAchievementRequest.Achievement achievement = TrackUnlockedAchievementRequest.Achievement.Builder()
     .AchievementId(achievementId)
     .AchievementName(achievementName)
+    .Create();
+    achievements.Add(achievement);
+    
+    TrackUnlockedAchievementRequest.Builder()
+    .Achievements(achievements)
     .Create(
-    trackUnlockAchievementRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackUnlockAchievementRequest),
+    trackUnlockedAchievementRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackUnlockedAchievementRequest),
     onFailure =>
     {
         // handle failure
