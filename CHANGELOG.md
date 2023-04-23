@@ -5,8 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+<a name="released-versions"></a>
 ## Released Versions
 
+* [1.3.0](#1.3.0)
 * [1.2.1](#1.2.1)
 * [1.2.0](#1.2.0)
 * [1.1.0](#1.1.0) - Deprecated
@@ -24,6 +26,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   This is why we are working on a MIKROS App Store, which will allow developers the opportunity to
   market each others' products within the MIKROS ecosystem. More details to come as we build out the 
   necessary infrastructure and marketing machine.
+  
+<a name="1.3.0"></a>
+## [1.3.0] - 2023-04-21
+
+### Platform Compatibility
+
+- Compatibile for both iOS and Android platforms.
+
+### Enhancements
+
+- Bug Fixes: Squashed some pesky bugs :bug:
+- Gameplay Tracking: Added gameplay tracking as part of user metadata.
+  
+  Note: Developers still have full control over the type of user metadata data automatically collected. Remember that
+  the data captured by MIKROS is completely configuratable by using [Privacy Levels](https://developer.tatumgames.com/documentation/disable-mikros-analytics).
+
+### Dashboard
+
+- Asset Update: Assets have been updated to give MIKROS a fresh new look! Let us know how you like them.
+- New Global Analytics section, `Trends`. Trends allows developers to always know the latest trends across the entire mobile game industry. For the first time ever, developers can know in real-time valuable information such as what game genre is most popular, what content is least popular, how much are gamers spending and much more. 
+- New Global Analytics section, `Statistics`. Statistics allows developers to monitor the growth of the MIKROS ecosystem.  
+
+[Jump to Top](#released-versions)
   
 <a name="1.2.1"></a>
 ## [1.2.1] - 2023-04-21
@@ -43,7 +68,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Dashboard
 
 - New Insights section, `Which Users Are the BIG Spenders?`. This section only populates with data if 
-  you use the TrackPurchaseRequest() interface. You can learn more via the [technical documentation](https://developer.tatumgames.com/documentation/log-preset-events#track-purchase).   
+  you use the TrackPurchaseRequest() interface. You can learn more via the [technical documentation](https://developer.tatumgames.com/documentation/log-preset-events#track-purchase).
+  
+[Jump to Top](#released-versions)  
 
 <a name="1.2.0"></a>
 ## [1.2.0] - 2022-10-07
@@ -67,7 +94,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - New Insights section, `Which Users Are the BIG Spenders?`. This section only populates with data if 
   you use the TrackPurchaseRequest() interface. You can learn more via the [technical documentation](https://developer.tatumgames.com/documentation/log-preset-events#track-purchase). 
-  
+
+[Jump to Top](#released-versions)
+
 <a name="1.1.0"></a>
 ## [1.1.0] - 2021-12-17 (Version no longer supported)
 
@@ -91,6 +120,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - New Insights section, `Things Your Business Should Know`. This section populates automatically. You can 
   learn more via the [technical documentation](https://developer.tatumgames.com/documentation/preset/business). 
+
+[Jump to Top](#released-versions)
 
 <a name="1.0.0"></a>
 ## [1.0.0] - 2021-05-11 (Version no longer supported)
@@ -148,3 +179,5 @@ call `LogEvent()` internally and will track the provided information and details
   unlock, or feature unlock.
 - TrackScreenTimeRequest(): Use this to track how long users are spending on a specific screen.
 - TrackPurchaseRequest(): Use this as receipt tracking for all purchases made.  
+
+[Jump to Top](#released-versions)
