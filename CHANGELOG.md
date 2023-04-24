@@ -45,6 +45,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Dashboard
 
 - Asset Update: Assets have been updated to give MIKROS a fresh new look! Let us know how you like them.
+- Favorites: Revamped `Favorites` section. You can now organize your Favorites into categories and groups. You can also Favorite preset events under Insights.
 - New Global Analytics section, `Trends`. Trends allows developers to always know the latest trends across the entire mobile game industry. For the first time ever, developers can know in real-time valuable information such as what game genre is most popular, what content is least popular, how much are gamers spending and much more. 
 - New Global Analytics section, `Statistics`. Statistics allows developers to monitor the growth of the MIKROS ecosystem.  
 
