@@ -34,6 +34,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Compatibile for both iOS and Android platforms.
 
+### Added Interfaces
+
+- TrackPlayerRating(): Use this tracker to build user reputation. Building up a users' Reputation Score
+  is equivalent in importance as building up a users' credit score. You not only report bad behaviors,
+  but also good behaviors. This is perfect to include in any type of user negative reporting system. 
+  For example, in the case of hacking or trolling. This is also perfect to use at the end of game matches
+  where users rate each other and name MVP teammates. By developers tracking user Reputation Score, you
+  allow other developers to know instantly what type of users are playing their game right upon login.
+  We are all responsible for accurately reporting user behaviors and building up (or down) reputation.
+
+  Note: Remember that MIKROS is an ecosystem. The more developers that participate and contribute to 
+  the ecosystem, the more powerful MIKROS becomes. If you want to quickly identify hackers and trolls 
+  inside and outside of your product, all developers need to use MIKROS to help complete the users' entire 
+  reputation journey.
+
 ### Enhancements
 
 - Bug Fixes: Squashed some pesky bugs :bug:
@@ -70,6 +85,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - New Insights section, `Which Users Are the BIG Spenders?`. This section only populates with data if 
   you use the TrackPurchaseRequest() interface. You can learn more via the [technical documentation](https://developer.tatumgames.com/documentation/log-preset-events#track-purchase).
+
+### Warning
+
+:rotating_light: SendPlayerRating has a bug and is resolved in v1.3.0. The interface has been updated to TrackPlayerRating().
+You can learn more via the [technical documentation](https://developer.tatumgames.com/documentation/log-preset-events#track-player-rating).
   
 [Jump to Top](#released-versions)  
 
@@ -129,9 +149,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- This CHANGELOG file to hopefully serve as an evolving example of the type of transparency Tatum Games 
+- This CHANGELOG file will hopefully serve as an evolving example of the type of transparency Tatum Games 
   wants to have with MIKROS Integrators.
-- README now contains more information about MIKROS as well as answers to common questions. For additional 
+- README now contains more information about MIKROS, as well as answers to common questions. For additional 
   information, you can learn more via the [FAQ](https://stage-developer.tatumgames.com/documentation/faq)
 
 ### Added Interfaces
@@ -144,7 +164,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - SignupRequest(): This is a SSO (Single Sign-On) feature. By using registration through MIKROS, you set 
   users up to be able to sign into any app where MIKROS SSO is used.
 - SignoutRequest(): This will log the user out of MIKROS SSO (Single Sign-On).
-- PlayerRating(): Used to allow players to rate each other after a match, battle or challenge. This rating
+- SendPlayerRating(): Used to allow players to rate each other after a match, battle or challenge. This rating
   directly affects user [Reputation Score](https://developer.tatumgames.com/documentation/scores#reputation-score).
 
 ### Convenience Interfaces
