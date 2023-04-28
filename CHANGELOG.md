@@ -88,7 +88,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Warning
 
-:rotating_light: SendPlayerRating has a bug and is resolved in v1.3.0. The interface has been updated to TrackPlayerRating().
+:rotating_light: SendPlayerRating has a bug and is resolved in [1.3.0](#1.3.0). The interface has been updated to TrackPlayerRating().
 You can learn more via the [technical documentation](https://developer.tatumgames.com/documentation/log-preset-events#track-player-rating).
   
 [Jump to Top](#released-versions)  
