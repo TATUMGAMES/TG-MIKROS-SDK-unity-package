@@ -58,13 +58,15 @@ extern "C"
     /// @param sdkVersion Versioning for Mikros SDK releases and updates.
     /// @param sdkType Type of SDK being used.
     /// @param isWifi Status of internet connectivity.
-    void UpdateUserMetadata(char* latitude, char* longitude, char* deviceModel, char* deviceOSVersion, char* deviceOperatingSystem, char* deviceScreenDpi, char* deviceScreenHeight, char* deviceScreenWidth, char* sdkVersion, char* sdkType, char* isWifi)
+    void UpdateUserMetadata(char* latitude, char* longitude, char* deviceBattery, char* deviceModel, char* deviceOSVersion, char* deviceOperatingSystem, char* deviceOrientation, char* deviceScreenDpi, char* deviceScreenHeight, char* deviceScreenWidth, char* sdkVersion, char* sdkType, char* isWifi)
     {
         NSString *strLatitude = [NSString stringWithUTF8String: latitude];
         NSString *strLongitude = [NSString stringWithUTF8String: longitude];
+        NSString *strDeviceBattery = [NSString stringWithUTF8String: deviceBattery];
         NSString *strDeviceModel = [NSString stringWithUTF8String: deviceModel];
         NSString *strDeviceOSVersion = [NSString stringWithUTF8String: deviceOSVersion];
         NSString *strDeviceOperatingSystem = [NSString stringWithUTF8String: deviceOperatingSystem];
+        NSString *strDeviceOrientation = [NSString stringWithUTF8String: deviceOrientation];
         NSString *strDeviceScreenDpi = [NSString stringWithUTF8String: deviceScreenDpi];
         NSString *strDeviceScreenHeight = [NSString stringWithUTF8String: deviceScreenHeight];
         NSString *strDeviceScreenWidth = [NSString stringWithUTF8String: deviceScreenWidth];
@@ -72,8 +74,10 @@ extern "C"
         NSString *strIsWifi = [NSString stringWithUTF8String: isWifi];
         [[SwiftToUnity shared] updateMetaDataWithLatitude: strLatitude
                                                 longitude: strLongitude
+												deviceBattery: strDeviceBattery
                                               deviceModel: strDeviceModel
                                                  deviceOS: strDeviceOperatingSystem
+												 deviceOrientation: strDeviceOrientation
                                           deviceOSVersion: strDeviceOSVersion
                                           deviceScreenDpi: strDeviceScreenDpi
                                        deviceScreenHeight: strDeviceScreenHeight
@@ -90,12 +94,21 @@ extern "C"
         [[SwiftToUnity shared] logEventsWithEventData: strEventData];
     }
 
+    /// Update DeviceId requests.
+    /// @param deviceId .
+    void UpdateDeviceId(const char* deviceId)
+    {
+        NSString *strDeviceId = [NSString stringWithUTF8String: deviceId];
+        [[SwiftToUnity shared] updateUserDeviceIdWithDeviceId: strDeviceId];
+    }
+
     /// Flush any init or error events in current queue; this will fire a one time task to flush events.
     void FlushEvents()
     {
         [[SwiftToUnity shared] flushEvents];
         [[SwiftToUnity shared] flushSessionEvents];
         [[SwiftToUnity shared] flushMemoryEvents];
+        [[SwiftToUnity shared] flushGameplayEvents];
     }
 
     /// Used to update the value of session logging, allowing to enable or disable Mikros Analytics user sessions once the configuration has been set.
@@ -119,6 +132,8 @@ extern "C"
         [[SwiftToUnity shared] updateCrashReportingWithIsCrashReportingEnabled:isCrashReporting];
     }
 
+    /// Used to set the status of Memory Logging.
+    /// @param isTrackMemory Enable or disable Mikros Memory Logging.
     void UpdateMemoryLogging(bool isTrackMemory)
     {
         [[SwiftToUnity shared] updateMemoryLoggingWithIsEventLogging: isTrackMemory];
