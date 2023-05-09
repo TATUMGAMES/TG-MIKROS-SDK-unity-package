@@ -59,7 +59,7 @@ extern "C"
     /// @param sdkType Type of SDK being used.
     /// @param isWifi Status of internet connectivity.
     void UpdateUserMetadata(char* latitude, char* longitude, char* deviceBattery, char* deviceModel, char* deviceOSVersion, char* deviceOperatingSystem, char* deviceOrientation, char* deviceScreenDpi, char* deviceScreenHeight, char* deviceScreenWidth, char* sdkVersion, char* sdkType, char* isWifi)
-    {
+{
         NSString *strLatitude = [NSString stringWithUTF8String: latitude];
         NSString *strLongitude = [NSString stringWithUTF8String: longitude];
         NSString *strDeviceBattery = [NSString stringWithUTF8String: deviceBattery];
@@ -74,11 +74,11 @@ extern "C"
         NSString *strIsWifi = [NSString stringWithUTF8String: isWifi];
         [[SwiftToUnity shared] updateMetaDataWithLatitude: strLatitude
                                                 longitude: strLongitude
-												deviceBattery: strDeviceBattery
+                                            deviceBattery: strDeviceBattery
                                               deviceModel: strDeviceModel
                                                  deviceOS: strDeviceOperatingSystem
-												 deviceOrientation: strDeviceOrientation
                                           deviceOSVersion: strDeviceOSVersion
+                                        deviceOrientation: strDeviceOrientation
                                           deviceScreenDpi: strDeviceScreenDpi
                                        deviceScreenHeight: strDeviceScreenHeight
                                         deviceScreenWidth: strDeviceScreenWidth
