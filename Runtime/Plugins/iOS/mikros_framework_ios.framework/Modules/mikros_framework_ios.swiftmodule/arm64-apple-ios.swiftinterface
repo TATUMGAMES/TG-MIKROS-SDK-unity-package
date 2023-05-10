@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name mikros_framework_ios
-// swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreBluetooth
 import CoreData
 import CoreLocation
@@ -11,7 +10,6 @@ import Swift
 import SystemConfiguration
 import UIKit
 import _Concurrency
-import _StringProcessing
 @_exported import mikros_framework_ios
 @objc @_inheritsConvenienceInitializers @objcMembers final public class UserMetadataBuilder : ObjectiveC.NSObject {
   @objc override dynamic public init()
@@ -245,9 +243,9 @@ extension mikros_framework_ios.AnalyticsMemoryConfiguration.IllegalArgumentExcep
   }
 }
 @objc public protocol MikrosAnalyticsExceptionLogger : mikros_framework_ios.MikrosAnalyticsExceptionConfigurationProperties {
-  @objc func updateCrashEventLogging(isEnabled: Swift.Bool)
-  @objc func getAnalyticsExceptionConfiguration() -> mikros_framework_ios.AnalyticsExceptionConfiguration
-  @objc func updateAnalyticsExceptionConfiguration(analyticssExceptionConfiguration: mikros_framework_ios.AnalyticsExceptionConfiguration)
+  @objc override func updateCrashEventLogging(isEnabled: Swift.Bool)
+  @objc override func getAnalyticsExceptionConfiguration() -> mikros_framework_ios.AnalyticsExceptionConfiguration
+  @objc override func updateAnalyticsExceptionConfiguration(analyticssExceptionConfiguration: mikros_framework_ios.AnalyticsExceptionConfiguration)
 }
 @objc public protocol MikrosAnalyticsEventConfigurationProperties {
   @objc func updateEventLogging(isEnabled: Swift.Bool)
@@ -374,11 +372,11 @@ extension mikros_framework_ios.MikrosGameplayEntity {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<mikros_framework_ios.MikrosGameplayEntity>
   @objc @NSManaged dynamic public var gameplayStartTime: Swift.String? {
     @objc get
-    @objc set
+    @objc set(value)
   }
   @objc @NSManaged dynamic public var gameplayEndTime: Swift.String? {
     @objc get
-    @objc set
+    @objc set(value)
   }
 }
 @objc public protocol MikrosApiClientProtocol : ObjectiveC.NSObjectProtocol, mikros_framework_ios.MikrosAnalyticsEventLogger, mikros_framework_ios.MikrosAnalyticsExceptionLogger, mikros_framework_ios.MikrosAnalyticsGameplayLogger, mikros_framework_ios.MikrosAnalyticsMemoryLogger, mikros_framework_ios.MikrosAnalyticsSessionLogger {
@@ -449,21 +447,3 @@ extension mikros_framework_ios.MikrosApiClientProvider.IllegalStateException : F
   @objc func getAnalyticsExceptionConfiguration() -> mikros_framework_ios.AnalyticsExceptionConfiguration
   @objc func updateAnalyticsExceptionConfiguration(analyticssExceptionConfiguration: mikros_framework_ios.AnalyticsExceptionConfiguration)
 }
-extension mikros_framework_ios.UserMetadata.IllegalArgumentException : Swift.Equatable {}
-extension mikros_framework_ios.UserMetadata.IllegalArgumentException : Swift.Hashable {}
-extension mikros_framework_ios.MikrosCrash.IllegalArgumentException : Swift.Equatable {}
-extension mikros_framework_ios.MikrosCrash.IllegalArgumentException : Swift.Hashable {}
-extension mikros_framework_ios.ClientConfiguration.IllegalArgumentException : Swift.Equatable {}
-extension mikros_framework_ios.ClientConfiguration.IllegalArgumentException : Swift.Hashable {}
-extension mikros_framework_ios.AnalyticsEventConfiguration.IllegalArgumentException : Swift.Equatable {}
-extension mikros_framework_ios.AnalyticsEventConfiguration.IllegalArgumentException : Swift.Hashable {}
-extension mikros_framework_ios.AnalyticsMemoryConfiguration.IllegalArgumentException : Swift.Equatable {}
-extension mikros_framework_ios.AnalyticsMemoryConfiguration.IllegalArgumentException : Swift.Hashable {}
-extension mikros_framework_ios.LogLevel : Swift.Equatable {}
-extension mikros_framework_ios.LogLevel : Swift.Hashable {}
-extension mikros_framework_ios.AnalyticsSessionConfiguration.IllegalArgumentException : Swift.Equatable {}
-extension mikros_framework_ios.AnalyticsSessionConfiguration.IllegalArgumentException : Swift.Hashable {}
-extension mikros_framework_ios.MikrosEvent.IllegalArgumentException : Swift.Equatable {}
-extension mikros_framework_ios.MikrosEvent.IllegalArgumentException : Swift.Hashable {}
-extension mikros_framework_ios.MikrosApiClientProvider.IllegalStateException : Swift.Equatable {}
-extension mikros_framework_ios.MikrosApiClientProvider.IllegalStateException : Swift.Hashable {}
