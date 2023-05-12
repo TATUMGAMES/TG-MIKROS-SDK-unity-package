@@ -26,7 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   This is why we are working on a MIKROS App Store, which will allow developers the opportunity to
   market each others' products within the MIKROS ecosystem. More details to come as we build out the 
   necessary infrastructure and marketing machine.
-  
+
 <a name="1.3.0"></a>
 ## [1.3.0] - 2023-04-21
 
@@ -65,7 +65,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - New Global Analytics section, `Statistics`. Statistics allows developers to monitor the growth of the MIKROS ecosystem.  
 
 [Jump to Top](#released-versions)
-  
+
 <a name="1.2.1"></a>
 ## [1.2.1] - 2023-04-21
 
@@ -84,14 +84,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Dashboard
 
 - New Insights section, `Which Users Are the BIG Spenders?`. This section only populates with data if 
-  you use the TrackPurchaseRequest() interface. You can learn more via the [technical documentation](https://developer.tatumgames.com/documentation/log-preset-events#track-purchase).
+  you use the TrackPurchaseRequest() interface. You can learn more via the [technical documentation](https://developer.tatumgames.com/documentation/log-preset-events#track-purchase).   
 
 ### Warning
 
 :rotating_light: SendPlayerRating has a bug and is resolved in [1.3.0](#1.3.0). The interface has been updated to TrackPlayerRating().
 You can learn more via the [technical documentation](https://developer.tatumgames.com/documentation/log-preset-events#track-player-rating).
   
-[Jump to Top](#released-versions)  
+[Jump to Top](#released-versions)
 
 <a name="1.2.0"></a>
 ## [1.2.0] - 2022-10-07
