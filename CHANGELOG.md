@@ -5,8 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+<a name="released-versions"></a>
 ## Released Versions
 
+* [1.3.0](#1.3.0)
 * [1.2.1](#1.2.1)
 * [1.2.0](#1.2.0)
 * [1.1.0](#1.1.0) - Deprecated
@@ -24,7 +26,46 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   This is why we are working on a MIKROS App Store, which will allow developers the opportunity to
   market each others' products within the MIKROS ecosystem. More details to come as we build out the 
   necessary infrastructure and marketing machine.
+
+<a name="1.3.0"></a>
+## [1.3.0] - 2023-04-21
+
+### Platform Compatibility
+
+- Compatibile for both iOS and Android platforms.
+
+### Added Interfaces
+
+- TrackPlayerRating(): Use this tracker to build user reputation. Building up a users' Reputation Score
+  is equivalent in importance as building up a users' credit score. You not only report bad behaviors,
+  but also good behaviors. This is perfect to include in any type of user negative reporting system. 
+  For example, in the case of hacking or trolling. This is also perfect to use at the end of game matches
+  where users rate each other and name MVP teammates. By developers tracking user Reputation Score, you
+  allow other developers to know instantly what type of users are playing their game right upon login.
+  We are all responsible for accurately reporting user behaviors and building up (or down) reputation.
+
+  Note: Remember that MIKROS is an ecosystem. The more developers that participate and contribute to 
+  the ecosystem, the more powerful MIKROS becomes. If you want to quickly identify hackers and trolls 
+  inside and outside of your product, all developers need to use MIKROS to help complete the users' entire 
+  reputation journey.
+
+### Enhancements
+
+- Bug Fixes: Squashed some pesky bugs :bug:
+- Gameplay Tracking: Added gameplay tracking as part of user metadata.
   
+  Note: Developers still have full control over the type of user metadata data automatically collected. Remember that
+  the data captured by MIKROS is completely configuratable by using [Privacy Levels](https://developer.tatumgames.com/documentation/disable-mikros-analytics).
+
+### Dashboard
+
+- Asset Update: Assets have been updated to give MIKROS a fresh new look! Let us know how you like them.
+- Favorites: Revamped `Favorites` section. You can now organize your Favorites into categories and groups. You can also Favorite preset events under Insights.
+- New Global Analytics section, `Trends`. Trends allows developers to always know the latest trends across the entire mobile game industry. For the first time ever, developers can know in real-time valuable information such as what game genre is most popular, what content is least popular, how much are gamers spending and much more. 
+- New Global Analytics section, `Statistics`. Statistics allows developers to monitor the growth of the MIKROS ecosystem.  
+
+[Jump to Top](#released-versions)
+
 <a name="1.2.1"></a>
 ## [1.2.1] - 2023-04-21
 
@@ -44,6 +85,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - New Insights section, `Which Users Are the BIG Spenders?`. This section only populates with data if 
   you use the TrackPurchaseRequest() interface. You can learn more via the [technical documentation](https://developer.tatumgames.com/documentation/log-preset-events#track-purchase).   
+
+### Warning
+
+:rotating_light: SendPlayerRating has a bug and is resolved in [1.3.0](#1.3.0). The interface has been updated to TrackPlayerRating().
+You can learn more via the [technical documentation](https://developer.tatumgames.com/documentation/log-preset-events#track-player-rating).
+  
+[Jump to Top](#released-versions)
 
 <a name="1.2.0"></a>
 ## [1.2.0] - 2022-10-07
@@ -67,7 +115,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - New Insights section, `Which Users Are the BIG Spenders?`. This section only populates with data if 
   you use the TrackPurchaseRequest() interface. You can learn more via the [technical documentation](https://developer.tatumgames.com/documentation/log-preset-events#track-purchase). 
-  
+
+[Jump to Top](#released-versions)
+
 <a name="1.1.0"></a>
 ## [1.1.0] - 2021-12-17 (Version no longer supported)
 
@@ -92,14 +142,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - New Insights section, `Things Your Business Should Know`. This section populates automatically. You can 
   learn more via the [technical documentation](https://developer.tatumgames.com/documentation/preset/business). 
 
+[Jump to Top](#released-versions)
+
 <a name="1.0.0"></a>
 ## [1.0.0] - 2021-05-11 (Version no longer supported)
 
 ### Added
 
-- This CHANGELOG file to hopefully serve as an evolving example of the type of transparency Tatum Games 
+- This CHANGELOG file will hopefully serve as an evolving example of the type of transparency Tatum Games 
   wants to have with MIKROS Integrators.
-- README now contains more information about MIKROS as well as answers to common questions. For additional 
+- README now contains more information about MIKROS, as well as answers to common questions. For additional 
   information, you can learn more via the [FAQ](https://stage-developer.tatumgames.com/documentation/faq)
 
 ### Added Interfaces
@@ -112,7 +164,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - SignupRequest(): This is a SSO (Single Sign-On) feature. By using registration through MIKROS, you set 
   users up to be able to sign into any app where MIKROS SSO is used.
 - SignoutRequest(): This will log the user out of MIKROS SSO (Single Sign-On).
-- PlayerRating(): Used to allow players to rate each other after a match, battle or challenge. This rating
+- SendPlayerRating(): Used to allow players to rate each other after a match, battle or challenge. This rating
   directly affects user [Reputation Score](https://developer.tatumgames.com/documentation/scores#reputation-score).
 
 ### Convenience Interfaces
@@ -148,3 +200,5 @@ call `LogEvent()` internally and will track the provided information and details
   unlock, or feature unlock.
 - TrackScreenTimeRequest(): Use this to track how long users are spending on a specific screen.
 - TrackPurchaseRequest(): Use this as receipt tracking for all purchases made.  
+
+[Jump to Top](#released-versions)
