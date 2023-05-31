@@ -32,7 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Platform Compatibility
 
-- Compatibile for both iOS and Android platforms.
+- Compatible for both iOS and Android platforms.
 
 ### Added Interfaces
 
