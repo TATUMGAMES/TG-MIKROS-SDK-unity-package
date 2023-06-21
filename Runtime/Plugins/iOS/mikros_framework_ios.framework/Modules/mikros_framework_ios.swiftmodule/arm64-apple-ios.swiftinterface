@@ -1,27 +1,21 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name mikros_framework_ios
-// swift-module-flags-ignorable: -enable-bare-slash-regex
-import CoreBluetooth
 import CoreData
-import CoreLocation
 import Foundation
 import Network
 import Swift
 import SystemConfiguration
 import UIKit
 import _Concurrency
-import _StringProcessing
 @_exported import mikros_framework_ios
 @objc @_inheritsConvenienceInitializers @objcMembers final public class UserMetadataBuilder : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc final public func set(latitude: Swift.String?) -> mikros_framework_ios.UserMetadataBuilder
   @objc final public func set(longitude: Swift.String?) -> mikros_framework_ios.UserMetadataBuilder
-  @objc final public func set(deviceBattery: Swift.String?) -> mikros_framework_ios.UserMetadataBuilder
   @objc final public func set(deviceModel: Swift.String?) -> mikros_framework_ios.UserMetadataBuilder
   @objc final public func set(deviceOS: Swift.String?) -> mikros_framework_ios.UserMetadataBuilder
   @objc final public func set(deviceOSVersion: Swift.String?) -> mikros_framework_ios.UserMetadataBuilder
-  @objc final public func set(deviceOrientation: Swift.String?) -> mikros_framework_ios.UserMetadataBuilder
   @objc final public func set(deviceScreenDpi: Swift.String?) -> mikros_framework_ios.UserMetadataBuilder
   @objc final public func set(deviceScreenHeight: Swift.String?) -> mikros_framework_ios.UserMetadataBuilder
   @objc final public func set(deviceScreenWidth: Swift.String?) -> mikros_framework_ios.UserMetadataBuilder
@@ -34,11 +28,9 @@ extension mikros_framework_ios.UserMetadata {
   public enum IllegalArgumentException : Swift.Error {
     case latitude
     case longitude
-    case deviceBattery
     case deviceModel
     case deviceOS
     case deviceOSVersion
-    case deviceOrientation
     case deviceScreenDpi
     case deviceScreenHeight
     case deviceScreenWidth
@@ -56,11 +48,6 @@ extension mikros_framework_ios.UserMetadata.IllegalArgumentException : Foundatio
     get
   }
 }
-@_inheritsConvenienceInitializers @objc(MikrosGameplayEntity) public class MikrosGameplayEntity : CoreData.NSManagedObject, Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  @objc deinit
-}
 public struct UncaughtException : Swift.Codable, Swift.Equatable {
   public static func == (a: mikros_framework_ios.UncaughtException, b: mikros_framework_ios.UncaughtException) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
@@ -72,9 +59,6 @@ public struct UncaughtException : Swift.Codable, Swift.Equatable {
   @objc func updateMinimumSessionLengthValidity(minimumSessionLengthValidity: Swift.Int)
   @objc func getAnalyticsSessionConfiguration() -> mikros_framework_ios.AnalyticsSessionConfiguration
   @objc func updateAnalyticsConfiguration(analyticsSessionConfiguration: mikros_framework_ios.AnalyticsSessionConfiguration)
-}
-@objc public protocol MikrosAnalyticsGameplayLogger : mikros_framework_ios.MikrosAnalyticsGameplayConfigurationProperties {
-  @objc func flushGameplayEvents()
 }
 @_hasMissingDesignatedInitializers @objc final public class MikrosEvent : ObjectiveC.NSObject {
   @objc deinit
@@ -90,7 +74,7 @@ public struct UncaughtException : Swift.Codable, Swift.Equatable {
 }
 extension mikros_framework_ios.MikrosCrash {
   public enum IllegalArgumentException : Swift.Error {
-    case customCrash
+    case crash
     public static func == (a: mikros_framework_ios.MikrosCrash.IllegalArgumentException, b: mikros_framework_ios.MikrosCrash.IllegalArgumentException) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
@@ -204,10 +188,6 @@ extension mikros_framework_ios.MikrosApiClient : mikros_framework_ios.MikrosApiC
   @objc final public func updateAnalyticsConfiguration(analyticsSessionConfiguration: mikros_framework_ios.AnalyticsSessionConfiguration)
   @objc final public func getAnalyticsExceptionConfiguration() -> mikros_framework_ios.AnalyticsExceptionConfiguration
   @objc final public func updateAnalyticsExceptionConfiguration(analyticssExceptionConfiguration: mikros_framework_ios.AnalyticsExceptionConfiguration)
-  @objc final public func flushGameplayEvents()
-  @objc final public func updateGameplayLogging(isEnabled: Swift.Bool)
-  @objc final public func getAnalyticsGameplayConfiguration() -> mikros_framework_ios.AnalyticsGameplayConfiguration
-  @objc final public func updateAnalyticsConfiguration(analyticsGameplayConfiguration: mikros_framework_ios.AnalyticsGameplayConfiguration)
 }
 @_hasMissingDesignatedInitializers final public class CommonAnalyticsEventConfigurationProperties {
   @objc deinit
@@ -257,11 +237,6 @@ extension mikros_framework_ios.AnalyticsMemoryConfiguration.IllegalArgumentExcep
   @objc func getAnalyticsConfiguration() -> mikros_framework_ios.AnalyticsEventConfiguration
   @objc func updateAnalyticsConfiguration(analyticsConfiguration: mikros_framework_ios.AnalyticsEventConfiguration)
 }
-@objc @_inheritsConvenienceInitializers public class MikrosMemoryEntity : CoreData.NSManagedObject, Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  @objc deinit
-}
 public enum LogLevel {
   case none
   case debug
@@ -277,6 +252,11 @@ public enum LogLevel {
 public enum Logger {
   public static func log(_ message: Swift.String, level: mikros_framework_ios.LogLevel = .none)
   public static func log(_ array: [Swift.String], level: mikros_framework_ios.LogLevel = .none)
+}
+@objc @_inheritsConvenienceInitializers public class MikrosMemoryEntity : CoreData.NSManagedObject, Swift.Encodable {
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
 }
 public struct StackSymbolParser {
   public init(exception: Foundation.NSException, bundleId: Swift.String)
@@ -310,15 +290,6 @@ extension mikros_framework_ios.AnalyticsSessionConfiguration.IllegalArgumentExce
   public var errorDescription: Swift.String? {
     get
   }
-}
-@objc @_hasMissingDesignatedInitializers @objcMembers final public class AnalyticsGameplayConfiguration : ObjectiveC.NSObject {
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @objcMembers final public class AnalyticsGameplayConfigurationBuilder : ObjectiveC.NSObject {
-  @objc override dynamic public init()
-  @objc final public func set(eventLogging: Swift.Bool) -> mikros_framework_ios.AnalyticsGameplayConfigurationBuilder
-  @objc final public func create() throws -> mikros_framework_ios.AnalyticsGameplayConfiguration
-  @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class CommonAnalyticsSessionConfigurationProperties {
   @objc deinit
@@ -355,14 +326,6 @@ extension mikros_framework_ios.MikrosEvent.IllegalArgumentException : Foundation
 @objc @_hasMissingDesignatedInitializers @objcMembers final public class ClientConfiguration : ObjectiveC.NSObject {
   @objc deinit
 }
-@_hasMissingDesignatedInitializers final public class CommonAnalyticsGameplayConfigurationProperties {
-  @objc deinit
-}
-@objc public protocol MikrosAnalyticsGameplayConfigurationProperties {
-  @objc func updateGameplayLogging(isEnabled: Swift.Bool)
-  @objc func getAnalyticsGameplayConfiguration() -> mikros_framework_ios.AnalyticsGameplayConfiguration
-  @objc func updateAnalyticsConfiguration(analyticsGameplayConfiguration: mikros_framework_ios.AnalyticsGameplayConfiguration)
-}
 @objc public protocol MikrosAnalyticsMemoryLogger : mikros_framework_ios.MikrosAnalyticsMemoryConfigurationProperties {
   @objc func flushMemoryEvents()
 }
@@ -370,18 +333,7 @@ extension mikros_framework_ios.MikrosEvent.IllegalArgumentException : Foundation
   @objc func onMotionEvent()
   @objc func flushSessionEvents()
 }
-extension mikros_framework_ios.MikrosGameplayEntity {
-  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<mikros_framework_ios.MikrosGameplayEntity>
-  @objc @NSManaged dynamic public var gameplayStartTime: Swift.String? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var gameplayEndTime: Swift.String? {
-    @objc get
-    @objc set
-  }
-}
-@objc public protocol MikrosApiClientProtocol : ObjectiveC.NSObjectProtocol, mikros_framework_ios.MikrosAnalyticsEventLogger, mikros_framework_ios.MikrosAnalyticsExceptionLogger, mikros_framework_ios.MikrosAnalyticsGameplayLogger, mikros_framework_ios.MikrosAnalyticsMemoryLogger, mikros_framework_ios.MikrosAnalyticsSessionLogger {
+@objc public protocol MikrosApiClientProtocol : ObjectiveC.NSObjectProtocol, mikros_framework_ios.MikrosAnalyticsEventLogger, mikros_framework_ios.MikrosAnalyticsExceptionLogger, mikros_framework_ios.MikrosAnalyticsMemoryLogger, mikros_framework_ios.MikrosAnalyticsSessionLogger {
   @objc func getClientConfiguration() -> mikros_framework_ios.ClientConfiguration
   @objc func updateClientConfiguration(clientConfiguration: mikros_framework_ios.ClientConfiguration)
   @objc func updateApiKey(apiKey: Swift.String?)
@@ -420,7 +372,7 @@ extension mikros_framework_ios.MikrosGameplayEntity {
   @objc func updateAnalyticsMemoryConfiguration(analyticsMemoryConfiguration: mikros_framework_ios.AnalyticsMemoryConfiguration)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class MikrosApiClientProvider : ObjectiveC.NSObject {
-  @objc public static func initialize(clientConfiguration: mikros_framework_ios.ClientConfiguration, analyticsEventConfiguration: mikros_framework_ios.AnalyticsEventConfiguration? = nil, analyticsSessionConfiguration: mikros_framework_ios.AnalyticsSessionConfiguration? = nil, analyticsMemoryConfiguration: mikros_framework_ios.AnalyticsMemoryConfiguration? = nil, analyticsExceptionConfiguration: mikros_framework_ios.AnalyticsExceptionConfiguration? = nil, analyticsGameplayConfiguration: mikros_framework_ios.AnalyticsGameplayConfiguration? = nil) throws
+  @objc public static func initialize(clientConfiguration: mikros_framework_ios.ClientConfiguration, analyticsEventConfiguration: mikros_framework_ios.AnalyticsEventConfiguration? = nil, analyticsSessionConfiguration: mikros_framework_ios.AnalyticsSessionConfiguration? = nil, analyticsMemoryConfiguration: mikros_framework_ios.AnalyticsMemoryConfiguration? = nil, analyticsExceptionConfiguration: mikros_framework_ios.AnalyticsExceptionConfiguration? = nil) throws
   @objc public static func getInstance() throws -> mikros_framework_ios.MikrosApiClientProtocol
   @objc override dynamic public init()
   @objc deinit
