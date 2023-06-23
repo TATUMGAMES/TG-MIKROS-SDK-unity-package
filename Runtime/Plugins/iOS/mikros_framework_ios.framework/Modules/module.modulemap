@@ -6,6 +6,6 @@ framework module mikros_framework_ios {
 }
 
 module mikros_framework_ios.Swift {
-  header "mikros_framework_ios-Swift.h"
-  requires objc
+    header "mikros_framework_ios-Swift.h"
+    requires objc
 }
