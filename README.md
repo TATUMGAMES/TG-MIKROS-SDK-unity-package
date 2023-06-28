@@ -500,14 +500,16 @@ TrackTutorialCompleteRequest.Builder()
 ```
 
 ##### Track Unlocked Achievement Request Object
-
-| Parameter               | Type                                                        | Field      |
-| ----------------------- | ----------------------------------------------------------- | ---------- |
-| achievementData         |  List<TrackUnlockedAchievementRequest.AchievementData>      | Required   |  
+```
+using Achievement = MikrosClient.Analytics.TrackUnlockedAchievementRequest.Achievement;
+```
+| Parameter       | Type                                                  | Field    |
+| --------------- | ----------------------------------------------------- | -------- |
+| achievementData | List<AchievementData> | Required |
 
 ```
-List<TrackUnlockedAchievementRequest.Achievement> achievements = new List<TrackUnlockedAchievementRequest.Achievement>();
-    TrackUnlockedAchievementRequest.Achievement achievement = TrackUnlockedAchievementRequest.Achievement.Builder()
+ List<Achievement> achievements = new List<Achievement>();
+    Achievement achievement = Achievement.Builder()
     .AchievementId(achievementId)
     .AchievementName(achievementName)
     .Create();
@@ -809,42 +811,45 @@ Mikros forms a Reputation profile for every users with the help of ratings provi
 Make sure to have the following namespaces defined at the top of your scripts:
 ```
 using MikrosClient;
-using MikrosClient.GameService;
+using Participant = MikrosClient.Analytics.TrackPlayerRatingRequest.Participant;
 ```
 
 ### Player Rating Request
 
-| Parameter                | Type                    | Field                           |
-| ------------------------ | ----------------------- | ------------------------------- |
-| appGameId                | String                  | Required (Provided internally)  |
-| apiKeyType               | String                  | Required (Provided internally)  |
-| sender                   | Sender                  | Required                        |
-| participants             | List<Participant>       | Required                        |
+| Parameter    | Type              | Field                          |
+| ------------ | ----------------- | ------------------------------ |
+| appGameId    | String            | Required (Provided internally) |
+| apiKeyType   | String            | Required (Provided internally) |
+| sender       | Sender            | Required                       |
+| participants | List<Participant> | Required                       |
 
 ### Sender Request
 *(Provided internally)
 
-| Parameter                | Type                    | Field                           |
-| ------------------------ | ----------------------- | ------------------------------- |
-| senderDistinctId         | String                  | Required                        |
+| Parameter | Type   | Field    |
+| --------- | ------ | -------- |
+| deviceId  | String | Required |
+| Username  | String | Required |
+| Email     | String | Required |
 
 ### Participant Request
 
-| Parameter                | Type                    | Field                                        |
-| ------------------------ | ----------------------- | -------------------------------------------- |
-| participantDeviceId      | String                  | Required                                     |
-| email                    | String                  | Optional                                     |
-| playerBehavior           | PlayerBehavior          | Required                                     |
-| value                    | Integer                 | Required (Generated w.r.t `playerBehavior`)  |
-| behavior                 | String                  | Required (Generated w.r.t `playerBehavior`)  |
+| Parameter      | Type           | Field                                       |
+| -------------- | -------------- | ------------------------------------------- |
+| Username       | String         | Required                                    |
+| email          | String         | Optional                                    |
+| playerBehavior | PlayerBehavior | Required                                    |
+| value          | Integer        | Required (Generated w.r.t `playerBehavior`) |
+| behavior       | String         | Required (Generated w.r.t `playerBehavior`) |
 
 Example of creating `PlayerRating` request using list of `Participant` data:
 ```
 List<Participant> participants = new List<Participant>();
 
+// participant #1
 Participant.Builder()
-    .DistinctId(participantDistinctId1)
-    .Email(email1)
+    .Username(username)
+    .Email(email)
     .Behavior(PlayerBehavior.CHEATING)
     .Create(
     participantRequest =>
@@ -856,8 +861,9 @@ Participant.Builder()
         // handle failure
     });
     
+// participant #2
 Participant.Builder()
-    .DistinctId(participantDistinctId2)
+    .Username(username)
     .Behavior(PlayerBehavior.GREAT_LEADERSHIP)
     .Create(
     participantRequest =>
@@ -869,12 +875,12 @@ Participant.Builder()
         // handle failure
     });
 
-PlayerRating.Builder()
+TrackPlayerRatingRequest.Builder()
     .Participants(participants)
     .Create(
     playerRatingRequest =>
     {
-        MikrosManager.Instance.GameServiceController.SendPlayerRating(playerRatingRequest, response =>
+        MikrosManager.Instance.AnalyticsController.LogEvent(playerRatingRequest, response =>
         {
             STATUS_TYPE statusType = Utils.DetectStatusType(response.Status.StatusCode);
             if(statusType == STATUS_TYPE.SUCCESS)
@@ -883,11 +889,11 @@ PlayerRating.Builder()
             }
             else if(statusType == STATUS_TYPE.ERROR)
             {
-                // Error occured during player rating submission
+                // Error occurred during player rating submission
             }
             else
             {
-                // other StatusCode that is related to other types of errors.
+                // Other StatusCode that is related to other types of errors
             }
         });
     },
