@@ -1,7 +1,7 @@
 ## Table of Contents
 
-* [What is MIKROS?](#what-is-mikros)
-* [How Does MIKROS Work?](#how-does-mikros-work)
+* [About Tatum Games](#about-tatum-games)
+* [About MIKROS](#about-mikros)
 * [Installation](#installation)
 * [How to Implement MIKROS?](#how-to-implement-mikros)
 * [SDK Initialization](#sdk-initialization)
@@ -15,15 +15,24 @@
 * [Mikros Button](#mikros-button)
 * [FAQ](*faq)
 
+<a name="about-tatum-games"></a>
+## About Tatum Games
+[Tatum Games](https://tatumgames.com/) is currently spearheading solutions to many of the pain points in the mobile game ecosystem, such as analytics and advertising. Specifically, they are addressing issues with targeted user acquisition for developers on smartphones.
 
+[table of contents](#table-of-contents)
 
-<a name="what-is-mikros"></a>
-## What Is MIKROS?
-MIKROS is a service aimed at game developers which provides useful information and clear analytics in a sharing ecosystem, also known as data pooling. These insights about user behaviour can help developers understand their clientele better including their spending habits. MIKROS uniquely displays its analytics in a simple format with the goal of connecting game developers and advertisers to a full understanding of the problems they are looking to solve. This is due to all the data being in the MIKROS ecosystem.
+<a name="about-mikros"></a>
+## About MIKROS
+In the simplest terms, [MIKROS](https://developer.tatumgames.com/) is an all-in-one mobile analytics platform that is focused on helping developers grow their games and connect with their users. Game developers are enrolled in an information sharing ecosystem that helps identify better insights about user behavior, including user spending habits.
 
-<a name="how-does-mikros-work"></a>
-## How Does MIKROS Work?
-MIKROS sorts users by spending and activity levels in its ecosystem. This differs from how data is currently managed by competitors as they do not offer any data pooling. Game developers and advertisers can then view reports in a dashboard with valuable information which is needed to identify areas to improve their customer experience. With MIKROS, advertisers can now be certain that their ads are being shown to verified spenders.
+By offering improved user targeting, users of MIKROS will in turn have improved user acquisition, and this improved user acquisition will ultimately lead to increased monetization and growth.
+
+📈 More About MIKROS:
+[Explainer](https://youtu.be/_B6szHOWe4o)
+[Stage Sever](https://stage-developer.tatumgames.com/))
+[Demo Sever](https://demo-developer.tatumgames.com/)) 
+
+[table of contents](#table-of-contents)
 
 <a name="installation"></a>
 ## Installation
@@ -42,6 +51,8 @@ Supply the following URL:
 ```
 https://github.com/TATUMGAMES/TG-MIKROS-SDK-unity-package.git
 ```
+
+[table of contents](#table-of-contents)
 
 <a name="how-to-implement-mikros"></a>
 ## How to Implement MIKROS?
@@ -63,6 +74,8 @@ Now, the client has to include the Mikros SDK into their gaming product and setu
 4. *(Optional)* You also have the option to select which API key to use at any development stage. By default, Production API Key is used.
 5. *(Optional)* Mikros collects and sends session data for better user insights and is also crucial for Analytics purpose. This can be enabled or disabled by the ***Auto Track User Session*** option from the Mikros Settings. By default, it is kept enabled and is recommended to keep it that way.
 6. *(Optional)* Mikros collects and sends metadata for better user insights and is also crucial for Analytics purpose. This can be enabled or disabled by the ***Auto Track User Metadata*** option from the Mikros Settings. By default, it is kept enabled and is recommended to keep it that way.
+
+[table of contents](#table-of-contents)
 
 <a name="sdk-initialization"></a>
 ### SDK Initialization
@@ -158,8 +171,9 @@ Configuration.Builder() .SetTrackDeviceMemory(isTrackDeviceMemory)
 
 *Note: The privacy configuration that is set in MikrosSettings from Editor, will always get overriden whenever a Configuration parameter is passed to the `MikrosManager.Instance.InitializeMikrosSDK` method.*
 
-
 You can use the `MikrosManager.Instance` and request objects to perform any operation. You will also need to pass in the correct response callbacks.
+
+[table of contents](#table-of-contents)
 
 <a name="privacy-standard"></a>
 ### Privacy Standard
@@ -200,6 +214,9 @@ If at any point it is required to customize logging of all type of user activity
 ```
 MikrosManager.Instance.ConfigurationController.SetAllTrackingEnabled(isAllTrackingEnabled);
 ```
+
+[table of contents](#table-of-contents)
+
 <a name="mikros-analytics"></a>
 ### Mikros Analytics
 Once the SDK is initialized, you can immediately start logging events (preset or custom) for analytics.
@@ -209,6 +226,8 @@ Make sure to have the following namespaces defined at the top of your scripts:
 using MikrosClient;
 using MikrosClient.Analytics;
 ```
+
+[table of contents](#table-of-contents)
 
 <a name="mikros-analytics-preset"></a>
 ### Preset Analytics Events
@@ -600,6 +619,8 @@ PurchaseCategory secondayPurchaseCategory = PurchaseCategory.Currency.GOLD;
 
 ```
 
+[table of contents](#table-of-contents)
+
 <a name="mikros-analytics-custom"></a>
 #### Custom Analytics Events
 Custom events can be tracked by the following ways:
@@ -672,6 +693,9 @@ All custom events are uploaded automatically to backend at a feasible time whene
 ```
 MikrosManager.Instance.AnalyticsController.FlushEvents();
 ```
+
+[table of contents](#table-of-contents)
+
 <a name="mikros-authentication"></a>
 ## Mikros Authentication
 To make any request you must first create a request object. This object uses a builder pattern, which is a design pattern designed to provide a flexible solution to various object creation problems. The intent of the Builder design pattern is to separate the construction of a complex object from its representation.
@@ -903,6 +927,8 @@ TrackPlayerRatingRequest.Builder()
     });
 ```
 
+[table of contents](#table-of-contents)
+
 <a name="mikros-button"></a>
 ## Mikros Button
 Mikros Button is the gateway to the Mikros App Store. This button can be placed on the game UI by the integrators. It can be found at:
@@ -920,3 +946,12 @@ This makes the Mikros Button acts as an overlay on the game UI and can be dragge
 Integrators also have the option to customize the floating behavior.
 
 *NOTE: Mikros Button needs to be placed at the home screen UI of game to fulfil the basic requirement standards for making the app eligible to be listed on the Mikros Panel, which can be viewed by everyone in the Mikros ecosystem.* 
+
+[table of contents](#table-of-contents)
+
+<a name="changelog"></a> 
+## CHANGELOG
+
+Format: (yyyy-mm-dd)
+1. 2021-12-21: Readme created/updated\
+2. 2023-08-07: Synchronized company and product descripton\
