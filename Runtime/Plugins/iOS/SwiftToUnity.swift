@@ -70,11 +70,9 @@ import mikros_framework_ios
     /// @param isWifi Status of internet connectivity.
     @objc public func updateMetaData(latitude: String,
                                      longitude: String,
-									 deviceBattery: String,
                                      deviceModel: String,
                                      deviceOS: String,
                                      deviceOSVersion: String,
-									 deviceOrientation:String,
                                      deviceScreenDpi: String,
                                      deviceScreenHeight: String,
                                      deviceScreenWidth: String,
@@ -85,11 +83,9 @@ import mikros_framework_ios
             let updateMetaDataBuilder = try UserMetadataBuilder()
                 .set(latitude: latitude)
                 .set(longitude: longitude)
-				.set(deviceBattery: deviceBattery)
                 .set(deviceModel: deviceModel)
                 .set(deviceOS: deviceOS)
                 .set(deviceOSVersion: deviceOSVersion)
-				.set(deviceOrientation:deviceOrientation)
                 .set(deviceScreenDpi: deviceScreenDpi)
                 .set(deviceScreenHeight: deviceScreenHeight)
                 .set(deviceScreenWidth: deviceScreenWidth)
@@ -98,21 +94,6 @@ import mikros_framework_ios
                 .create()
             mikrosApiClientProvider.updateUserMetadata(userMetadata: updateMetaDataBuilder)
         } catch let error {
-            print(error)
-        }
-    }
-    
-	/// Update DeviceId requests.
-    /// @param deviceId.
-    @objc public func updateUserDeviceId(deviceId : NSString)
-    {
-        do{
-            let strDeviceId = String(deviceId)
-            let mikrosApiClientProvider = try MikrosApiClientProvider.getInstance()
-            mikrosApiClientProvider.updateDeviceId(deviceId: strDeviceId)
-        }
-        catch let error
-        {
             print(error)
         }
     }
@@ -185,8 +166,6 @@ import mikros_framework_ios
         }
     }
 
-    /// Used to set the status of Memory Logging.
-    /// @param isEventLogging Enable or disable Mikros Memory Logging.
     @objc public func updateMemoryLogging(isEventLogging: Bool) {
         do {
             let mikrosApiClientProvider = try MikrosApiClientProvider.getInstance()
@@ -195,8 +174,7 @@ import mikros_framework_ios
             print(error)
         }
     }
-    
-    /// Used to flush memory event.
+
     @objc public func flushMemoryEvents() {
         do {
             let mikrosApiClientProvider = try MikrosApiClientProvider.getInstance()
@@ -206,21 +184,10 @@ import mikros_framework_ios
         }
     }
 
-    /// Used to flush session event.
     @objc public func flushSessionEvents() {
         do {
             let mikrosApiClientProvider = try MikrosApiClientProvider.getInstance()
             mikrosApiClientProvider.flushSessionEvents()
-        } catch let error {
-            print(error)
-        }
-    }
-    
-    /// Used to flush gameplay event.
-    @objc public func flushGameplayEvents() {
-        do {
-            let mikrosApiClientProvider = try MikrosApiClientProvider.getInstance()
-            mikrosApiClientProvider.flushGameplayEvents()
         } catch let error {
             print(error)
         }

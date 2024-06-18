@@ -2487,7 +2487,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -4292,7 +4292,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -5600,7 +5600,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -5625,7 +5625,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -6740,7 +6740,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -6765,7 +6765,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -8099,12 +8099,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(mikros_framework_ios.APIError.Type) -> (Swift.Error) -> mikros_framework_ios.APIError",
+                "printedName": "(mikros_framework_ios.APIError.Type) -> (any Swift.Error) -> mikros_framework_ios.APIError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error) -> mikros_framework_ios.APIError",
+                    "printedName": "(any Swift.Error) -> mikros_framework_ios.APIError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -8115,12 +8115,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(error: Swift.Error)",
+                        "printedName": "(error: any Swift.Error)",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ]
@@ -9911,7 +9911,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -11267,7 +11267,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -12165,12 +12165,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "mikros_framework_ios.BaseAnalyticsExceptionConfiguration?",
+                "printedName": "(any mikros_framework_ios.BaseAnalyticsExceptionConfiguration)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "BaseAnalyticsExceptionConfiguration",
-                    "printedName": "mikros_framework_ios.BaseAnalyticsExceptionConfiguration",
+                    "printedName": "any mikros_framework_ios.BaseAnalyticsExceptionConfiguration",
                     "usr": "s:20mikros_framework_ios35BaseAnalyticsExceptionConfigurationP"
                   }
                 ],
@@ -13977,12 +13977,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "mikros_framework_ios.BaseAnalyticsEventConfiguration?",
+                "printedName": "(any mikros_framework_ios.BaseAnalyticsEventConfiguration)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "BaseAnalyticsEventConfiguration",
-                    "printedName": "mikros_framework_ios.BaseAnalyticsEventConfiguration",
+                    "printedName": "any mikros_framework_ios.BaseAnalyticsEventConfiguration",
                     "usr": "s:20mikros_framework_ios31BaseAnalyticsEventConfigurationP"
                   }
                 ],
@@ -18061,7 +18061,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "OnHttpRequestListener",
-                "printedName": "mikros_framework_ios.OnHttpRequestListener",
+                "printedName": "any mikros_framework_ios.OnHttpRequestListener",
                 "usr": "s:20mikros_framework_ios21OnHttpRequestListenerP"
               }
             ],
@@ -18705,12 +18705,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "mikros_framework_ios.BaseAnalyticsMemoryConfiguration?",
+                "printedName": "(any mikros_framework_ios.BaseAnalyticsMemoryConfiguration)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "BaseAnalyticsMemoryConfiguration",
-                    "printedName": "mikros_framework_ios.BaseAnalyticsMemoryConfiguration",
+                    "printedName": "any mikros_framework_ios.BaseAnalyticsMemoryConfiguration",
                     "usr": "s:20mikros_framework_ios32BaseAnalyticsMemoryConfigurationP"
                   }
                 ],
@@ -19870,7 +19870,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -24504,7 +24504,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -28475,7 +28475,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -29943,7 +29943,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Decodable) -> τ_1_0?",
+                "printedName": "(any Swift.Decodable) -> τ_1_0?",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -29961,7 +29961,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Decodable",
-                    "printedName": "Swift.Decodable",
+                    "printedName": "any Swift.Decodable",
                     "usr": "s:Se"
                   }
                 ]
@@ -30068,7 +30068,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Decodable) -> τ_1_0?",
+                "printedName": "(any Swift.Decodable) -> τ_1_0?",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -30086,7 +30086,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Decodable",
-                    "printedName": "Swift.Decodable",
+                    "printedName": "any Swift.Decodable",
                     "usr": "s:Se"
                   }
                 ]
@@ -31130,12 +31130,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "mikros_framework_ios.OnTrackSessionListener?",
+                "printedName": "(any mikros_framework_ios.OnTrackSessionListener)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "OnTrackSessionListener",
-                    "printedName": "mikros_framework_ios.OnTrackSessionListener",
+                    "printedName": "any mikros_framework_ios.OnTrackSessionListener",
                     "usr": "s:20mikros_framework_ios22OnTrackSessionListenerP"
                   }
                 ],
@@ -31332,12 +31332,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "mikros_framework_ios.OnTrackSessionListener?",
+                "printedName": "(any mikros_framework_ios.OnTrackSessionListener)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "OnTrackSessionListener",
-                    "printedName": "mikros_framework_ios.OnTrackSessionListener",
+                    "printedName": "any mikros_framework_ios.OnTrackSessionListener",
                     "usr": "s:20mikros_framework_ios22OnTrackSessionListenerP"
                   }
                 ],
@@ -31812,7 +31812,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "OnCaughtExceptionListener",
-                "printedName": "mikros_framework_ios.OnCaughtExceptionListener",
+                "printedName": "any mikros_framework_ios.OnCaughtExceptionListener",
                 "usr": "s:20mikros_framework_ios25OnCaughtExceptionListenerP"
               }
             ],
@@ -31846,7 +31846,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Error",
-                "printedName": "Swift.Error",
+                "printedName": "any Swift.Error",
                 "usr": "s:s5ErrorP"
               }
             ],
@@ -33053,12 +33053,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "mikros_framework_ios.BaseAnalyticsSessionConfiguration?",
+                "printedName": "(any mikros_framework_ios.BaseAnalyticsSessionConfiguration)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "BaseAnalyticsSessionConfiguration",
-                    "printedName": "mikros_framework_ios.BaseAnalyticsSessionConfiguration",
+                    "printedName": "any mikros_framework_ios.BaseAnalyticsSessionConfiguration",
                     "usr": "s:20mikros_framework_ios33BaseAnalyticsSessionConfigurationP"
                   }
                 ],
@@ -35014,12 +35014,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "mikros_framework_ios.OnTrackGameplayListener?",
+                "printedName": "(any mikros_framework_ios.OnTrackGameplayListener)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "OnTrackGameplayListener",
-                    "printedName": "mikros_framework_ios.OnTrackGameplayListener",
+                    "printedName": "any mikros_framework_ios.OnTrackGameplayListener",
                     "usr": "s:20mikros_framework_ios23OnTrackGameplayListenerP"
                   }
                 ],
@@ -35148,12 +35148,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "mikros_framework_ios.OnTrackGameplayListener?",
+                "printedName": "(any mikros_framework_ios.OnTrackGameplayListener)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "OnTrackGameplayListener",
-                    "printedName": "mikros_framework_ios.OnTrackGameplayListener",
+                    "printedName": "any mikros_framework_ios.OnTrackGameplayListener",
                     "usr": "s:20mikros_framework_ios23OnTrackGameplayListenerP"
                   }
                 ],
@@ -35265,12 +35265,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "mikros_framework_ios.BaseAnalyticsGameplayConfiguration?",
+                "printedName": "(any mikros_framework_ios.BaseAnalyticsGameplayConfiguration)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "BaseAnalyticsGameplayConfiguration",
-                    "printedName": "mikros_framework_ios.BaseAnalyticsGameplayConfiguration",
+                    "printedName": "any mikros_framework_ios.BaseAnalyticsGameplayConfiguration",
                     "usr": "s:20mikros_framework_ios34BaseAnalyticsGameplayConfigurationP"
                   }
                 ],
@@ -38519,7 +38519,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -41009,7 +41009,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -43637,12 +43637,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "mikros_framework_ios.BaseClientConfiguration?",
+                "printedName": "(any mikros_framework_ios.BaseClientConfiguration)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "BaseClientConfiguration",
-                    "printedName": "mikros_framework_ios.BaseClientConfiguration",
+                    "printedName": "any mikros_framework_ios.BaseClientConfiguration",
                     "usr": "s:20mikros_framework_ios23BaseClientConfigurationP"
                   }
                 ],
@@ -44440,7 +44440,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -47839,7 +47839,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "ProtocolComposition",
-                "printedName": "mikros_framework_ios.MikrosCrashDao & mikros_framework_ios.MikrosEventDao & mikros_framework_ios.MikrosGameplayDao & mikros_framework_ios.MikrosMemoryDao & mikros_framework_ios.MikrosSessionDao"
+                "printedName": "any mikros_framework_ios.MikrosCrashDao & mikros_framework_ios.MikrosEventDao & mikros_framework_ios.MikrosGameplayDao & mikros_framework_ios.MikrosMemoryDao & mikros_framework_ios.MikrosSessionDao"
               }
             ],
             "declKind": "Var",
@@ -49707,12 +49707,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "mikros_framework_ios.UncaughtExceptionCallback?",
+                "printedName": "(any mikros_framework_ios.UncaughtExceptionCallback)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "UncaughtExceptionCallback",
-                    "printedName": "mikros_framework_ios.UncaughtExceptionCallback",
+                    "printedName": "any mikros_framework_ios.UncaughtExceptionCallback",
                     "usr": "s:20mikros_framework_ios25UncaughtExceptionCallbackP"
                   }
                 ],
@@ -49774,12 +49774,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "mikros_framework_ios.UncaughtExceptionCallback?",
+                "printedName": "(any mikros_framework_ios.UncaughtExceptionCallback)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "UncaughtExceptionCallback",
-                    "printedName": "mikros_framework_ios.UncaughtExceptionCallback",
+                    "printedName": "any mikros_framework_ios.UncaughtExceptionCallback",
                     "usr": "s:20mikros_framework_ios25UncaughtExceptionCallbackP"
                   }
                 ],
@@ -53120,7 +53120,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -54464,24 +54464,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "MikrosAnalyticsEventLogger",
-            "printedName": "MikrosAnalyticsEventLogger",
-            "usr": "c:@M@mikros_framework_ios@objc(pl)MikrosAnalyticsEventLogger",
-            "mangledName": "$s20mikros_framework_ios26MikrosAnalyticsEventLoggerP"
+            "name": "MikrosAnalyticsGameplayLogger",
+            "printedName": "MikrosAnalyticsGameplayLogger",
+            "usr": "c:@M@mikros_framework_ios@objc(pl)MikrosAnalyticsGameplayLogger",
+            "mangledName": "$s20mikros_framework_ios29MikrosAnalyticsGameplayLoggerP"
           },
           {
             "kind": "Conformance",
-            "name": "MikrosAnalyticsSessionLogger",
-            "printedName": "MikrosAnalyticsSessionLogger",
-            "usr": "c:@M@mikros_framework_ios@objc(pl)MikrosAnalyticsSessionLogger",
-            "mangledName": "$s20mikros_framework_ios28MikrosAnalyticsSessionLoggerP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "MikrosAnalyticsMemoryLogger",
-            "printedName": "MikrosAnalyticsMemoryLogger",
-            "usr": "c:@M@mikros_framework_ios@objc(pl)MikrosAnalyticsMemoryLogger",
-            "mangledName": "$s20mikros_framework_ios27MikrosAnalyticsMemoryLoggerP"
+            "name": "MikrosAnalyticsGameplayConfigurationProperties",
+            "printedName": "MikrosAnalyticsGameplayConfigurationProperties",
+            "usr": "c:@M@mikros_framework_ios@objc(pl)MikrosAnalyticsGameplayConfigurationProperties",
+            "mangledName": "$s20mikros_framework_ios46MikrosAnalyticsGameplayConfigurationPropertiesP"
           },
           {
             "kind": "Conformance",
@@ -54492,24 +54485,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "MikrosAnalyticsGameplayLogger",
-            "printedName": "MikrosAnalyticsGameplayLogger",
-            "usr": "c:@M@mikros_framework_ios@objc(pl)MikrosAnalyticsGameplayLogger",
-            "mangledName": "$s20mikros_framework_ios29MikrosAnalyticsGameplayLoggerP"
+            "name": "MikrosAnalyticsExceptionConfigurationProperties",
+            "printedName": "MikrosAnalyticsExceptionConfigurationProperties",
+            "usr": "c:@M@mikros_framework_ios@objc(pl)MikrosAnalyticsExceptionConfigurationProperties",
+            "mangledName": "$s20mikros_framework_ios47MikrosAnalyticsExceptionConfigurationPropertiesP"
           },
           {
             "kind": "Conformance",
-            "name": "MikrosAnalyticsEventConfigurationProperties",
-            "printedName": "MikrosAnalyticsEventConfigurationProperties",
-            "usr": "c:@M@mikros_framework_ios@objc(pl)MikrosAnalyticsEventConfigurationProperties",
-            "mangledName": "$s20mikros_framework_ios43MikrosAnalyticsEventConfigurationPropertiesP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "MikrosAnalyticsSessionConfigurationProperties",
-            "printedName": "MikrosAnalyticsSessionConfigurationProperties",
-            "usr": "c:@M@mikros_framework_ios@objc(pl)MikrosAnalyticsSessionConfigurationProperties",
-            "mangledName": "$s20mikros_framework_ios45MikrosAnalyticsSessionConfigurationPropertiesP"
+            "name": "MikrosAnalyticsMemoryLogger",
+            "printedName": "MikrosAnalyticsMemoryLogger",
+            "usr": "c:@M@mikros_framework_ios@objc(pl)MikrosAnalyticsMemoryLogger",
+            "mangledName": "$s20mikros_framework_ios27MikrosAnalyticsMemoryLoggerP"
           },
           {
             "kind": "Conformance",
@@ -54520,17 +54506,31 @@
           },
           {
             "kind": "Conformance",
-            "name": "MikrosAnalyticsExceptionConfigurationProperties",
-            "printedName": "MikrosAnalyticsExceptionConfigurationProperties",
-            "usr": "c:@M@mikros_framework_ios@objc(pl)MikrosAnalyticsExceptionConfigurationProperties",
-            "mangledName": "$s20mikros_framework_ios47MikrosAnalyticsExceptionConfigurationPropertiesP"
+            "name": "MikrosAnalyticsSessionLogger",
+            "printedName": "MikrosAnalyticsSessionLogger",
+            "usr": "c:@M@mikros_framework_ios@objc(pl)MikrosAnalyticsSessionLogger",
+            "mangledName": "$s20mikros_framework_ios28MikrosAnalyticsSessionLoggerP"
           },
           {
             "kind": "Conformance",
-            "name": "MikrosAnalyticsGameplayConfigurationProperties",
-            "printedName": "MikrosAnalyticsGameplayConfigurationProperties",
-            "usr": "c:@M@mikros_framework_ios@objc(pl)MikrosAnalyticsGameplayConfigurationProperties",
-            "mangledName": "$s20mikros_framework_ios46MikrosAnalyticsGameplayConfigurationPropertiesP"
+            "name": "MikrosAnalyticsSessionConfigurationProperties",
+            "printedName": "MikrosAnalyticsSessionConfigurationProperties",
+            "usr": "c:@M@mikros_framework_ios@objc(pl)MikrosAnalyticsSessionConfigurationProperties",
+            "mangledName": "$s20mikros_framework_ios45MikrosAnalyticsSessionConfigurationPropertiesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MikrosAnalyticsEventLogger",
+            "printedName": "MikrosAnalyticsEventLogger",
+            "usr": "c:@M@mikros_framework_ios@objc(pl)MikrosAnalyticsEventLogger",
+            "mangledName": "$s20mikros_framework_ios26MikrosAnalyticsEventLoggerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MikrosAnalyticsEventConfigurationProperties",
+            "printedName": "MikrosAnalyticsEventConfigurationProperties",
+            "usr": "c:@M@mikros_framework_ios@objc(pl)MikrosAnalyticsEventConfigurationProperties",
+            "mangledName": "$s20mikros_framework_ios43MikrosAnalyticsEventConfigurationPropertiesP"
           }
         ]
       },
@@ -54976,7 +54976,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -55004,7 +55004,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -58585,7 +58585,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -62561,7 +62561,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -64067,7 +64067,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -66063,12 +66063,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((Swift.Double?, Swift.Error?) -> ())?",
+                "printedName": "((Swift.Double?, (any Swift.Error)?) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Double?, Swift.Error?) -> ()",
+                    "printedName": "(Swift.Double?, (any Swift.Error)?) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -66078,7 +66078,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(Swift.Double?, Swift.Error?)",
+                        "printedName": "(Swift.Double?, (any Swift.Error)?)",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -66097,12 +66097,12 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Optional",
-                            "printedName": "Swift.Error?",
+                            "printedName": "(any Swift.Error)?",
                             "children": [
                               {
                                 "kind": "TypeNominal",
                                 "name": "Error",
-                                "printedName": "Swift.Error",
+                                "printedName": "any Swift.Error",
                                 "usr": "s:s5ErrorP"
                               }
                             ],
@@ -66122,9 +66122,9 @@
             "moduleName": "mikros_framework_ios",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -66136,12 +66136,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((Swift.Double?, Swift.Error?) -> ())?",
+                    "printedName": "((Swift.Double?, (any Swift.Error)?) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.Double?, Swift.Error?) -> ()",
+                        "printedName": "(Swift.Double?, (any Swift.Error)?) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -66151,7 +66151,7 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Tuple",
-                            "printedName": "(Swift.Double?, Swift.Error?)",
+                            "printedName": "(Swift.Double?, (any Swift.Error)?)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -66170,12 +66170,12 @@
                               {
                                 "kind": "TypeNominal",
                                 "name": "Optional",
-                                "printedName": "Swift.Error?",
+                                "printedName": "(any Swift.Error)?",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
                                     "name": "Error",
-                                    "printedName": "Swift.Error",
+                                    "printedName": "any Swift.Error",
                                     "usr": "s:s5ErrorP"
                                   }
                                 ],
@@ -66210,12 +66210,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((Swift.Double?, Swift.Error?) -> ())?",
+                    "printedName": "((Swift.Double?, (any Swift.Error)?) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.Double?, Swift.Error?) -> ()",
+                        "printedName": "(Swift.Double?, (any Swift.Error)?) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -66225,7 +66225,7 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Tuple",
-                            "printedName": "(Swift.Double?, Swift.Error?)",
+                            "printedName": "(Swift.Double?, (any Swift.Error)?)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
@@ -66244,12 +66244,12 @@
                               {
                                 "kind": "TypeNominal",
                                 "name": "Optional",
-                                "printedName": "Swift.Error?",
+                                "printedName": "(any Swift.Error)?",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
                                     "name": "Error",
-                                    "printedName": "Swift.Error",
+                                    "printedName": "any Swift.Error",
                                     "usr": "s:s5ErrorP"
                                   }
                                 ],
@@ -66318,9 +66318,9 @@
             "moduleName": "mikros_framework_ios",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -66432,9 +66432,9 @@
             "moduleName": "mikros_framework_ios",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -66538,9 +66538,9 @@
             "moduleName": "mikros_framework_ios",
             "isOpen": true,
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
-              "HasStorage"
+              "HasStorage",
+              "Custom"
             ],
             "hasStorage": true,
             "accessors": [
@@ -66652,7 +66652,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Double?, Swift.Error?) -> ()",
+                "printedName": "(Swift.Double?, (any Swift.Error)?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -66662,7 +66662,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(Swift.Double?, Swift.Error?)",
+                    "printedName": "(Swift.Double?, (any Swift.Error)?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -66681,12 +66681,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -66722,7 +66722,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Double?, Swift.Error?) -> ()",
+                "printedName": "(Swift.Double?, (any Swift.Error)?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -66732,7 +66732,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(Swift.Double?, Swift.Error?)",
+                    "printedName": "(Swift.Double?, (any Swift.Error)?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -66751,12 +66751,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -66845,12 +66845,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -67033,6 +67033,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -67472,7 +67479,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -68139,7 +68146,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -70904,7 +70911,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -70932,7 +70939,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -71549,7 +71556,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "MikrosApiClientProtocol",
-                "printedName": "mikros_framework_ios.MikrosApiClientProtocol",
+                "printedName": "any mikros_framework_ios.MikrosApiClientProtocol",
                 "usr": "c:@M@mikros_framework_ios@objc(pl)MikrosApiClientProtocol"
               }
             ],
@@ -74017,6 +74024,16 @@
         "usr": "s:10Foundation3URLV",
         "mangledName": "$s10Foundation3URLV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -74223,6 +74240,7 @@
         "mangledName": "$sSS",
         "moduleName": "Swift",
         "declAttributes": [
+          "EagerMove",
           "Frozen"
         ],
         "isExternal": true,
@@ -74800,36 +74818,31 @@
         "usr": "s:10Foundation4DateV",
         "mangledName": "$s10Foundation4DateV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "ReferenceConvertible",
-            "printedName": "ReferenceConvertible",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ReferenceType",
-                "printedName": "ReferenceType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSDate",
-                    "printedName": "Foundation.NSDate",
-                    "usr": "c:objc(cs)NSDate"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation20ReferenceConvertibleP",
-            "mangledName": "$s10Foundation20ReferenceConvertibleP"
-          },
           {
             "kind": "Conformance",
             "name": "Comparable",
             "printedName": "Comparable",
             "usr": "s:SL",
             "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -74844,35 +74857,6 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Strideable",
-            "printedName": "Strideable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Stride",
-                "printedName": "Stride",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:Sx",
-            "mangledName": "$sSx"
           },
           {
             "kind": "Conformance",
@@ -74894,6 +74878,42 @@
             "printedName": "CustomReflectable",
             "usr": "s:s17CustomReflectableP",
             "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDate",
+                    "printedName": "Foundation.NSDate",
+                    "usr": "c:objc(cs)NSDate"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -74926,17 +74946,25 @@
           },
           {
             "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
+            "name": "Strideable",
+            "printedName": "Strideable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Stride",
+                "printedName": "Stride",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sx",
+            "mangledName": "$sSx"
           }
         ]
       }
@@ -74945,1344 +74973,1344 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Utils\/Platform.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Utils\/Platform.swift",
       "kind": "StringLiteral",
       "offset": 627,
       "length": 5,
       "value": "\"ios\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Request\/Model\/TrackHttpRequest\/TrackHttpRequestBuilder.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Request\/Model\/TrackHttpRequest\/TrackHttpRequestBuilder.swift",
       "kind": "StringLiteral",
       "offset": 1323,
       "length": 3,
       "value": "\"0\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
       "kind": "StringLiteral",
       "offset": 719,
       "length": 11,
       "value": "\"test-keys\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
       "kind": "StringLiteral",
       "offset": 781,
       "length": 11,
       "value": "\"\/bin\/bash\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
       "kind": "StringLiteral",
       "offset": 810,
       "length": 16,
       "value": "\"\/usr\/sbin\/sshd\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
       "kind": "StringLiteral",
       "offset": 844,
       "length": 10,
       "value": "\"\/etc\/apt\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
       "kind": "StringLiteral",
       "offset": 872,
       "length": 23,
       "value": "\"\/private\/var\/lib\/apt\/\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
       "kind": "StringLiteral",
       "offset": 913,
       "length": 25,
       "value": "\"\/Applications\/Cydia.app\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
       "kind": "StringLiteral",
       "offset": 956,
       "length": 48,
       "value": "\"\/Library\/MobileSubstrate\/MobileSubstrate.dylib\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
       "kind": "StringLiteral",
       "offset": 1022,
       "length": 59,
       "value": "\"\/Library\/MobileSubstrate\/DynamicLibraries\/LiveClock.plist\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
       "kind": "StringLiteral",
       "offset": 1099,
       "length": 56,
       "value": "\"\/Library\/MobileSubstrate\/DynamicLibraries\/Veency.plist\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
       "kind": "StringLiteral",
       "offset": 1173,
       "length": 47,
       "value": "\"\/private\/var\/mobile\/Library\/SBSettings\/Themes\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
       "kind": "StringLiteral",
       "offset": 1238,
       "length": 51,
       "value": "\"\/System\/Library\/LaunchDaemons\/com.ikey.bbot.plist\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
       "kind": "StringLiteral",
       "offset": 1307,
       "length": 26,
       "value": "\"\/usr\/libexec\/sftp-server\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
       "kind": "StringLiteral",
       "offset": 1351,
       "length": 20,
       "value": "\"\/private\/var\/stash\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Utils\/DeviceUtils.swift",
       "kind": "BooleanLiteral",
       "offset": 1412,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Events\/MikrosEvent\/MikrosEvent.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Events\/MikrosEvent\/MikrosEvent.swift",
       "kind": "StringLiteral",
       "offset": 657,
       "length": 11,
       "value": "\"mikros_framework_ios.MikrosEvent\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Configuration\/AnalyticsExceptionConfiguration.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Configuration\/AnalyticsExceptionConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 214,
       "length": 31,
       "value": "\"mikros_framework_ios.AnalyticsExceptionConfiguration\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Configuration\/AnalyticsExceptionConfiguration.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Configuration\/AnalyticsExceptionConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 1109,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Configuration\/AnalyticsEventConfiguration.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Configuration\/AnalyticsEventConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 720,
       "length": 27,
       "value": "\"mikros_framework_ios.AnalyticsEventConfiguration\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Configuration\/AnalyticsEventConfiguration.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Configuration\/AnalyticsEventConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 3035,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Constants\/HttpConstants.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Constants\/HttpConstants.swift",
       "kind": "StringLiteral",
       "offset": 641,
       "length": 10,
       "value": "\"X-Apikey\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Client\/MikrosApiClient.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Client\/MikrosApiClient.swift",
       "kind": "StringLiteral",
       "offset": 721,
       "length": 16,
       "value": "\"Value \""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Client\/MikrosApiClient.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Client\/MikrosApiClient.swift",
       "kind": "StringLiteral",
       "offset": 736,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Client\/MikrosApiClient.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Client\/MikrosApiClient.swift",
       "kind": "StringLiteral",
       "offset": 983,
       "length": 30,
       "value": "\"Unable to create crash event\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Client\/MikrosApiClient.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Client\/MikrosApiClient.swift",
       "kind": "StringLiteral",
       "offset": 1170,
       "length": 15,
       "value": "\"mikros_framework_ios.MikrosApiClient\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Configuration\/Properties\/CommonAnalyticsEventConfigurationProperties.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Configuration\/Properties\/CommonAnalyticsEventConfigurationProperties.swift",
       "kind": "BooleanLiteral",
       "offset": 1828,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Client\/BaseApiClient.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Client\/BaseApiClient.swift",
       "kind": "StringLiteral",
       "offset": 897,
       "length": 13,
       "value": "\"mikros_framework_ios.BaseApiClient\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Configuration\/AnalyticsMemoryConfiguration.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Configuration\/AnalyticsMemoryConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 721,
       "length": 28,
       "value": "\"mikros_framework_ios.AnalyticsMemoryConfiguration\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Configuration\/AnalyticsMemoryConfiguration.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Configuration\/AnalyticsMemoryConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 3060,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 1456,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 1462,
       "length": 3,
       "value": "299"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 1505,
       "length": 21,
       "value": "\"Unknown status code\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 1696,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 1701,
       "length": 10,
       "value": "\"Continue\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 1756,
       "length": 3,
       "value": "101"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 1761,
       "length": 21,
       "value": "\"Switching Protocols\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 1819,
       "length": 3,
       "value": "102"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 1824,
       "length": 12,
       "value": "\"Processing\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 1977,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 1982,
       "length": 4,
       "value": "\"OK\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2020,
       "length": 3,
       "value": "201"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 2025,
       "length": 9,
       "value": "\"Created\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2069,
       "length": 3,
       "value": "202"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 2074,
       "length": 10,
       "value": "\"Accepted\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2138,
       "length": 3,
       "value": "203"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 2143,
       "length": 31,
       "value": "\"Non-Authoritative Information\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2210,
       "length": 3,
       "value": "204"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 2215,
       "length": 12,
       "value": "\"No Content\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2266,
       "length": 3,
       "value": "205"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 2271,
       "length": 15,
       "value": "\"Reset Content\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2327,
       "length": 3,
       "value": "206"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 2332,
       "length": 17,
       "value": "\"Partial Content\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2387,
       "length": 3,
       "value": "207"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 2392,
       "length": 14,
       "value": "\"Multi-Status\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2574,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 2579,
       "length": 18,
       "value": "\"Multiple Choices\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2640,
       "length": 3,
       "value": "301"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 2645,
       "length": 19,
       "value": "\"Moved Permanently\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2696,
       "length": 3,
       "value": "302"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 2701,
       "length": 7,
       "value": "\"Found\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2743,
       "length": 3,
       "value": "303"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 2748,
       "length": 11,
       "value": "\"See Other\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2797,
       "length": 3,
       "value": "304"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 2802,
       "length": 14,
       "value": "\"Not Modified\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2851,
       "length": 3,
       "value": "305"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 2856,
       "length": 11,
       "value": "\"Use Proxy\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2905,
       "length": 3,
       "value": "306"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 2910,
       "length": 14,
       "value": "\"Switch Proxy\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 2968,
       "length": 3,
       "value": "307"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 2973,
       "length": 20,
       "value": "\"Temporary Redirect\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 3037,
       "length": 3,
       "value": "308"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 3042,
       "length": 20,
       "value": "\"Permanent Redirect\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 3171,
       "length": 3,
       "value": "400"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 3176,
       "length": 13,
       "value": "\"Bad Request\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 3228,
       "length": 3,
       "value": "401"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 3233,
       "length": 14,
       "value": "\"Unauthorized\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 3289,
       "length": 3,
       "value": "402"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 3294,
       "length": 18,
       "value": "\"Payment Required\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 3348,
       "length": 3,
       "value": "403"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 3353,
       "length": 11,
       "value": "\"Forbidden\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 3399,
       "length": 3,
       "value": "404"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 3404,
       "length": 11,
       "value": "\"Not Found\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 3458,
       "length": 3,
       "value": "405"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 3463,
       "length": 20,
       "value": "\"Method Not Allowed\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 3523,
       "length": 3,
       "value": "406"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 3528,
       "length": 16,
       "value": "\"Not Acceptable\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 3598,
       "length": 3,
       "value": "407"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 3603,
       "length": 31,
       "value": "\"Proxy Authentication Required\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 3675,
       "length": 3,
       "value": "408"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 3680,
       "length": 17,
       "value": "\"Request Timeout\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 3732,
       "length": 3,
       "value": "409"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 3737,
       "length": 10,
       "value": "\"Conflict\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 3778,
       "length": 3,
       "value": "410"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 3783,
       "length": 6,
       "value": "\"Gone\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 3830,
       "length": 3,
       "value": "411"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 3835,
       "length": 17,
       "value": "\"Length Required\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 3897,
       "length": 3,
       "value": "412"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 3902,
       "length": 21,
       "value": "\"Precondition Failed\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 3965,
       "length": 3,
       "value": "413"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 3970,
       "length": 19,
       "value": "\"Payload Too Large\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 4033,
       "length": 3,
       "value": "414"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 4038,
       "length": 22,
       "value": "\"Request-URI Too Long\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 4107,
       "length": 3,
       "value": "415"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 4112,
       "length": 24,
       "value": "\"Unsupported Media Type\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 4191,
       "length": 3,
       "value": "416"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 4196,
       "length": 33,
       "value": "\"Requested Range Not Satisfiable\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 4273,
       "length": 3,
       "value": "417"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 4278,
       "length": 20,
       "value": "\"Expectation Failed\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 4344,
       "length": 3,
       "value": "422"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 4349,
       "length": 22,
       "value": "\"Unprocessable Entity\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 4404,
       "length": 3,
       "value": "423"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 4409,
       "length": 8,
       "value": "\"Locked\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 4460,
       "length": 3,
       "value": "424"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 4465,
       "length": 19,
       "value": "\"Failed Dependency\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 4526,
       "length": 3,
       "value": "426"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 4531,
       "length": 18,
       "value": "\"Upgrade Required\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 4591,
       "length": 3,
       "value": "429"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 4596,
       "length": 19,
       "value": "\"Too Many Requests\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 4668,
       "length": 3,
       "value": "431"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 4673,
       "length": 33,
       "value": "\"Request Header Fields Too Large\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 4876,
       "length": 3,
       "value": "500"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 4881,
       "length": 23,
       "value": "\"Internal Server Error\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 4945,
       "length": 3,
       "value": "501"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 4950,
       "length": 17,
       "value": "\"Not Implemented\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 5004,
       "length": 3,
       "value": "502"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 5009,
       "length": 13,
       "value": "\"Bad Gateway\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 5067,
       "length": 3,
       "value": "503"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 5072,
       "length": 21,
       "value": "\"Service Unavailable\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 5134,
       "length": 3,
       "value": "504"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 5139,
       "length": 17,
       "value": "\"Gateway Timeout\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 5202,
       "length": 3,
       "value": "505"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 5207,
       "length": 28,
       "value": "\"HTTP Version Not Supported\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 5283,
       "length": 3,
       "value": "506"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 5288,
       "length": 25,
       "value": "\"Variant Also Negotiates\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "IntegerLiteral",
       "offset": 5359,
       "length": 3,
       "value": "507"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Response\/Protocol\/HttpResponse.swift",
       "kind": "StringLiteral",
       "offset": 5364,
       "length": 22,
       "value": "\"Insufficient Storage\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Utils\/Utils.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Utils\/Utils.swift",
       "kind": "StringLiteral",
       "offset": 641,
       "length": 9,
       "value": "\"HANDLED\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Utils\/Utils.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Utils\/Utils.swift",
       "kind": "StringLiteral",
       "offset": 672,
       "length": 11,
       "value": "\"UNHANDLED\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Utils\/Utils.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Utils\/Utils.swift",
       "kind": "StringLiteral",
       "offset": 641,
       "length": 9,
       "value": "\"HANDLED\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Utils\/Utils.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Utils\/Utils.swift",
       "kind": "StringLiteral",
       "offset": 672,
       "length": 11,
       "value": "\"UNHANDLED\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Constants\/ConfigurationConstants.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Constants\/ConfigurationConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 791,
       "length": 3,
       "value": "600"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Constants\/ConfigurationConstants.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Constants\/ConfigurationConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 841,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Constants\/ConfigurationConstants.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Constants\/ConfigurationConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 890,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Constants\/ConfigurationConstants.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Constants\/ConfigurationConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 1123,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Constants\/ConfigurationConstants.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Constants\/ConfigurationConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 1263,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Exception\/StackSymbolParser.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Exception\/StackSymbolParser.swift",
       "kind": "StringLiteral",
       "offset": 678,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Configuration\/Properties\/CommonAnalyticsExceptionConfigurationProperties.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Configuration\/Properties\/CommonAnalyticsExceptionConfigurationProperties.swift",
       "kind": "BooleanLiteral",
       "offset": 1171,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Configuration\/AnalyticsSessionConfiguration.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Configuration\/AnalyticsSessionConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 726,
       "length": 29,
       "value": "\"mikros_framework_ios.AnalyticsSessionConfiguration\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Configuration\/AnalyticsSessionConfiguration.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Configuration\/AnalyticsSessionConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 2398,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Database\/MikrosDatabase.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Database\/MikrosDatabase.swift",
       "kind": "StringLiteral",
       "offset": 930,
       "length": 17,
       "value": "\"MikrosDataModel\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Database\/MikrosDatabase.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Database\/MikrosDatabase.swift",
       "kind": "StringLiteral",
       "offset": 1043,
       "length": 6,
       "value": "\"momd\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Database\/MikrosDatabase.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Database\/MikrosDatabase.swift",
       "kind": "StringLiteral",
       "offset": 1081,
       "length": 33,
       "value": "\"Error loading model from bundle\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Database\/MikrosDatabase.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Database\/MikrosDatabase.swift",
       "kind": "StringLiteral",
       "offset": 1224,
       "length": 42,
       "value": "\"Error initializing mom from: \""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Database\/MikrosDatabase.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Database\/MikrosDatabase.swift",
       "kind": "StringLiteral",
       "offset": 1265,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Database\/MikrosDatabase.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Database\/MikrosDatabase.swift",
       "kind": "StringLiteral",
       "offset": 1597,
       "length": 41,
       "value": "\"persistentContainer = \""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Database\/MikrosDatabase.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Database\/MikrosDatabase.swift",
       "kind": "StringLiteral",
       "offset": 1637,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Configuration\/AnalyticsGameplayConfiguration.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Configuration\/AnalyticsGameplayConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 1146,
       "length": 30,
       "value": "\"mikros_framework_ios.AnalyticsGameplayConfiguration\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Configuration\/AnalyticsGameplayConfiguration.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Configuration\/AnalyticsGameplayConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 2601,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Configuration\/Properties\/CommonAnalyticsSessionConfigurationProperties.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Configuration\/Properties\/CommonAnalyticsSessionConfigurationProperties.swift",
       "kind": "BooleanLiteral",
       "offset": 2436,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Configuration\/Properties\/CommonAnalyticsMemoryConfigurationProperties.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Configuration\/Properties\/CommonAnalyticsMemoryConfigurationProperties.swift",
       "kind": "BooleanLiteral",
       "offset": 1830,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Configuration\/ClientConfiguration.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Configuration\/ClientConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 904,
       "length": 30,
       "value": "\"mikros\/mobile\/trackException\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Configuration\/ClientConfiguration.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Configuration\/ClientConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 980,
       "length": 34,
       "value": "\"mikros\/mobile\/custom\/trackEvents\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Configuration\/ClientConfiguration.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Configuration\/ClientConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 1062,
       "length": 29,
       "value": "\"mikros\/mobile\/trackSessions\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Configuration\/ClientConfiguration.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Configuration\/ClientConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 1131,
       "length": 27,
       "value": "\"mikros\/mobile\/trackMemory\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Configuration\/ClientConfiguration.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Configuration\/ClientConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 1200,
       "length": 29,
       "value": "\"mikros\/mobile\/trackGameplay\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Configuration\/ClientConfiguration.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Configuration\/ClientConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 1279,
       "length": 30,
       "value": "\"mikros\/mobile\/trackException\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Configuration\/ClientConfiguration.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Configuration\/ClientConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 1354,
       "length": 32,
       "value": "\"mikros\/mobile\/trackHttpFailure\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Configuration\/ClientConfiguration.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Configuration\/ClientConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 1431,
       "length": 32,
       "value": "\"mikros\/mobile\/trackHttpSuccess\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Configuration\/ClientConfiguration.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Configuration\/ClientConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 1510,
       "length": 34,
       "value": "\"mikros\/mobile\/updateUserMetaData\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Configuration\/ClientConfiguration.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Configuration\/ClientConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 705,
       "length": 19,
       "value": "\"mikros_framework_ios.ClientConfiguration\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Configuration\/Properties\/CommonAnalyticsGamePlayConfigurationProperties.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Configuration\/Properties\/CommonAnalyticsGamePlayConfigurationProperties.swift",
       "kind": "BooleanLiteral",
       "offset": 1168,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Request\/Protocol\/RequestProtocol.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Request\/Protocol\/RequestProtocol.swift",
       "kind": "StringLiteral",
       "offset": 634,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Request\/Protocol\/RequestProtocol.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Request\/Protocol\/RequestProtocol.swift",
       "kind": "StringLiteral",
       "offset": 656,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Request\/Protocol\/RequestProtocol.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Request\/Protocol\/RequestProtocol.swift",
       "kind": "StringLiteral",
       "offset": 678,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Request\/Protocol\/RequestProtocol.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Request\/Protocol\/RequestProtocol.swift",
       "kind": "StringLiteral",
       "offset": 701,
       "length": 7,
       "value": "\"PATCH\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Request\/Protocol\/RequestProtocol.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Request\/Protocol\/RequestProtocol.swift",
       "kind": "StringLiteral",
       "offset": 727,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Request\/Protocol\/RequestProtocol.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Request\/Protocol\/RequestProtocol.swift",
       "kind": "StringLiteral",
       "offset": 634,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Request\/Protocol\/RequestProtocol.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Request\/Protocol\/RequestProtocol.swift",
       "kind": "StringLiteral",
       "offset": 656,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Request\/Protocol\/RequestProtocol.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Request\/Protocol\/RequestProtocol.swift",
       "kind": "StringLiteral",
       "offset": 678,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Request\/Protocol\/RequestProtocol.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Request\/Protocol\/RequestProtocol.swift",
       "kind": "StringLiteral",
       "offset": 701,
       "length": 7,
       "value": "\"PATCH\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Http\/Request\/Protocol\/RequestProtocol.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Http\/Request\/Protocol\/RequestProtocol.swift",
       "kind": "StringLiteral",
       "offset": 727,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Analytics\/Events\/UserMetadata\/UserMetadata.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Analytics\/Events\/UserMetadata\/UserMetadata.swift",
       "kind": "StringLiteral",
       "offset": 658,
       "length": 12,
       "value": "\"mikros_framework_ios.UserMetadata\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Utils\/Network\/NetworkSpeedTest.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Utils\/Network\/NetworkSpeedTest.swift",
       "kind": "IntegerLiteral",
       "offset": 983,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Configuration\/CommonClientConfigurationProperties.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Configuration\/CommonClientConfigurationProperties.swift",
       "kind": "StringLiteral",
       "offset": 1807,
       "length": 3,
       "value": "\"\/\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Configuration\/CommonClientConfigurationProperties.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Configuration\/CommonClientConfigurationProperties.swift",
       "kind": "StringLiteral",
       "offset": 1845,
       "length": 18,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Configuration\/CommonClientConfigurationProperties.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Configuration\/CommonClientConfigurationProperties.swift",
       "kind": "StringLiteral",
       "offset": 1861,
       "length": 1,
       "value": "\"\/\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Configuration\/CommonClientConfigurationProperties.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Configuration\/CommonClientConfigurationProperties.swift",
       "kind": "StringLiteral",
       "offset": 1920,
       "length": 9,
       "value": "\"http:\/\/\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Configuration\/CommonClientConfigurationProperties.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Configuration\/CommonClientConfigurationProperties.swift",
       "kind": "StringLiteral",
       "offset": 1961,
       "length": 10,
       "value": "\"https:\/\/\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Configuration\/CommonClientConfigurationProperties.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Configuration\/CommonClientConfigurationProperties.swift",
       "kind": "StringLiteral",
       "offset": 2006,
       "length": 25,
       "value": "\"https:\/\/\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Configuration\/CommonClientConfigurationProperties.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Configuration\/CommonClientConfigurationProperties.swift",
       "kind": "StringLiteral",
       "offset": 2030,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/pc-043\/Documents\/IOS\/TG-MIKROS-FRAMEWORK-ios\/mikros-framework-ios\/Utils\/Network\/NetworkStatus.swift",
+      "filePath": "\/Users\/ratpc-125\/Documents\/Mikros\/mikros-framework-ios\/Utils\/Network\/NetworkStatus.swift",
       "kind": "BooleanLiteral",
       "offset": 1463,
       "length": 5,

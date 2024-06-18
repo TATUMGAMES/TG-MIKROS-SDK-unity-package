@@ -1,7 +1,7 @@
 framework module mikros_framework_ios {
   umbrella header "mikros_framework_ios.h"
-
   export *
+
   module * { export * }
 }
 
