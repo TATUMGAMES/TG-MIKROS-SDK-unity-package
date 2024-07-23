@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <a name="released-versions"></a>
 ## Released Versions
 
+* [1.3.2](#1.3.2)
 * [1.3.1](#1.3.1)
 * [1.3.0](#1.3.0)
 * [1.2.1](#1.2.1)
@@ -27,6 +28,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   This is why we are working on a MIKROS App Store, which will allow developers the opportunity to
   market each others' products within the MIKROS ecosystem. More details to come as we build out the 
   necessary infrastructure and marketing machine.
+
+<a name="1.3.2"></a>
+## [1.3.2] - 2024-07-23
+
+### Platform Compatibility
+
+- Compatible for both iOS and Android platforms.
+
+### Enhancements
+
+- Bug Fixes: Squashed some pesky bugs :bug:
+- Resolved gradle conflicts
 
 <a name="1.3.1"></a>
 ## [1.3.1] - 2023-06-30
