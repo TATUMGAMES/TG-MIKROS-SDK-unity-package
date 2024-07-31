@@ -549,29 +549,37 @@ TrackScreenTimeRequest.Builder()
             });
 ```
 
-
-
 ##### Track Purchase Request Object
 
-| Parameter               | Type                                         | Field      |
-| ----------------------  | -------------------------------------------- | ---------- |
-| skuName                 | String                                       | Required   |
-| skuDescription          | String                                       | Optional   |
-| primaryPurchaseCategory | PurchaseCategory                             | Required   |
-| purchaseType            | PurchaseType                                 | Required   |
-| purchaseCurrencyType    | PurchaseCurrencyType                         | Required   |
-| purchasePrice           | float                                        | Required   |
-| percentDiscount         | int                                          | Optional   |
-| amountRewarded          | int                                          | Optional   |
-| skuName                 | String                                       | Optional   |
-| skuDescription          | String                                       | Optional   |
-| skuType                 | String                                       | Required   |
-| skuSubType              | String                                       | Required   |
-| purchaseDetails         | List<TrackPurchaseRequest.PurchaseInfo>      | Required   |
-| timestamp               | String                                       | Required   |
+| Parameter               | Type                                    | Field    |
+| ----------------------- | --------------------------------------- | -------- |
+| skuName                 | String                                  | Required |
+| skuDescription          | String                                  | Optional |
+| primaryPurchaseCategory | PurchaseCategory                        | Required |
+| purchaseType            | PurchaseType                            | Required |
+| purchaseCurrencyType    | PurchaseCurrencyType                    | Required |
+| purchasePrice           | float                                   | Required |
+| percentDiscount         | int                                     | Optional |
+| amountRewarded          | int                                     | Optional |
+| skuName                 | String                                  | Optional |
+| skuDescription          | String                                  | Optional |
+| skuType                 | String                                  | Required |
+| skuSubType              | String                                  | Required |
+| purchaseDetails         | List<TrackPurchaseRequest.PurchaseInfo> | Required |
+| timestamp               | String                                  | Required |
+| additionDetails         | Hashtable                               | Optional |
 
 ```
 PurchaseCategory primaryPurchaseCategory = PurchaseCategory.Currency.GOLD;
+Hashtable additionDetails = new Hashtable();
+
+// describe purchase details e.g. screen details, sku details, purchase descriptors, ect
+AdditionalPurchaseDetails additionPurchaseData = new AdditionalPurchaseDetails();
+additionPurchaseData.additionalKey = "keyPurchaseDetails";
+additionPurchaseData.additionalValue = "valuePurchaseDetails";
+additionDetails.Add(additionPurchaseData.additionalKey, additionPurchaseData.additionalValue);
+additionDetails.Add("keyAdditionalPurchaseDetails", "valueAdditionalPurchaseDetails");
+ 
 List<TrackPurchaseRequest.PurchaseInfo> purchaseDetails = new List<TrackPurchaseRequest.PurchaseInfo>();
 PurchaseCategory secondayPurchaseCategory = PurchaseCategory.Currency.GOLD;
        TrackPurchaseRequest.PurchaseInfo purchaseInfo = TrackPurchaseRequest.PurchaseInfo.Builder()
@@ -591,6 +599,7 @@ PurchaseCategory secondayPurchaseCategory = PurchaseCategory.Currency.GOLD;
         .PercentDiscount(percentDiscount)
         .AmountRewarded(amountRewarded)
         .PurchaseDetails(purchaseDetails)
+        .AdditionalDetails(additionDetails)
         .Create(
         trackPurchaseRequest => MikrosManager.Instance.AnalyticsController.LogEvent(trackPurchaseRequest),
         onFailure =>
