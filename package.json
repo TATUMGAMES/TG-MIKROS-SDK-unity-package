@@ -19,9 +19,6 @@
     "url": "https://developer.tatumgames.com/"
   },
   "description": "MIKROS is a SaaS product that enrolls game developers in an information sharing ecosystem, also known as data pooling, that helps identify better insights about user behavior. Including user spending habits.",
-  "dependencies": {
-    "com.unity.nuget.newtonsoft-json": "3.2.1"
-  },
-  "type": "library",
+    "type": "library",
   "unityRelease": "45f1"
 }
