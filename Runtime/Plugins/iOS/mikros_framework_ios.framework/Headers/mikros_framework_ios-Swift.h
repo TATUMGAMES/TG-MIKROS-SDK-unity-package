@@ -908,7 +908,7 @@ SWIFT_CLASS("_TtC20mikros_framework_ios18MikrosEventBuilder")
 
 /// A  class that implements the behavior for a Core Data model object.
 SWIFT_CLASS_NAMED("MikrosGameplayEntity")
-@interface MikrosGameplayEntity : NSManagedObject
+@interface MikrosGameplayEntity
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -921,7 +921,7 @@ SWIFT_CLASS_NAMED("MikrosGameplayEntity")
 
 /// A  class that implements the behavior for a Core Data model object.
 SWIFT_CLASS("_TtC20mikros_framework_ios18MikrosMemoryEntity")
-@interface MikrosMemoryEntity : NSManagedObject
+@interface MikrosMemoryEntity
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
