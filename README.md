@@ -36,6 +36,16 @@ By offering improved user targeting, users of MIKROS will in turn have improved 
 
 <a name="installation"></a>
 ## Installation
+
+### Minimum Requirements
+To use the Mikros SDK successfully, ensure your project meets the following minimum requirements:
+##### Unity Version:
+
+  1.  Unity 2021.3.45f1 LTS or 2022.3.x LTS and above are supported.
+*(Earlier versions may work but are not officially tested or supported.)*
+  2. Android Target API Level:
+Minimum supported Android Target API Level: 35 (Android 14)
+
 ### Installation via Git in UPM
 
 You can install via Git. This assumes you have Git installed on your
@@ -963,4 +973,6 @@ Integrators also have the option to customize the floating behavior.
 
 Format: (yyyy-mm-dd)
 1. 2021-12-21: Readme created/updated\
-2. 2023-08-07: Synchronized company and product descripton\
+2. 2023-08-07: Synchronized company and product descripton
+3. 2025-07-11: Minimum Unity Version Update
+
