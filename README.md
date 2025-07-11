@@ -973,5 +973,6 @@ Integrators also have the option to customize the floating behavior.
 
 Format: (yyyy-mm-dd)
 1. 2021-12-21: Readme created/updated\
-2. 2023-08-07: Synchronized company and product descripton\
+2. 2023-08-07: Synchronized company and product descripton
 3. 2025-07-11: Minimum Unity Version Update
+
